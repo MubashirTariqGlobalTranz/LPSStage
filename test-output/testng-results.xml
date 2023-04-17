@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-14T19:08:55 GMT+05:00" name="GTZ_RegressionSuite" finished-at="2023-04-14T19:12:56 GMT+05:00" duration-ms="241693">
+    <groups>
+      <group name="Regression">
+        <method signature="CreateQuickLoad_AwardTest.spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@505fc5a4]" name="spotQuoteTest" class="GTZTransportation.gtz.CreateQuickLoad_AwardTest"/>
+        <method signature="CreateMassLoad_AwardTest.spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@485966cc]" name="spotQuoteTest" class="GTZTransportation.gtz.CreateMassLoad_AwardTest"/>
+        <method signature="CreateDirectLoad_AwardTest.spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@57cf54e1]" name="spotQuoteTest" class="GTZTransportation.gtz.CreateDirectLoad_AwardTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2023-04-14T19:08:55 GMT+05:00" name="QuickLoad" finished-at="2023-04-14T19:10:10 GMT+05:00" duration-ms="75209">
+      <class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@505fc5a4]" started-at="2023-04-14T19:08:55 GMT+05:00" name="setup" finished-at="2023-04-14T19:09:02 GMT+05:00" duration-ms="7125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@505fc5a4]" started-at="2023-04-14T19:09:02 GMT+05:00" name="spotQuoteTest" finished-at="2023-04-14T19:10:09 GMT+05:00" duration-ms="67348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuoteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@505fc5a4]" started-at="2023-04-14T19:10:09 GMT+05:00" name="tearDown" finished-at="2023-04-14T19:10:10 GMT+05:00" duration-ms="659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateQuickLoad_AwardTest -->
+    </test> <!-- QuickLoad -->
+    <test started-at="2023-04-14T19:10:10 GMT+05:00" name="MassLoad" finished-at="2023-04-14T19:10:46 GMT+05:00" duration-ms="36476">
+      <class name="GTZTransportation.gtz.CreateMassLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@485966cc]" started-at="2023-04-14T19:10:10 GMT+05:00" name="setup" finished-at="2023-04-14T19:10:16 GMT+05:00" duration-ms="5605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@485966cc]" started-at="2023-04-14T19:10:16 GMT+05:00" name="spotQuoteTest" finished-at="2023-04-14T19:10:46 GMT+05:00" duration-ms="30152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuoteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@485966cc]" started-at="2023-04-14T19:10:46 GMT+05:00" name="tearDown" finished-at="2023-04-14T19:10:46 GMT+05:00" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateMassLoad_AwardTest -->
+    </test> <!-- MassLoad -->
+    <test started-at="2023-04-14T19:10:46 GMT+05:00" name="DirectLoad" finished-at="2023-04-14T19:12:56 GMT+05:00" duration-ms="129913">
+      <class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@57cf54e1]" started-at="2023-04-14T19:10:46 GMT+05:00" name="setup" finished-at="2023-04-14T19:10:54 GMT+05:00" duration-ms="7347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuoteTest()[pri:1, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@57cf54e1]" started-at="2023-04-14T19:10:54 GMT+05:00" name="spotQuoteTest" finished-at="2023-04-14T19:12:55 GMT+05:00" duration-ms="121339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuoteTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@57cf54e1]" started-at="2023-04-14T19:12:55 GMT+05:00" name="tearDown" finished-at="2023-04-14T19:12:56 GMT+05:00" duration-ms="1223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateDirectLoad_AwardTest -->
+    </test> <!-- DirectLoad -->
+  </suite> <!-- GTZ_RegressionSuite -->
+</testng-results>

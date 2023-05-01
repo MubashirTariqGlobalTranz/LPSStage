@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-GTZ_RegressionSuite" class="navigator-link">
-              <span class="suite-name border-passed">GTZ_RegressionSuite</span>
+              <span class="suite-name border-failed">GTZ_RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-GTZ_RegressionSuite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,  3 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GTZ_RegressionSuite" class="hide-methods failed suite-GTZ_RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-GTZ_RegressionSuite -->
+                      <a href="#" panel-name="suite-GTZ_RegressionSuite" class="show-methods failed suite-GTZ_RegressionSuite"> (show)</a> <!-- show-methods failed suite-GTZ_RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-GTZ_RegressionSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" class="method navigator-link" hash-for-method="FindRatesTest">FindRatesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GTZ_RegressionSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-GTZ_RegressionSuite" class="hide-methods skipped suite-GTZ_RegressionSuite"> (hide)</a> <!-- hide-methods skipped suite-GTZ_RegressionSuite -->
+                      <a href="#" panel-name="suite-GTZ_RegressionSuite" class="show-methods skipped suite-GTZ_RegressionSuite"> (show)</a> <!-- show-methods skipped suite-GTZ_RegressionSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-GTZ_RegressionSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" class="method navigator-link" hash-for-method="FindRatesTest">FindRatesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" class="method navigator-link" hash-for-method="FindRatesTest">FindRatesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" class="method navigator-link" hash-for-method="FindRatesTest">FindRatesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-GTZ_RegressionSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +140,11 @@
                       <a href="#" panel-name="suite-GTZ_RegressionSuite" class="show-methods passed suite-GTZ_RegressionSuite"> (show)</a> <!-- show-methods passed suite-GTZ_RegressionSuite -->
                     </span>
                     <div class="method-list-content passed suite-GTZ_RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateBOL_FindRatesTest" class="method navigator-link" hash-for-method="FindRatesTest">FindRatesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-GTZ_RegressionSuite" title="GTZTransportation.gtz.CreateQuickLoad_AwardTest" class="method navigator-link" hash-for-method="spotQuoteTest">spotQuoteTest</a> <!-- method navigator-link -->
@@ -129,6 +172,153 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GTZ_RegressionSuite" class="panel GTZ_RegressionSuite">
+          <div class="suite-GTZ_RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FindRatesTest">
+                  </a> <!-- FindRatesTest -->
+                  <span class="method-name">FindRatesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GTZ_RegressionSuite-class-failed -->
+          <div class="suite-GTZ_RegressionSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FindRatesTest">
+                  </a> <!-- FindRatesTest -->
+                  <span class="method-name">FindRatesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.CreateBOL(CreateBOL_FindRates_CustomerRouted.java:197)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FindRatesTest">
+                  </a> <!-- FindRatesTest -->
+                  <span class="method-name">FindRatesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FindRatesTest">
+                  </a> <!-- FindRatesTest -->
+                  <span class="method-name">FindRatesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GTZ_RegressionSuite-class-skipped -->
           <div class="suite-GTZ_RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -147,7 +337,7 @@
           <div class="suite-GTZ_RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">GTZTransportation.gtz.CreateDirectLoad_AwardTest</span>
+              <span class="class-name">GTZTransportation.gtz.CreateQuickLoad_AwardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -162,7 +352,22 @@
           <div class="suite-GTZ_RegressionSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">GTZTransportation.gtz.CreateQuickLoad_AwardTest</span>
+              <span class="class-name">GTZTransportation.gtz.CreateBOL_FindRatesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FindRatesTest">
+                  </a> <!-- FindRatesTest -->
+                  <span class="method-name">FindRatesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GTZ_RegressionSuite-class-passed -->
+          <div class="suite-GTZ_RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">GTZTransportation.gtz.CreateDirectLoad_AwardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -199,6 +404,16 @@
       &lt;class name=&quot;GTZTransportation.gtz.CreateDirectLoad_AwardTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- DirectLoad --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;CreateBOL-FindRates&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;GTZTransportation.gtz.CreateBOL_FindRatesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CreateBOL-FindRates --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;CutomerRouted-FindRates&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CutomerRouted-FindRates --&gt;
 &lt;/suite&gt; &lt;!-- GTZ_RegressionSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,6 +433,12 @@
               <li>
                 <span class="test-name">DirectLoad (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">CreateBOL-FindRates (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CutomerRouted-FindRates (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -229,6 +450,10 @@
             <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">FindRatesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">spotQuoteTest</span>
                 <br/>
@@ -250,24 +475,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'spotQuoteTest')
 data.setCell(0, 2, 'GTZTransportation.gtz.CreateDirectLoad_AwardTest')
-data.setCell(0, 3, 121339);
+data.setCell(0, 3, 99743);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'spotQuoteTest')
 data.setCell(1, 2, 'GTZTransportation.gtz.CreateQuickLoad_AwardTest')
-data.setCell(1, 3, 67348);
+data.setCell(1, 3, 65789);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'spotQuoteTest')
-data.setCell(2, 2, 'GTZTransportation.gtz.CreateMassLoad_AwardTest')
-data.setCell(2, 3, 30152);
+data.setCell(2, 1, 'FindRatesTest')
+data.setCell(2, 2, 'GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test')
+data.setCell(2, 3, 38248);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FindRatesTest')
+data.setCell(3, 2, 'GTZTransportation.gtz.CreateBOL_FindRatesTest')
+data.setCell(3, 3, 33541);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'spotQuoteTest')
+data.setCell(4, 2, 'GTZTransportation.gtz.CreateMassLoad_AwardTest')
+data.setCell(4, 3, 28298);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'FindRatesTest')
+data.setCell(5, 2, 'GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test')
+data.setCell(5, 3, 5012);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'FindRatesTest')
+data.setCell(6, 2, 'GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test')
+data.setCell(6, 3, 5011);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'FindRatesTest')
+data.setCell(7, 2, 'GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test')
+data.setCell(7, 3, 5007);
 window.suiteTableData['GTZ_RegressionSuite']= { tableData: data, tableDiv: 'times-div-GTZ_RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-GTZ_RegressionSuite">
               </div> <!-- times-div-GTZ_RegressionSuite -->
             </div> <!-- times-div -->
@@ -300,41 +545,85 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">spotQuoteTest</span>
-                <span class="method-start">7186 ms</span>
+                <span class="method-start">3790 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">74542 ms</span>
+                <span class="method-start">69582 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">GTZTransportation.gtz.CreateMassLoad_AwardTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">75265 ms</span>
+                <span class="method-start">69907 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">spotQuoteTest</span>
-                <span class="method-start">80871 ms</span>
+                <span class="method-start">73048 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">111025 ms</span>
+                <span class="method-start">101347 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">GTZTransportation.gtz.CreateDirectLoad_AwardTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">111772 ms</span>
+                <span class="method-start">101617 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">spotQuoteTest</span>
-                <span class="method-start">119120 ms</span>
+                <span class="method-start">104645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">240462 ms</span>
+                <span class="method-start">204390 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">GTZTransportation.gtz.CreateBOL_FindRatesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">204831 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">FindRatesTest</span>
+                <span class="method-start">207707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241249 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">241497 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">FindRatesTest</span>
+                <span class="method-start">244447 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FindRatesTest</span>
+                <span class="method-start">282697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FindRatesTest</span>
+                <span class="method-start">287710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FindRatesTest</span>
+                <span class="method-start">292718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">297730 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

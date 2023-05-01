@@ -1,33 +1,29 @@
 package GTZTransportation.gtz;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import GTZTransportation.pages.LoginPage;
 
 public class LoginTest extends BaseClass {
-    
-	
+
 	LoginPage login;
-	
-	public LoginTest()
-	{
+
+	public LoginTest() {
 		super();
 	}
-	
+
 	@BeforeClass
-    public void setup() 
-    {
-	
+	public void setup() {
+
 		initialization();
-		login =new LoginPage();
-		
-	} 
+		login = new LoginPage();
+
+	}
+
 	@Test
 	public void Verifytitle() {
 		login.LoginPageTitle();
 	}
-	
-   
+
 }

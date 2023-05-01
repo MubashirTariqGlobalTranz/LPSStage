@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateLoadTest">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesTest">
         <methods>
-          <include name="LoadAwardProcess"/>
+          <include name="FindRatesTest"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.CreateLoadTest -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

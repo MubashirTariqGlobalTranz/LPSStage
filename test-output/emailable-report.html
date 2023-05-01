@@ -9,17 +9,121 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">GTZ_RegressionSuite</th></tr>
-<tr><td><a href="#t0">QuickLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">75,209</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">MassLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,476</td><td></td><td></td></tr>
-<tr><td><a href="#t2">DirectLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">129,913</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">241,598</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">QuickLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">69,888</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">MassLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,701</td><td></td><td></td></tr>
+<tr><td><a href="#t2">DirectLoad</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">103,208</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">CreateBOL-FindRates</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,658</td><td></td><td></td></tr>
+<tr><td><a href="#t4">CutomerRouted-FindRates</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">56,488</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">1</th><th class="num">297,943</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GTZ_RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">QuickLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateQuickLoad_AwardTest</td><td><a href="#m0">spotQuoteTest</a></td><td rowspan="1">1681481342388</td><td rowspan="1">67348</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">MassLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateMassLoad_AwardTest</td><td><a href="#m1">spotQuoteTest</a></td><td rowspan="1">1681481416073</td><td rowspan="1">30152</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">DirectLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateDirectLoad_AwardTest</td><td><a href="#m2">spotQuoteTest</a></td><td rowspan="1">1681481454322</td><td rowspan="1">121339</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GTZ_RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">QuickLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateQuickLoad_AwardTest</td><td><a href="#m0">spotQuoteTest</a></td><td rowspan="1">1682941571479</td><td rowspan="1">65789</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">MassLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateMassLoad_AwardTest</td><td><a href="#m1">spotQuoteTest</a></td><td rowspan="1">1682941640737</td><td rowspan="1">28298</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">DirectLoad &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateDirectLoad_AwardTest</td><td><a href="#m2">spotQuoteTest</a></td><td rowspan="1">1682941672334</td><td rowspan="1">99743</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">CreateBOL-FindRates &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.CreateBOL_FindRatesTest</td><td><a href="#m3">FindRatesTest</a></td><td rowspan="1">1682941775396</td><td rowspan="1">33541</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">CutomerRouted-FindRates &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test</td><td><a href="#m4">FindRatesTest</a></td><td rowspan="1">1682941860407</td><td rowspan="1">5011</td></tr><tr><th colspan="4">CutomerRouted-FindRates &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test</td><td><a href="#m5">FindRatesTest</a></td><td rowspan="3">1682941812136</td><td rowspan="3">38248</td></tr><tr class="retriedeven"><td><a href="#m6">FindRatesTest</a></td></tr><tr class="retriedeven"><td><a href="#m7">FindRatesTest</a></td></tr></tbody>
 </table>
 <h2>QuickLoad</h2><h3 id="m0">GTZTransportation.gtz.CreateQuickLoad_AwardTest#spotQuoteTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>MassLoad</h2><h3 id="m1">GTZTransportation.gtz.CreateMassLoad_AwardTest#spotQuoteTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>DirectLoad</h2><h3 id="m2">GTZTransportation.gtz.CreateDirectLoad_AwardTest#spotQuoteTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CreateBOL-FindRates</h2><h3 id="m3">GTZTransportation.gtz.CreateBOL_FindRatesTest#FindRatesTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CutomerRouted-FindRates</h2><h3 id="m4">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test#FindRatesTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test#FindRatesTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.138)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.CreateBOL(CreateBOL_FindRates_CustomerRouted.java:197)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test#FindRatesTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test#FindRatesTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a&quot;}
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GTZAZRCTXCRA27&apos;, ip: &apos;172.24.9.6&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\MUBASH~1.TAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7d6b7b2e0865cbd013e750110cc31d
+*** Element info: {Using=xpath, value=/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at GTZTransportation.pages.CreateBOL_FindRates_CustomerRouted.openFindRates(CreateBOL_FindRates_CustomerRouted.java:113)
+	at GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRatesTest(CreateBOL_FindRates_CustomerRouted_Test.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

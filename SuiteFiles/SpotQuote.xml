@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_Spot Quote" parallel="none" thread-count="1">
+	<test name="QuickLoad">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest" />
+
+		</classes>
+	</test>
+	<test name="MassLoad">
+
+		<classes>
+
+			<class name="GTZTransportation.gtz.CreateMassLoad_AwardTest" />
+
+		</classes>
+	</test>
+	<test name="DirectLoad">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest" />
+
+		</classes>
+
+	</test>
+	<test name="Load Boards">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadBoard_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Load Board Search">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Reports- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Cancel Load- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.CancelLoad_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Copy Load- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Load History- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadHistory_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	<test name="Customers-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Customer_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="Users-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.User_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="Loads-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Load_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="Carriers-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="Transport-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Transport_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="Requirments-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	
+	<test name="ServiceType-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	
+	<test name="Email Template-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	
+	<test name="Expressions- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	
+		<test name="Complete Load Flow- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest" />
+
+		</classes>
+	</test>
+</suite>

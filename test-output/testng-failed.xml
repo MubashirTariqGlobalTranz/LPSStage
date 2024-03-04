@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [GTZ_RegressionSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+      <class name="GTZTransportation.gtz.CreateMassLoad_AwardTest">
         <methods>
-          <include name="FindRatesTest"/>
-          <include name="setup"/>
+          <include name="spotQuote_MassLoad_Tests"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+      </class> <!-- GTZTransportation.gtz.CreateMassLoad_AwardTest -->
     </classes>
-  </test> <!-- CutomerRouted-FindRates(failed) -->
-</suite> <!-- Failed suite [GTZ_RegressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

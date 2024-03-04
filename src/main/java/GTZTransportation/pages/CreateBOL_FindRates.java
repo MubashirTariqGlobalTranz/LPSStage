@@ -11,7 +11,7 @@ public class CreateBOL_FindRates extends BaseClass {
 
 	// public static WebDriver driver;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[4]/a")
+	@FindBy(xpath = "//span[normalize-space()='Find freight rates']")
 	WebElement FindRates;
 
 	@FindBy(id = "OriginZip")
@@ -20,42 +20,56 @@ public class CreateBOL_FindRates extends BaseClass {
 	@FindBy(id = "DestinationZip")
 	WebElement Destination;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[2]/input")
+	@FindBy(xpath = "//input[@placeholder='Pieces']")
 	WebElement Pieces;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[3]/input")
+	@FindBy(xpath = "//input[@placeholder='Pallets']")
 	WebElement Pallet;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[4]/input")
+	@FindBy(xpath = "//input[@placeholder='Weight']")
 	WebElement Weight;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[5]/input[2]")
+	@FindBy(xpath = "//input[@placeholder='Length']")
 	WebElement Length;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[5]/input[2]")
+	@FindBy(xpath = "//input[@placeholder='Width']")
 	WebElement Width;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[10]/div/div[2]/table/tbody/tr[2]/td[5]/input[3]")
+	@FindBy(xpath = "//input[@placeholder='Height']")
 	WebElement Height;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[1]/div[16]/button")
+	@FindBy(xpath = "//button[@class='btn btn-large btn-primary']")
 	WebElement FindRatesButton;
 
 	@FindBy(xpath = "//*[@id=\"content\"]/div/div[1]/div[20]/div/div[2]/table/tbody/tr[2]/td[6]/a[1]")
 	WebElement Create;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[2]/div[2]/div[2]/table/tbody/tr[2]/td[8]/span/input")
+	@FindBy(xpath = "//input[@id='tr2']")
 	WebElement Description;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[2]/div[2]/div[4]/div[3]/div[2]/ul/li[1]/input")
+	@FindBy(xpath = "//div[@data-bind=\"template: { name: 'bolAddressTemplate', data: $root.bol.destination }\"]//input[@placeholder='Company name']")
 	WebElement CompanyName;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[2]/div[2]/div[4]/div[3]/div[2]/ul/li[2]/input")
+	@FindBy(xpath = "//div[@data-bind=\"template: { name: 'bolAddressTemplate', data: $root.bol.destination }\"]//input[@id='input3']")
 	WebElement Address;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[2]/div[2]/div[11]/a[1]")
-	WebElement BOLCreate;
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div[2]/div[2]/div[3]/div[3]/div[2]/ul/li[1]/input")
+	WebElement CompanyName1;
 
+	@FindBy(xpath = "//*[@id=\"input3\"]")
+	WebElement Address1;
+	
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div[2]/div[2]/div[3]/div[3]/div[3]/ul/li[3]/input[1]")
+	WebElement PhoneNo;
+	
+	@FindBy(xpath = "//span[@data-bind=\"text:(createBolButtonText()?createBolButtonText():'Create BOL!')\"]")
+	WebElement BOLCreate;
+	
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div[3]/div[2]/div[1]/textarea")
+	WebElement Emailtext;
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div[3]/div[2]/div[1]/button")
+	WebElement SendBOL;
 	
 	//Initialization
 	public CreateBOL_FindRates() {
@@ -103,7 +117,7 @@ public class CreateBOL_FindRates extends BaseClass {
 			e.printStackTrace();
 		}
 		Pieces.clear();
-		Pieces.sendKeys("11");
+		Pieces.sendKeys("22");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -111,7 +125,7 @@ public class CreateBOL_FindRates extends BaseClass {
 			e.printStackTrace();
 		}
 		Pallet.clear();
-		Pallet.sendKeys("11");
+		Pallet.sendKeys("22");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -119,13 +133,15 @@ public class CreateBOL_FindRates extends BaseClass {
 			e.printStackTrace();
 		}
 		Weight.clear();
-		Weight.sendKeys("100");
+		Weight.sendKeys("10");
+		Width.clear();
+		Width.sendKeys("30");
 		Length.clear();
-		Length.sendKeys("11");
+		Length.sendKeys("30");
 
 		Height.clear();
 
-		Height.sendKeys("11");
+		Height.sendKeys("30");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -135,14 +151,12 @@ public class CreateBOL_FindRates extends BaseClass {
 
 		FindRatesButton.click();
 		try {
-			Thread.sleep(9000);
+			Thread.sleep(15000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(
-				By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[20]/div/div[2]/table/tbody/tr[2]/td[6]/a[1]"))
-				.click();
+		driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[18]/div/div[2]/table/tbody/tr[2]/td[6]/a[1]")).click();
 		
 	}
 
@@ -151,7 +165,18 @@ public class CreateBOL_FindRates extends BaseClass {
 		Description.sendKeys("Mubashir");
 		CompanyName.sendKeys("Test Name");
 		Address.sendKeys("Test Address");
+		CompanyName1.sendKeys("Test Name");
+		Address1.sendKeys("Test Address");
+		PhoneNo.sendKeys("1231231234");
 		BOLCreate.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Emailtext.sendKeys("mubashir.tariq@globaltranz.com");
+		SendBOL.click();
 	}
 	
 

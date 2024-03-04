@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_VICS" parallel="none" thread-count="1">
+	
+
+    
+	<test name="VICS">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VerifyCustomerTest" />
+
+		</classes>
+	</test>
+
+	<test name="VICS BOL Creation">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest" />
+
+		</classes>
+	</test>
+
+	<test name="VICS View Order">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VeiwOrdersTest" />
+
+		</classes>
+	</test>
+
+</suite>

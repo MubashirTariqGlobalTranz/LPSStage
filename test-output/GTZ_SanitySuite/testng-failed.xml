@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [GTZ_SanitySuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="QuickLoad(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest">
+        <methods>
+          <include name="spotQuoteTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateQuickLoad_AwardTest -->
+    </classes>
+  </test> <!-- QuickLoad(failed) -->
+  <test thread-count="1" name="CreateBOL-FindRates(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesTest">
+        <methods>
+          <include name="FindRatesTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesTest -->
+    </classes>
+  </test> <!-- CreateBOL-FindRates(failed) -->
+  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <methods>
+          <include name="FindRatesTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+    </classes>
+  </test> <!-- CutomerRouted-FindRates(failed) -->
+</suite> <!-- Failed suite [GTZ_SanitySuite] -->

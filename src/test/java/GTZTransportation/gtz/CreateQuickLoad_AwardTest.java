@@ -24,7 +24,7 @@ public class CreateQuickLoad_AwardTest extends BaseClass {
 	}
 
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
-	public void spotQuoteTest() {
+	public void spotQuote_QuickLoad_Tests() {
 
 		// This will run all the methods
 		loadPage.openSpotQuote();

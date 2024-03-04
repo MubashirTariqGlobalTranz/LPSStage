@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [GTZ_KSX Admin]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="KSXADMIN Manage Users(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="KSXAdmin_ManageUsers_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageUsersTest -->
+    </classes>
+  </test> <!-- KSXADMIN Manage Users(failed) -->
+</suite> <!-- Failed suite [GTZ_KSX Admin] -->

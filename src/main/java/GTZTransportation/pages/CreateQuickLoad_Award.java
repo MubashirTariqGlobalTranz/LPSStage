@@ -11,7 +11,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 
 	// public static WebDriver driver;
 
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/table/tbody/tr/td[2]/div[1]/div[3]/ul/li[6]/a")
+	@FindBy(xpath = "//*[text()='Spot Quote system']")
 	WebElement SpotQuote;
 
 	@FindBy(xpath = "/html/body/form/div[3]/div[2]/div[1]/ul/li[1]/a/span")
@@ -157,7 +157,14 @@ public class CreateQuickLoad_Award extends BaseClass {
 
 	@FindBy(id = "ContentPlaceHolder1_containerFilter_btnRefresh")
 	WebElement FilterLoad;
+	
+	@FindBy(id = "ContentPlaceHolder1_quickLoad_itemList_DdlCommodityCode")
+	WebElement CommodityCode;
+	
+	@FindBy(id = "ContentPlaceHolder1_chkOnlyShowBidsWithAmounts")
+	WebElement UncheckBidResponse;
 
+	
 	//initialization
 	public CreateQuickLoad_Award() {
 		PageFactory.initElements(driver, this);
@@ -200,7 +207,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CustomerName.sendKeys("10637");
+		CustomerName.sendKeys("10663");//10637
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -218,7 +225,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 
 		// BidAmount.sendKeys("1000");
 
-		Company.sendKeys("Armacell LLC");
+		Company.sendKeys("Test");
 		// Name.sendKeys("Devon Daggenstoss");
 
 		Phoneno.sendKeys("(919) 304-3846");
@@ -228,14 +235,21 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		OriginPostalCode.sendKeys("98424");
+		originName.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		originName.sendKeys("Golden Services, LLC");
 		originAddress.sendKeys("2400 70th Avenue East Suite B100");
 		PickupContact.sendKeys("Test");
 		PickupPhone.sendKeys("(919) 304-3846");
 		originCity.sendKeys("Fife");
 		OriginState.sendKeys("WA");
-		OriginPostalCode.sendKeys("98424");
+		
 
 		try {
 			Thread.sleep(3000);
@@ -243,17 +257,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		PickupEmail.sendKeys("Test@gmail.com");
-
-		DestinationName.sendKeys("REFRIGERATION SUPPLIES DIST");
-		DestinationAddress.sendKeys("2521 PACIFIC HIGHWAY E, SUITE C");
-		PickupContactDestination.sendKeys("Test");
-		PickupPhoneDestination.sendKeys("(919) 304-1199");
-		DestinationCity.sendKeys("TACOMA");
-		DestinationState.sendKeys("WA");
-		DestinationPostalCode.sendKeys("98424");
-		DestinationCountry.sendKeys("US");
-		DestinationTimeWindow.sendKeys("4/11/2023");
+		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -270,18 +274,33 @@ public class CreateQuickLoad_Award extends BaseClass {
 		ClassSelection.click();
 		Description.sendKeys("This is Test");
 		ReferenceNo.sendKeys("Ref123456");
+		CommodityCode.sendKeys("air cooler");
 
-		PickTimeWindow.sendKeys("4/11/2023");
-
+		DestinationTimeWindow.sendKeys("7/19/2023");
+		
+		PickTimeWindow.sendKeys("7/16/2023");
+//Copy
+		PickupEmail.sendKeys("Test@gmail.com");
+		
+		DestinationName.sendKeys("REFRIGERATION SUPPLIES DIST");
+		DestinationAddress.sendKeys("2521 PACIFIC HIGHWAY E, SUITE C");
+		PickupContactDestination.sendKeys("Test");
+		PickupPhoneDestination.sendKeys("(919) 304-1199");
+		DestinationCity.sendKeys("TACOMA");
+		DestinationState.sendKeys("WA");
+		DestinationPostalCode.sendKeys("98424");
+		//DestinationCountry.sendKeys("US");
+		
+		//Paste
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// Flatbed.click();
+		//Flatbed.click();
 		TruckLoad.click();
-		// Expedited.click();
+		//Expedited.click();
 		LTLGuaranted.click();
 		Create.click();
 
@@ -300,6 +319,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 		System.out.println(kt);
 
 		SendBid.click();
+		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -307,12 +327,14 @@ public class CreateQuickLoad_Award extends BaseClass {
 			e.printStackTrace();
 		}
 		driver.switchTo().alert().accept();
+		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		//UncheckBidResponse.click();
 		AwardBid.click();
 		driver.switchTo().alert().accept();
 		try {

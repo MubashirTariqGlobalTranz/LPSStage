@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [GTZ_Freight Payments]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="FreightPayment-Reports(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.FreightPayment_ReportsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="FreightPayment_Report_tests"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.FreightPayment_ReportsTest -->
+    </classes>
+  </test> <!-- FreightPayment-Reports(failed) -->
+</suite> <!-- Failed suite [GTZ_Freight Payments] -->

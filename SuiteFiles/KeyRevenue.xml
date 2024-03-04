@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LPS_Key Revenue" parallel="none" thread-count="1">
+
+
+	<test name="LPS_Key Revenue Reports">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_ReportsTest" />
+
+		</classes>
+	</test>
+	
+	<test name="LPS_Key Revenue- Customer">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_CustomerTest" />
+
+		</classes>
+	</test>
+<test name="LPS_Key Revenue- Admin">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_AdminTest" />
+
+		</classes>
+	</test>
+	<test name="LPS_Key Revenue- Invoice">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_InvoiceTest" />
+
+		</classes>
+	</test>
+	<test name="LPS_Key Revenue- InvoiceGeneral">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest" />
+
+		</classes>
+	</test>
+</suite>

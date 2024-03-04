@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [GTZ_Find Rates]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.Reporting"/>
+  </listeners>
+  <test thread-count="1" name="Parcel-FindRates(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesParcelTest">
+        <methods>
+          <include name="FindRatesParcel_BOL_Creation_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesParcelTest -->
+    </classes>
+  </test> <!-- Parcel-FindRates(failed) -->
+</suite> <!-- Failed suite [GTZ_Find Rates] -->

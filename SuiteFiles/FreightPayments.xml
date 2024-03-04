@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_Freight Payments" parallel="none" thread-count="1">
+	
+	<test name="FreightPayment-Missing Carriers">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-Account Payable">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_AccountPayableTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-Reports">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ReportsTest" />
+
+		</classes>
+	</test>
+	
+	<test name="FreightPayment-ClientAdmin">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ClientAdminTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-CarrierPortal_Others">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_CarrierPortalTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-GTZ_WebQueues">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_GTZTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-GTZ_Links">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_GTZ_Links_Test" />
+
+		</classes>
+	</test>
+</suite>

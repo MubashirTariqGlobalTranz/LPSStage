@@ -9,8 +9,10 @@ import org.testng.annotations.Test;
 import GTZTransportation.pages.CreateBOL_FindRates;
 
 public class CreateBOL_FindRatesTest extends BaseClass {
+	
+
 	// public static WebDriver driver;
-	CreateBOL_FindRates loadPage;
+	CreateBOL_FindRates Rates;
 
 	public CreateBOL_FindRatesTest() {
 		super();
@@ -20,21 +22,21 @@ public class CreateBOL_FindRatesTest extends BaseClass {
 	public void setup() {
 
 		initialization();
-		loadPage = new CreateBOL_FindRates();
+		Rates = new CreateBOL_FindRates();
 	}
 
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
-	public void FindRatesTest() {
+	public void FindRates_BOL_Creation_Tests() {
 //This will run all the methods
-		loadPage.openFindRates();
-		loadPage.FindRates();
-		loadPage.CreateBOL();
+		Rates.openFindRates();
+		Rates.FindRates();
+		Rates.CreateBOL();
 //After creating BOL, This assertion will work
-		String actual = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[3]/div[1]/h1/small"))
+		String actual = driver.findElement(By.xpath("//small[normalize-space()='Bill of Lading']"))
 				.getText();
 		String expected = "Bill of Lading";
 		Assert.assertEquals(actual, expected);
-		captureScreenShot(driver,"Verify Find Ratesfor Normal BOL");
+		captureScreenShot(driver,"Verify Find Rates for Normal BOL");
 	}
 
 	@AfterTest(groups = ("Regression"))

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_RegressionSuite" parallel="classes" thread-count="1">
+	<listeners>
+		<listener class-name="utilities.Reporting" />
+	</listeners>
+
+	<test name="Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest" />
+			<class name="GTZTransportation.gtz.CreateMassLoad_AwardTest" />
+			<class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest" />
+			<class name="GTZTransportation.gtz.LoadBoard_SpotQuoteTest" />
+			<class name="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest" />
+		</classes>
+	</test>
+	<test name="Find Rates">
+		<classes>
+			<class name="GTZTransportation.gtz.FindRatesCarriersTest" />
+			<class name="GTZTransportation.gtz.CreateBOL_FindRatesTest" />
+			<class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" />
+		</classes>
+	</test>
+	<test name="Freight Payment">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest" />
+			<class
+				name="GTZTransportation.gtz.FreightPayment_AccountPayableTest" />
+		</classes>
+	</test>
+	<test name="KSX Admin">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest" />
+		</classes>
+	</test>
+	<test name="VICS">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VerifyCustomerTest" />
+			<class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest" />
+			<class name="GTZTransportation.gtz.VICS_VeiwOrdersTest" />
+		</classes>
+	</test>
+</suite>

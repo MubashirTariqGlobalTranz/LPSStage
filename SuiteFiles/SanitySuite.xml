@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_SanitySuite" parallel="none" thread-count="1">
+	<test name="QuickLoad">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest" />
+
+		</classes>
+	</test>
+	<test name="MassLoad">
+
+		<classes>
+
+			<class name="GTZTransportation.gtz.CreateMassLoad_AwardTest" />
+
+		</classes>
+	</test>
+	<test name="DirectLoad">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest" />
+
+		</classes>
+
+	</test>
+	<test name="CreateBOL-FindRates">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateBOL_FindRatesTest" />
+
+		</classes>
+	</test>
+	<test name="CutomerRouted-FindRates">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" />
+
+		</classes>
+	</test>
+
+	<test name="FreightPayment-Missing Carriers">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-Account Payable">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_AccountPayableTest" />
+
+		</classes>
+	</test>
+	<test name="KSXADMIN ManageShipment">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="VICS BOL Creation">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest" />
+
+		</classes>
+	</test>
+
+
+</suite>

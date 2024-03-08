@@ -1,18 +1,19 @@
 package GTZTransportation.gtz;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import GTZTransportation.pages.CreateLPSDirectLoad_Award;
+import GTZTransportation.pages.CreateLPSDirectMassLoad_Award;
 
-public class CreateLPSDirectLoad_AwardTest extends BaseClass {
+public class CreateLPSDirectMassLoad_AwardTest extends BaseClass {
 	// public static WebDriver driver;
-	CreateLPSDirectLoad_Award loadPage;
+	CreateLPSDirectMassLoad_Award loadPage;
 
-	public CreateLPSDirectLoad_AwardTest() {
+	public CreateLPSDirectMassLoad_AwardTest() {
 		super();
 	}
 
@@ -20,7 +21,7 @@ public class CreateLPSDirectLoad_AwardTest extends BaseClass {
 	public void setup() {
 
 		initialization();
-		loadPage = new CreateLPSDirectLoad_Award();
+		loadPage = new CreateLPSDirectMassLoad_Award();
 	}
 
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
@@ -29,12 +30,11 @@ public class CreateLPSDirectLoad_AwardTest extends BaseClass {
 		// This will run all the methods
 		loadPage.openSpotQuote();
 		loadPage.Create_Load();
-		loadPage.Award_load();
 
-		//After load will be awarded, this will compare the text and test will pass/fail accordingly
-		String actual = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]")).getText();
-		String expected = "The Load was successfully awarded";
-		Assert.assertEquals(actual, expected);
+		//After load will be Created, this will compare the text and test will pass/fail accordingly
+		String actual = driver.findElement(By.className("notify-success")).getText();
+		String expected = "Bid awarded to Carrier 10071";
+		assertTrue(actual.contains(expected));
 		captureScreenShot(driver,"Verify Load awarded to LPS Direct");
 	}
 

@@ -155,6 +155,12 @@
 		</classes>
 	</test>
 
+<test name="LPS Direct by Mass Load- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest" />
+
+		</classes>
+	</test>
 	<test name="FindRate-Carriers">
 		<classes>
 			<class name="GTZTransportation.gtz.FindRatesCarriersTest" />

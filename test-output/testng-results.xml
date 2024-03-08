@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T21:43:27 GMT+05:00" name="Default suite" finished-at="2024-03-04T21:44:06 GMT+05:00" duration-ms="38867">
+  <suite started-at="2024-03-08T23:02:42 PKT" name="Default suite" finished-at="2024-03-08T23:04:02 PKT" duration-ms="80282">
     <groups>
       <group name="Regression">
-        <method signature="CreateMassLoad_AwardTest.spotQuote_MassLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@70e9c95d]" name="spotQuote_MassLoad_Tests" class="GTZTransportation.gtz.CreateMassLoad_AwardTest"/>
+        <method signature="CreateLPSDirectLoad_AwardTest.spotQuote_QuickLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@70e9c95d]" name="spotQuote_QuickLoad_Tests" class="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-03-04T21:43:27 GMT+05:00" name="Default test" finished-at="2024-03-04T21:44:06 GMT+05:00" duration-ms="38867">
-      <class name="GTZTransportation.gtz.CreateMassLoad_AwardTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@70e9c95d]" started-at="2024-03-04T21:43:27 GMT+05:00" name="setup" finished-at="2024-03-04T21:43:33 GMT+05:00" duration-ms="5801" status="PASS">
+    <test started-at="2024-03-08T23:02:42 PKT" name="Default test" finished-at="2024-03-08T23:04:02 PKT" duration-ms="80282">
+      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@70e9c95d]" started-at="2024-03-08T23:02:42 PKT" name="setup" finished-at="2024-03-08T23:02:48 PKT" duration-ms="5929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="spotQuote_MassLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@70e9c95d]" started-at="2024-03-04T21:43:33 GMT+05:00" name="spotQuote_MassLoad_Tests" finished-at="2024-03-04T21:44:05 GMT+05:00" duration-ms="32627" status="PASS">
+        <test-method signature="spotQuote_QuickLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@70e9c95d]" started-at="2024-03-08T23:02:48 PKT" name="spotQuote_QuickLoad_Tests" finished-at="2024-03-08T23:04:02 PKT" duration-ms="73963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- spotQuote_MassLoad_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@70e9c95d]" started-at="2024-03-04T21:44:05 GMT+05:00" name="tearDown" finished-at="2024-03-04T21:44:06 GMT+05:00" duration-ms="407" status="PASS">
+        </test-method> <!-- spotQuote_QuickLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@70e9c95d]" started-at="2024-03-08T23:04:02 PKT" name="tearDown" finished-at="2024-03-08T23:04:02 PKT" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.CreateMassLoad_AwardTest -->
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

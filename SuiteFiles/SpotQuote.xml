@@ -135,4 +135,11 @@
 
 		</classes>
 	</test>
+	
+	<test name="LPS Direct - Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest" />
+
+		</classes>
+	</test>
 </suite>

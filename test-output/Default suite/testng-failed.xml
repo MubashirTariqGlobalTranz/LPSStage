@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateMassLoad_AwardTest">
+      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
         <methods>
-          <include name="spotQuote_MassLoad_Tests"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="spotQuote_QuickLoad_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.CreateMassLoad_AwardTest -->
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

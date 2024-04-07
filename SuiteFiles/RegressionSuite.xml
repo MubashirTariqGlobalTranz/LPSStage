@@ -3,7 +3,7 @@
 
 <suite name="GTZ_RegressionSuite" parallel="none" thread-count="1">
 	<listeners>
-		<listener class-name="utilities.Reporting" />
+		<listener class-name="Utility.Reporting" />
 	</listeners>
 	
 

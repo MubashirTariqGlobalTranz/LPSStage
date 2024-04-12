@@ -23,7 +23,14 @@ public class LPS_MyShipmentsTest extends BaseClass {
 		initialization();
 		Shipments = new LPS_MyShipments();
 	}
+	/**
 
+	Test case description:
+	This test case verifies "My Shipments" for LPS:
+	Verify my shipments are displayed.
+	Verify search functionality is working.
+	Verify shipment details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void LPS_MyshipmentsTest() {
 //This will run all the methods

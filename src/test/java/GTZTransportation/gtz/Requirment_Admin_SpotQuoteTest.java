@@ -22,7 +22,11 @@ public class Requirment_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Requirment_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Requirement admin section for Spot Quote. It searches for the Requirement for carrier and opens the Requirement details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Requirment_Admin_Tests() {
 

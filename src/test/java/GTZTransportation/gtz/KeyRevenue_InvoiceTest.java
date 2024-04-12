@@ -22,7 +22,15 @@ public class KeyRevenue_InvoiceTest extends BaseClass {
 		initialization();
 		keyRevenue = new KeyRevenue_Invoice();
 	}
+	/**
 
+	Test case description:
+	This test case verifies Invoice for Key Revenue:
+	Verify Invoice creation.
+	Verify Invoice search.
+	Verify Invoice sending.
+	Verify Invoice canceling.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KeyRevenue_Invoice_tests() {
 //This will run all the methods

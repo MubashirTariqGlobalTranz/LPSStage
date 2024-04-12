@@ -22,7 +22,13 @@ public class LPSCustomer_Carrier_CarrierImportTest extends BaseClass {
 		initialization();
 		CustomerCarrier = new LPSCustomer_Carrier_CarrierImport();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for Carrier import for the customer/carrier app:
+	Verify carrier import opens.
+	Verify import details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void CustomerCarriers_CarrierImport_tests() {
 //This will run all the methods & Test

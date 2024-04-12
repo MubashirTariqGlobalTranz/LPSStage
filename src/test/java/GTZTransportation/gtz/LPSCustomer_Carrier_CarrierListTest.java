@@ -22,7 +22,15 @@ public class LPSCustomer_Carrier_CarrierListTest extends BaseClass {
 		initialization();
 		CustomerCarrier = new LPSCustomer_Carrier_CarrierList();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for Carrier list for the customer/carrier app:
+	Verify carrier list.
+	Verify carriers can be searched.
+	Verify carrier details open.
+	Verify carrier details links are functional.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void CustomerCarriers_CarrierList_tests() {
 //This will run all the methods

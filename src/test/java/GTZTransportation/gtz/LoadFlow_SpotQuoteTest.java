@@ -22,7 +22,11 @@ public class LoadFlow_SpotQuoteTest extends BaseClass {
 		initialization();
 		loadPage = new LoadFlow_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the complete load flow end-to-end in Spot Quote.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_CompleteLoadFlow_Tests() {
 		// This will run all the tests

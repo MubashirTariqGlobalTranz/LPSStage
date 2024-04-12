@@ -22,7 +22,21 @@ public class LoadBoard_SpotQuoteTest extends BaseClass {
 		initialization();
 		loadPage = new LoadBoard_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the load board in Spot Quote:
+	Load Boards:
+	Verify All Tab functionality and data display.
+	Verify New Tab functionality and data display.
+	Verify Open Tab functionality and data display.
+	Verify Awarded Tab functionality and data display.
+	Verify In-Transit Tab functionality and data display.
+	Verify Delivered Tab functionality and data display.
+	Verify Completed Tab functionality and data display.
+	Verify Cancelled Tab functionality and data display.
+	Verify Actions Tab functionality and data display.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LoadBoard_Search_Tests() {
 

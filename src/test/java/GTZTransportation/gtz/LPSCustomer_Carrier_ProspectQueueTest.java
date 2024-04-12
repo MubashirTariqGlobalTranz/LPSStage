@@ -22,9 +22,17 @@ public class LPSCustomer_Carrier_ProspectQueueTest extends BaseClass {
 		initialization();
 		CustomerCarrier = new LPSCustomer_Carrier_ProspectQueue();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for customer/Prospect Queue for the customer/carrier app:
+	Verify customer Prospect Queue.
+	Verify edit queue functionality.
+	Verify search on Prospect Queue.
+	Verify tabs on Prospect Queue (New, Submitted, Assigned, Cancelled).
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
-	public void CustomerCarriers_CustomerList_tests() {
+	public void CustomerCarriers_CustomerList_ProspectQueue_tests() {
 //This will run all the methods
 
 		CustomerCarrier.clientAdminGTZ();

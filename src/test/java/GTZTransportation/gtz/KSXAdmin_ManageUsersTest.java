@@ -22,7 +22,13 @@ public class KSXAdmin_ManageUsersTest extends BaseClass {
 		initialization();
 		Shipments = new KSXAdmin_ManageUsers();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Manage users section for KSX admin:
+	Verify all Client User/SAV User/Admin Sites users.
+	Edit user and save changes.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KSXAdmin_ManageUsers_Tests() {
 //This will run all the methods

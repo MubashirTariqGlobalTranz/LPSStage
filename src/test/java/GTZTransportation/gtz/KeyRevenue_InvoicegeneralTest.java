@@ -22,7 +22,15 @@ public class KeyRevenue_InvoicegeneralTest extends BaseClass {
 		initialization();
 		keyRevenue = new KeyRevenue_Invoicegeneral();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Invoice & Shipment section for Key Revenue:
+	Verify billable invoices.
+	Verify invoice payments.
+	Verify invoice file review module, search for files.
+	Verify Shipments.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KeyRevenue_InvoiceGeneral_tests() {
 //This will run all the methods

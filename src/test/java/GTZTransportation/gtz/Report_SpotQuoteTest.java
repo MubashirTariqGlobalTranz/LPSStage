@@ -22,7 +22,16 @@ public class Report_SpotQuoteTest extends BaseClass {
 		initialization();
 		Report = new Report_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for the following reports in the customer/carrier app:
+	LinkedLoad
+	CarrierList
+	CarrierGroup
+	AwardLoad
+	EdiFileTrackingList
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Reports_Tests() {
 

@@ -22,7 +22,13 @@ public class KSXAdmin_ManageClientTest extends BaseClass {
 		initialization();
 		Shipments = new KSXAdmin_ManageClient();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Manage clients section for KSX admin:
+	Verify Manage client opens successfully.
+	Verify client details are displayed & edit.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KSXAdmin_ManageClient_Tests() {
 //This will run all the methods

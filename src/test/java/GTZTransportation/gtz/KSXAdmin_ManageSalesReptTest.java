@@ -22,7 +22,14 @@ public class KSXAdmin_ManageSalesReptTest extends BaseClass {
 		initialization();
 		Shipments = new KSXAdmin_ManageSalesRep();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Manage Sales rep section for KSX admin:
+	Verify sales reps can be opened.
+	Verify sales rep details are displayed.
+	Verify saving sales rep functionality.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KSXAdmin_ManageSalesRep_Tests() {
 //This will run all the methods

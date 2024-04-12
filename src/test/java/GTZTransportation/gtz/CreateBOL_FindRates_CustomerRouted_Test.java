@@ -22,7 +22,14 @@ public class CreateBOL_FindRates_CustomerRouted_Test extends BaseClass {
 		initialization();
 		Rates = new CreateBOL_FindRates_CustomerRouted();
 	}
+	/**
 
+	Test case description:
+	Create BOL for Customer Routed:
+	Verify carriers are displayed.
+	Verify successful creation of BOL for Customer Routed.
+	Verify proper display of BOL.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void FindRates_BOL_Creation_CustomerRouted_Tests() {
 		//This will run all the methods

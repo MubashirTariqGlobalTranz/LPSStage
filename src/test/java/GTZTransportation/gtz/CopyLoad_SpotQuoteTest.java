@@ -23,7 +23,11 @@ public class CopyLoad_SpotQuoteTest extends BaseClass {
 		initialization();
 		loadPage = new CopyLoad_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case creates a load in the Spot Quote section and verifies that the load is copied properly.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_CopyLoad_Tests() {
 

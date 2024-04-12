@@ -22,7 +22,11 @@ public class Carriers_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Carriers_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the carrier admin section for Spot Quote. It searches for the carrier and opens the carrier details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Carriers_Admin_Tests() {
 

@@ -20,6 +20,22 @@ public class FreightPayment_GTZ_Links_Test extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_GTZ_Links();
 	}
+	/**
+
+	Test case description:
+	This test case verifies GTZ links in FreightPayment:
+	Verify GTZ links.
+	Verify budget tool opens.
+	Verify customers open.
+	Verify users open.
+	Verify welcome email.
+	Verify invalid bank details are displayed.
+	Verify payment files details are displayed.
+	Verify payment remittance contact details are displayed and can be opened.
+	Verify Mass batch tool.
+	*/
+
+
 
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_GTZ_Links_tests() {

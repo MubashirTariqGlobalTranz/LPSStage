@@ -22,7 +22,11 @@ public class Customer_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Customer_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the customer admin section for Spot Quote. It searches for the customer and opens the customer details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Customers_Admin_Tests() {
 

@@ -22,7 +22,11 @@ public class EmailTemplate_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new EmailTemplate_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Email templates in admin section for Spot Quote. It opens email templates and save them.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_EmailTemplate_Admin_Tests() {
 

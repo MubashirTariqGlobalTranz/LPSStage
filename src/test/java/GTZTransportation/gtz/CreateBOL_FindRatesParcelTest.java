@@ -24,7 +24,13 @@ public class CreateBOL_FindRatesParcelTest extends BaseClass {
 		initialization();
 		Rates = new CreateBOL_FindRatesParcel();
 	}
+	/**
 
+	Test case description:
+	Create Normal BOLs for Parcel & Air:
+	Verify Carriers Rates are displayed against added info.
+	Verify successful creation of normal BOL.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void FindRatesParcel_BOL_Creation_Tests() {
 //This will run all the methods

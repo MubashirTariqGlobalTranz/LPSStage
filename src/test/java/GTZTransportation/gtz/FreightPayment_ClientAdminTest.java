@@ -22,7 +22,13 @@ public class FreightPayment_ClientAdminTest extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_ClientAdmin();
 	}
+	/**
 
+	Test case description:
+	This test case verifies client admin for FreightPayment:
+	Verify client admin opens successfully.
+	Search for the user and send the reset email.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_ClientAdmin_tests() {
 //This will run all the methods

@@ -24,7 +24,13 @@ public class CreateBOL_FindRatesTest extends BaseClass {
 		initialization();
 		Rates = new CreateBOL_FindRates();
 	}
+	/**
 
+	Test case description:
+	Create Normal BOLs for LTL:
+	Verify Carriers Rates are displayed against added info.
+	Verify successful creation of normal BOL.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void FindRates_BOL_Creation_Tests() {
 //This will run all the methods

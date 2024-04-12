@@ -22,7 +22,11 @@ public class CreateLPSDirectLoad_AwardTest extends BaseClass {
 		initialization();
 		loadPage = new CreateLPSDirectLoad_Award();
 	}
+	/**
 
+	Test case description:
+	This test case verifies load creation for Mcleod from Spot Quote with Direct load.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LPSDirect_Tests() {
 

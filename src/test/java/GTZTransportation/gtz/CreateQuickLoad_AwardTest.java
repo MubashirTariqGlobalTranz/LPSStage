@@ -22,7 +22,14 @@ public class CreateQuickLoad_AwardTest extends BaseClass {
 		initialization();
 		loadPage = new CreateQuickLoad_Award();
 	}
+	/**
 
+	Test case description:
+	Create Quick Load/Award Load Process in Spot Quote:
+	Verify Quick Load creation.
+	Verify Bid sending.
+	Verify Load awarding.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_QuickLoad_Tests() {
 

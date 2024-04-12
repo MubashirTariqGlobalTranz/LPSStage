@@ -22,7 +22,13 @@ public class FreightPayment_MissingCarriersTest extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_MissingCarriers();
 	}
+	/**
 
+	Test case description:
+	This test case verifies Missing carrier for FreightPayment:
+	Verify search functionality.
+	Verify missing carrier details are displayed and can be opened.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_Missing_Carriers() {
 //This will run all the methods

@@ -22,7 +22,12 @@ public class FindRatesCarriersTest extends BaseClass {
 		initialization();
 		loadPage = new FindRatesCarriers();
 	}
+	/**
 
+	Test case description:
+	Find Rates Result:
+	Verify carrier Rates are displayed.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void FindRates_Carriers_Tests() {
 //This will run all the methods

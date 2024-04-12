@@ -23,7 +23,13 @@ public class History_FindRatesTest extends BaseClass {
 		initialization();
 		Rates = new History_FindRates();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the History section in Find rates:
+	Verify search functionality is working properly.
+	Verify details are displayed correctly.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FindRates_History_Tests() {
 //This will run all the methods

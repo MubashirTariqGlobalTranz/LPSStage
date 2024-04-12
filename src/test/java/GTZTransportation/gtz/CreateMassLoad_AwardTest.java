@@ -23,7 +23,12 @@ public class CreateMassLoad_AwardTest extends BaseClass {
 		initialization();
 		loadPage = new CreateMassLoad_Award();
 	}
+	/**
 
+	Test case description:
+	Create Mass Copy in Spot Quote app:
+	Verify Quick Load creation is successful.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_MassLoad_Tests() {
 

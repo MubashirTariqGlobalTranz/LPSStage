@@ -22,7 +22,11 @@ public class Expressions_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Expressions_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Expressions in admin section for Spot Quote. It s opens the expressions details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Expressions_Admin_Tests() {
 

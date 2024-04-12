@@ -22,7 +22,15 @@ public class CreateDirectLoad_AwardTest extends BaseClass {
 		initialization();
 		loadPage = new CreateDirectLoad_Award();
 	}
+	/**
 
+	Test case description:
+	Create Direct Load & Award Load Process for Spot Quote:
+	Verify Direct Load creation.
+	Verify Bid sending.
+	Verify that the load appears on the load board.
+	Verify Load awarding.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_DirectLoad_Tests() {
 		// This will run all the methods

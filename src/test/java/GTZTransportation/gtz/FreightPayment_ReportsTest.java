@@ -22,7 +22,24 @@ public class FreightPayment_ReportsTest extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_Reports();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the following reports for FreightPayment:
+	FreightDataImport
+	FreightDataDetails
+	LineItemCodes
+	CarrierShipmentSummary
+	FeeCheck
+	ZipList
+	LoadMasterOrder
+	PayableHistory
+	AccessorialCodes
+	EricssonGLCodes
+	CarrierSummaryTransfer
+	ManualTransferDetails
+	ManualTransferSummary
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_Report_tests() {
 //This will run all the methods

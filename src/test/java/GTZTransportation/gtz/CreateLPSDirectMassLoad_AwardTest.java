@@ -23,7 +23,12 @@ public class CreateLPSDirectMassLoad_AwardTest extends BaseClass {
 		initialization();
 		loadPage = new CreateLPSDirectMassLoad_Award();
 	}
+	/**
 
+	Test case description:
+	This test case verifies load creation for Mcleod from Spot Quote with Mass load.
+	This process will be done using the Adhoc tool.
+	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LPSDirect_Tests() {
 

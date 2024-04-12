@@ -20,7 +20,18 @@ public class FreightPayment_CarrierPortalTest extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_CarrierPortal();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the carrier Portal for FreightPayment:
+	Verify carrier portal opens successfully.
+	Verify invoice search and opening.
+	Verify remittance information.
+	Verify code shipments open.
+	Verify Review Shipments.
+	Verify Batch shipments.
+	Verify confirm payments.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_CarrierPortal_Tests() {
 //This will run all the methods

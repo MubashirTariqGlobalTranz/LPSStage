@@ -20,7 +20,17 @@ public class FreightPayment_GTZTest extends BaseClass {
 		initialization();
 		freightPayment = new FreightPayment_GTZ();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the following apps in GTZ section for FreightPayment:
+	Verify Import queue.
+	Verify duplicates.
+	Verify missing customers.
+	Verify audit.
+	Verify shipment verifications.
+	Verify Payment verifications.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void FreightPayment_GTZ_tests() {
 //This will run all the methods

@@ -22,7 +22,24 @@ public class KeyRevenue_ReportsTest extends BaseClass {
 		initialization();
 		keyRevenue = new KeyRevenue_Reports();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the following reports for Key Revenue:
+	KeyPaymentInvoices
+	ResourceRequest
+	MarketingPartners
+	KSXMPListing
+	InvoiceHistory
+	PastDueInvoices
+	AutoLinkDetail
+	VarianceSummaryByCarrier
+	Customers
+	PendingBillables
+	PendingJobs
+	LoadAuditSummary
+	LoadAuditErrorRollup
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KeyRevenue_Report_tests() {
 //This will run all the methods

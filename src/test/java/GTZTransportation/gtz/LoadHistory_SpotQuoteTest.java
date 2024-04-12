@@ -20,7 +20,10 @@ public class LoadHistory_SpotQuoteTest extends BaseClass {
 		initialization();
 		loadPage = new LoadHistory_SpotQuote();
 	}
-
+	/**
+	Test case description:
+	This test case creates a load in the Spot Quote section and verifies that the load history.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LoadHistory_Tests() {
 		// This will run all the methods

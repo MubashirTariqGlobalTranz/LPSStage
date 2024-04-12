@@ -22,7 +22,17 @@ public class KeyRevenue_AdminTest extends BaseClass {
 		initialization();
 		keyRevenue = new KeyRevenue_Admin();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Admin section for Key Revenue:
+	Verify accounts are displayed.
+	Verify system users can be opened and searched, and verify system user changes are saved successfully on edit.
+	Verify customer configurations can be opened and searched, and verify configurations are saved successfully on edit.
+	Verify payment terms.
+	Verify line item bulk.
+	Verify GL codes.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KeyRevenue_Admin_tests() {
 //This will run all the methods

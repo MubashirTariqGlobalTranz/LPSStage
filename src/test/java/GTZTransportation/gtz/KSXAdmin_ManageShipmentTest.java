@@ -22,7 +22,24 @@ public class KSXAdmin_ManageShipmentTest extends BaseClass {
 		initialization();
 		Shipments = new KSXAdmin_ManageShipment();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Manage Shipments section for KSX admin:
+	Manage Shipment Filters:
+	Verify Manage shipment page is functional.
+	Verify filters operate correctly.
+	Manage Shipment Advance Search:
+	Verify Advance search functionality and search results.
+	Manage Shipment Tabs:
+	Verify Manage Shipments Tabs functionality.
+	Verify Dispatch Tab operation.
+	Verify In Transit Tab functionality.
+	Verify Delivered Tab operation.
+	Verify Exception Tab functionality.
+	Verify All Tab operation.
+	Verify Context filters functionality: Customer, Carriers.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KSXAdmin_ManageShipment_Tests() {
 //This will run all the methods

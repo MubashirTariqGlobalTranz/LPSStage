@@ -22,7 +22,11 @@ public class Load_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Load_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the load services from the admin section for Spot Quote. It opens Load service details and saves them.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LoadServices_Admin_Tests() {
 

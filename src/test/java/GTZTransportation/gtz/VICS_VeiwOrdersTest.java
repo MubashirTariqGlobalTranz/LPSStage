@@ -24,7 +24,13 @@ public class VICS_VeiwOrdersTest extends BaseClass {
 		initialization();
 		customer = new VICS_VeiwOrders();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for the VICS app:
+	View Orders:
+	Verify created shipments are displayed against the customer.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void VICS_ViewOrders_Tests() {
 //This will run all the methods

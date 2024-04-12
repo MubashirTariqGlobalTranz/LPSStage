@@ -23,7 +23,14 @@ public class VICS_VerifyBOLCreationTest extends BaseClass {
 		initialization();
 		customer = new VICS_VerifyBOLCreation();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for the VICS app:
+	BOL Creation:
+	Verify shipment creation is successful.
+	Verify BOL creation is successful.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void VICS_BOLCreation_Tests() {
 //This will run all the methods

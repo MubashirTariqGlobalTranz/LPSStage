@@ -22,7 +22,11 @@ public class Transport_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new Transport_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Transport in the admin section for Spot Quote. It searches for the Transport and opens the Transport details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_Transport_Admin_Tests() {
 

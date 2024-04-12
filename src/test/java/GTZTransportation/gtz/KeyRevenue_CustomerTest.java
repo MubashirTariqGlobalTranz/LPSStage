@@ -22,7 +22,14 @@ public class KeyRevenue_CustomerTest extends BaseClass {
 		initialization();
 		keyRevenue = new KeyRevenue_Customer();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the Customer section for Key Revenue:
+	Verify invoice history can be opened, searched, and details are displayed properly.
+	Verify statement history.
+	Verify payment history, search for the customer, and records are displayed properly.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void KeyRevenue_Customer_tests() {
 //This will run all the methods

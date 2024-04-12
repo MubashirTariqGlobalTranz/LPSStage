@@ -22,7 +22,11 @@ public class ServiceType_Admin_SpotQuoteTest extends BaseClass {
 		initialization();
 		Admin = new ServiceType_Admin_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the service type in the admin section for Spot Quote. It searches for the service type and opens the service type details.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_ServiceTypes_Admin_Tests() {
 

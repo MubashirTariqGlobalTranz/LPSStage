@@ -22,7 +22,13 @@ public class VICS_VerifyCustomerTest extends BaseClass {
 		initialization();
 		customer = new VICS_VerifyCustomer();
 	}
+	/**
 
+	Test case description:
+	This test case contains test cases for the VICS app:
+	Customer Verification:
+	Verify customers are displayed in the VICS app.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void VICS_CustomersList_Tests() {
 //This will run all the methods

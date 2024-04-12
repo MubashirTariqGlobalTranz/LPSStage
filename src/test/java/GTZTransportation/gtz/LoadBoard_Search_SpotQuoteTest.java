@@ -22,7 +22,21 @@ public class LoadBoard_Search_SpotQuoteTest extends BaseClass {
 		initialization();
 		loadPage = new LoadBoard_Search_SpotQuote();
 	}
+	/**
 
+	Test case description:
+	This test case verifies the load board search functionality in Spot Quote:
+	Load Board Search:
+	Verify Loads are searched by Customer.
+	Verify Loads are searched by Carrier.
+	Verify Loads are searched by Load No.
+	Verify Loads are searched by Load Owner.
+	Verify Loads are searched by Load Origin.
+	Verify Loads are searched by Load Destination.
+	Verify Loads are searched by Load Created By.
+	Verify Loads are searched by Load Business Unit.
+	Verify Loads are searched by Load Exception.
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void spotQuote_LoadBoard_Tests() {
 

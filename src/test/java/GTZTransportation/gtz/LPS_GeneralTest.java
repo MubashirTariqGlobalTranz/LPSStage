@@ -20,7 +20,18 @@ public class LPS_GeneralTest extends BaseClass {
 		initialization();
 		LPS = new LPS_General();
 	}
+	/**
 
+	Test case description:
+	This test case verifies all of the following sections for LPS:
+	Glossary
+	Routing Guides
+	Prospects
+	My Profile
+	My Team
+	Data Entry
+	Resources
+	*/
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
 	public void LPS_General_Tests() {
 		// This will run all the methods

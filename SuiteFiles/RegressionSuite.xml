@@ -369,4 +369,11 @@
 
 		</classes>
 	</test>
+	<test name="LPS AccountManagement">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest" />
+
+		</classes>
+	</test>
+
 </suite>

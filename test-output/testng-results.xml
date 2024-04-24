@@ -2,27 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-20T12:51:06 PKT" name="Default suite" finished-at="2024-04-20T12:51:39 PKT" duration-ms="32270">
+  <suite started-at="2024-04-24T20:32:36 PKT" name="Default suite" finished-at="2024-04-24T20:32:55 PKT" duration-ms="19450">
     <groups>
       <group name="Regression">
-        <method signature="LPS_AccountManager_ActionBillingTest.LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@10e31a9a]" name="LPS_AccountManagement_Tests" class="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest"/>
+        <method signature="LPS_ProductCatalog_MyTeamTest.LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@74fe5c40]" name="LPS_AccountManagement_Tests" class="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-04-20T12:51:06 PKT" name="Default test" finished-at="2024-04-20T12:51:39 PKT" duration-ms="32270">
-      <class name="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@10e31a9a]" started-at="2024-04-20T12:51:06 PKT" name="setup" finished-at="2024-04-20T12:51:11 PKT" duration-ms="4330" status="PASS">
+    <test started-at="2024-04-24T20:32:36 PKT" name="Default test" finished-at="2024-04-24T20:32:55 PKT" duration-ms="19450">
+      <class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@74fe5c40]" started-at="2024-04-24T20:32:36 PKT" name="setup" finished-at="2024-04-24T20:32:45 PKT" duration-ms="9501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@10e31a9a]" started-at="2024-04-20T12:51:11 PKT" name="LPS_AccountManagement_Tests" finished-at="2024-04-20T12:51:38 PKT" duration-ms="27497" status="PASS">
+        <test-method signature="LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@74fe5c40]" started-at="2024-04-24T20:32:45 PKT" name="LPS_AccountManagement_Tests" finished-at="2024-04-24T20:32:55 PKT" duration-ms="9897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LPS_AccountManagement_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@10e31a9a]" started-at="2024-04-20T12:51:38 PKT" name="tearDown" finished-at="2024-04-20T12:51:39 PKT" duration-ms="404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

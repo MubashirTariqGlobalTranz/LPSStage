@@ -19,6 +19,18 @@
 		</classes>
 	</test>
 
+	<test name="LPS AccountManagement - OptimizationDetails-CustomerAccount">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest" />
+
+		</classes>
+	</test>
 	
+	<test name="LPS AccountManagement - ProductCatalog-Myteam">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest" />
+
+		</classes>
+	</test>
 
 </suite>

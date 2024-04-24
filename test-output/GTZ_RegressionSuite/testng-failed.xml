@@ -15,4 +15,26 @@
       </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
     </classes>
   </test> <!-- Reports- Spot Quote(failed) -->
+  <test thread-count="1" name="KSXADMIN Manage Sales Rep(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest">
+        <methods>
+          <include name="KSXAdmin_ManageSalesRep_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest -->
+    </classes>
+  </test> <!-- KSXADMIN Manage Sales Rep(failed) -->
+  <test thread-count="1" name="KSXADMIN Manage Users(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="KSXAdmin_ManageUsers_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageUsersTest -->
+    </classes>
+  </test> <!-- KSXADMIN Manage Users(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

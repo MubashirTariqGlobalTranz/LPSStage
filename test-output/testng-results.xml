@@ -2,27 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T20:33:20 PKT" name="Default suite" finished-at="2024-04-30T20:33:47 PKT" duration-ms="26588">
+  <suite started-at="2024-04-30T21:52:51 PKT" name="Default suite" finished-at="2024-04-30T21:53:06 PKT" duration-ms="14633">
     <groups>
       <group name="Regression">
-        <method signature="LPS_AccountManager_AddressbookTest.LPS_AccountManagement_Addresses_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@10e31a9a]" name="LPS_AccountManagement_Addresses_Tests" class="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest"/>
+        <method signature="LPS_Resources_NewsAdminTest.LPS_Resources_News_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@74fe5c40]" name="LPS_Resources_News_Admin_Tests" class="GTZTransportation.gtz.LPS_Resources_NewsAdminTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-04-30T20:33:20 PKT" name="Default test" finished-at="2024-04-30T20:33:47 PKT" duration-ms="26588">
-      <class name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@10e31a9a]" started-at="2024-04-30T20:33:20 PKT" name="setup" finished-at="2024-04-30T20:33:25 PKT" duration-ms="4946" status="PASS">
+    <test started-at="2024-04-30T21:52:51 PKT" name="Default test" finished-at="2024-04-30T21:53:06 PKT" duration-ms="14633">
+      <class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@74fe5c40]" started-at="2024-04-30T21:52:51 PKT" name="setup" finished-at="2024-04-30T21:52:57 PKT" duration-ms="5289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LPS_AccountManagement_Addresses_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@10e31a9a]" started-at="2024-04-30T20:33:25 PKT" name="LPS_AccountManagement_Addresses_Tests" finished-at="2024-04-30T20:33:47 PKT" duration-ms="21296" status="PASS">
+        <test-method signature="LPS_Resources_News_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@74fe5c40]" started-at="2024-04-30T21:52:57 PKT" name="LPS_Resources_News_Admin_Tests" finished-at="2024-04-30T21:53:06 PKT" duration-ms="9318" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LPS_AccountManagement_Addresses_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@10e31a9a]" started-at="2024-04-30T20:33:47 PKT" name="tearDown" finished-at="2024-04-30T20:33:47 PKT" duration-ms="316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.LPS_AccountManager_AddressbookTest -->
+        </test-method> <!-- LPS_Resources_News_Admin_Tests -->
+      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsAdminTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

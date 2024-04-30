@@ -393,4 +393,16 @@
 
 		</classes>
 	</test>
+	<test name="LPS Resources - NewsListing">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Resources_NewsTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Resources - News Items">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest" />
+
+		</classes>
+	</test>
 </suite>

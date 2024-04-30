@@ -32,5 +32,12 @@
 
 		</classes>
 	</test>
+	
+	<test name="LPS AccountManagement - Addressbook">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest" />
+
+		</classes>
+	</test>
 
 </suite>

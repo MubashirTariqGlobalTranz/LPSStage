@@ -64,5 +64,12 @@
 
 		</classes>
 	</test>
+	
+	<test name="LPS Admin - Security">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_SecurityTest" />
+
+		</classes>
+	</test>
 
 </suite>

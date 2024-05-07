@@ -15,6 +15,61 @@
       </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
     </classes>
   </test> <!-- Reports- Spot Quote(failed) -->
+  <test thread-count="1" name="Complete Load Flow- Spot Quote(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
+        <methods>
+          <include name="setup"/>
+          <include name="spotQuote_CompleteLoadFlow_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Complete Load Flow- Spot Quote(failed) -->
+  <test thread-count="1" name="LPS Direct by Mass Load- Spot Quote(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest">
+        <methods>
+          <include name="spotQuote_LPSDirect_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest -->
+    </classes>
+  </test> <!-- LPS Direct by Mass Load- Spot Quote(failed) -->
+  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <methods>
+          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+    </classes>
+  </test> <!-- CutomerRouted-FindRates(failed) -->
+  <test thread-count="1" name="FreightPayment-Missing Carriers(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="FreightPayment_Missing_Carriers"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.FreightPayment_MissingCarriersTest -->
+    </classes>
+  </test> <!-- FreightPayment-Missing Carriers(failed) -->
+  <test thread-count="1" name="KSXADMIN ManageShipment(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+        <methods>
+          <include name="KSXAdmin_ManageShipment_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
+    </classes>
+  </test> <!-- KSXADMIN ManageShipment(failed) -->
   <test thread-count="1" name="KSXADMIN Manage Sales Rep(failed)">
     <classes>
       <class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest">

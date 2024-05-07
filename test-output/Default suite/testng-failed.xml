@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPS_Resources_NewsTest">
+      <class name="GTZTransportation.gtz.LPS_Admin_AssetUploadTest">
         <methods>
-          <include name="LPS_Resources_News_Tests"/>
           <include name="setup"/>
+          <include name="LPS_Admin_AssetUpload_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AssetUploadTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

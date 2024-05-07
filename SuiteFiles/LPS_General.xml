@@ -52,5 +52,17 @@
 
 		</classes>
 	</test>
+	<test name="LPS Admin - Data Entry Expression">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Asset Upload">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AssetUploadTest" />
+
+		</classes>
+	</test>
 
 </suite>

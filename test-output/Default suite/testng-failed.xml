@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPS_Admin_SecurityTest">
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest">
         <methods>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="LPS_Admin_Security_Tests"/>
+          <include name="KSXAdmin_ManageUsers_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Admin_SecurityTest -->
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageUsersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

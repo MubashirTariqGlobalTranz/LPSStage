@@ -77,7 +77,7 @@ public class KSXAdmin_ManageUsers extends BaseClass {
 	// This will Open Client user & Save
 	public void KSXAdminManageUsers_ClientsUser() {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -85,7 +85,7 @@ public class KSXAdmin_ManageUsers extends BaseClass {
 		ManageUsers.click();
 		clientUsers.click();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

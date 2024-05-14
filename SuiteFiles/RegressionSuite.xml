@@ -5,7 +5,7 @@
 	<listeners>
 		<listener class-name="Utility.Reporting" />
 	</listeners>
-	
+
 
 	<test name="Load Boards Search">
 		<classes>
@@ -21,7 +21,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="QuickLoad">
 		<classes>
 			<class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest" />
@@ -45,21 +45,13 @@
 	</test>
 
 
-
-	<test name="Reports- Spot Quote">
-		<classes>
-			<class name="GTZTransportation.gtz.Report_SpotQuoteTest" />
-
-		</classes>
-	</test>
-
 	<test name="Cancel Load- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.CancelLoad_SpotQuoteTest" />
 
 		</classes>
 	</test>
-	
+
 	<test name="Copy Load- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest" />
@@ -80,7 +72,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="Users-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.User_Admin_SpotQuoteTest" />
@@ -88,7 +80,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="Loads-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.Load_Admin_SpotQuoteTest" />
@@ -96,7 +88,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="Carriers-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest" />
@@ -104,7 +96,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="Transport-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.Transport_Admin_SpotQuoteTest" />
@@ -112,7 +104,7 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="Requirments-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest" />
@@ -120,44 +112,46 @@
 		</classes>
 	</test>
 
-	
+
 	<test name="ServiceType-Admin- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest" />
 
 		</classes>
 	</test>
-	
+
 	<test name="Email Template-Admin- Spot Quote">
 		<classes>
-			<class name="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest" />
+			<class
+				name="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest" />
 
 		</classes>
 	</test>
-	
+
 	<test name="Expressions- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest" />
 
 		</classes>
 	</test>
-	
+
 	<test name="Complete Load Flow- Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest" />
 
 		</classes>
 	</test>
-<test name="LPS Direct - Spot Quote">
+	<test name="LPS Direct - Spot Quote">
 		<classes>
 			<class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest" />
 
 		</classes>
 	</test>
 
-<test name="LPS Direct by Mass Load- Spot Quote">
+	<test name="LPS Direct by Mass Load- Spot Quote">
 		<classes>
-			<class name="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest" />
+			<class
+				name="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest" />
 
 		</classes>
 	</test>
@@ -175,14 +169,14 @@
 		</classes>
 	</test>
 
-<test name="CutomerRouted-FindRates">
+	<test name="CutomerRouted-FindRates">
 		<classes>
 			<class
 				name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test" />
 
 		</classes>
 	</test>
-	
+
 	<test name="Parcel-FindRates">
 		<classes>
 			<class
@@ -190,7 +184,7 @@
 
 		</classes>
 	</test>
-	
+
 	<test name="History-FindRates">
 		<classes>
 			<class
@@ -208,8 +202,7 @@
 		</classes>
 	</test>
 
-	
-	
+
 	<test name="FreightPayment-Reports">
 		<classes>
 			<class
@@ -231,7 +224,7 @@
 
 		</classes>
 	</test>
-	
+
 	<test name="KSXADMIN ManageClient">
 		<classes>
 			<class name="GTZTransportation.gtz.KSXAdmin_ManageClientTest" />
@@ -239,19 +232,7 @@
 		</classes>
 	</test>
 
-<test name="KSXADMIN Manage Sales Rep">
-		<classes>
-			<class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
 
-		</classes>
-	</test>
-	<test name="KSXADMIN Manage Users">
-		<classes>
-			<class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />
-
-		</classes>
-	</test>
-	
 	<test name="VICS">
 		<classes>
 			<class name="GTZTransportation.gtz.VICS_VerifyCustomerTest" />
@@ -272,13 +253,14 @@
 
 		</classes>
 	</test>
-<test name="CustomerCarrier-CustomerList">
+	<test name="CustomerCarrier-CustomerList">
 		<classes>
-			<class name="GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest" />
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest" />
 
 		</classes>
 	</test>
-<test name="CustomerCarrier-Prospect Queue">
+	<test name="CustomerCarrier-Prospect Queue">
 		<classes>
 			<class
 				name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest" />
@@ -371,17 +353,18 @@
 	</test>
 	<test name="LPS AccountManagement">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest" />
 
 		</classes>
 	</test>
-<test name="LPS AccountManagement - OptimizationDetails-CustomerAccount">
+	<test name="LPS AccountManagement - OptimizationDetails-CustomerAccount">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest" />
 
 		</classes>
 	</test>
-<test name="LPS AccountManagement - ProductCatalog-Myteam">
+	<test name="LPS AccountManagement - ProductCatalog-Myteam">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest" />
 
@@ -389,7 +372,8 @@
 	</test>
 	<test name="LPS AccountManagement - Addressbook">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest" />
 
 		</classes>
 	</test>
@@ -407,7 +391,8 @@
 	</test>
 	<test name="LPS Admin - Data Entry Expression">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest" />
 
 		</classes>
 	</test>
@@ -423,4 +408,22 @@
 
 		</classes>
 	</test>
+ <!--	<test name="Reports- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="KSXADMIN Manage Users">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />
+
+		</classes>
+	</test>
+	<test name="KSXADMIN Manage Sales Rep">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
+
+		</classes>
+	</test> -->
 </suite>

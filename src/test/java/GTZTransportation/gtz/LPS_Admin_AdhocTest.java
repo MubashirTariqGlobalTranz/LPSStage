@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import GTZTransportation.pages.LPS_Admin_Adhoc;
-import GTZTransportation.pages.LPS_Admin_DataEntryExpression;
 
 public class LPS_Admin_AdhocTest extends BaseClass {
 
@@ -28,21 +27,20 @@ public class LPS_Admin_AdhocTest extends BaseClass {
 	/**
 	 * 
 	 * Test case description: This test case contains test cases for Admin Section
-	 * for LPS: Verify Data Entry Expressions. Verify Data Entry Expression Help.
+	 * for LPS: Verify Copy user from Adhoc tools.
 	 * 
 	 */
 	@Test(priority = 1, groups = ("Regression"), retryAnalyzer = listeners.MyRetry.class)
-	public void LPS_Admin_Adhoc_Tests() {
+	public void LPS_Admin_Adhoc_CopyUser_Tests() {
 //This will run all the methods
 		Admin.Admin();
-		Admin.SearchExpression();
-		Admin.DataEntryExpression();
+		Admin.CopyUser();
 
 //Text Compare, This assertion will work
-		String actual = driver.findElement(By.xpath("//h2[normalize-space()='Data Entry Expression Help']")).getText();
-		String expected = "Data Entry Expression Help";
+		String actual = driver.findElement(By.xpath("//div[@class='notify-success']")).getText();
+		String expected = "Operation successfully executed";
 		Assert.assertEquals(actual, expected);
-		captureScreenShot(driver, "Verify Data Entry Expression Help");
+		captureScreenShot(driver, "Verify Copy Operation successfully executed");
 	}
 
 	@AfterTest(groups = ("Regression"))

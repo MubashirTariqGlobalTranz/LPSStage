@@ -450,4 +450,34 @@
 
 		</classes>
 	</test>
+	<test name="LPS Admin - Adhoc AssignCarrier">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc ChangeBid">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc ChangePaymentAmount">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc ChangeCurrency">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc Zero Invoice">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest" />
+
+		</classes>
+	</test>
 </suite>

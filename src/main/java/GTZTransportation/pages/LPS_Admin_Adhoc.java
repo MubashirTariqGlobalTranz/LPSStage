@@ -3,6 +3,9 @@ package GTZTransportation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import GTZTransportation.gtz.BaseClass;
@@ -14,30 +17,30 @@ public class LPS_Admin_Adhoc extends BaseClass {
 	@FindBy(xpath = "//span[normalize-space()='Admin']")
 	WebElement Admin;
 
-	@FindBy(xpath = "//a[normalize-space()='Expression Help']")
-	WebElement ExpressionHelp;
+	@FindBy(xpath = "//a[normalize-space()='Copy User']")
+	WebElement CopyUser;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_txtDataEntryShipmentId']")
-	WebElement DataEntryShipment;
+	@FindBy(xpath = "//input[@name='ctl00$ContentPlaceHolder1$ExecuteAdhoc$inputParameterCopyFromEmailAddress$ctl00']")
+	WebElement CopyFrom;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_btnLoad']")
-	WebElement LoadDataEntryShipment;
+	@FindBy(xpath = "//input[@name='ctl00$ContentPlaceHolder1$ExecuteAdhoc$inputParameterEmailAddress$ctl00']")
+	WebElement Emailaddress;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_txtName']")
-	WebElement Name;
+	@FindBy(xpath = "//input[@name='ctl00$ContentPlaceHolder1$ExecuteAdhoc$inputParameterFirstName$ctl00']")
+	WebElement FirstName;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_btnFilter']")
-	WebElement Save;
+	@FindBy(xpath = "//input[@name='ctl00$ContentPlaceHolder1$ExecuteAdhoc$inputParameterLastName$ctl00']")
+	WebElement LastName;
 
-	@FindBy(xpath = "//a[@id='ContentPlaceHolder1_containerFilter_btnExpand']")
-	WebElement FilterExpand;
+	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_ExecuteAdhoc_btnExecute']")
+	WebElement Submit;
 
 	// Initialization
 	public LPS_Admin_Adhoc() {
 		PageFactory.initElements(driver, this);
 	}
 
-	// This will open Admin & Data Entry Expressions
+	// This will open Admin & adhoc
 	public void Admin()
 
 	{
@@ -51,15 +54,14 @@ public class LPS_Admin_Adhoc extends BaseClass {
 		Admin.click();
 
 		// Find the "Data entry expression" link
-		WebElement actionEventsLink = driver
-				.findElement(By.xpath("//a[@href='/DataEntry/Shipment/Expressions/default.aspx']"));
+		WebElement actionEventsLink = driver.findElement(By.xpath("//a[@href='/Adhoc/Default.aspx']"));
 
 		// Use JavaScript to click on the "Data entry expression" link
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", actionEventsLink);
 	}
 
 	// This will open data entry Expression
-	public void DataEntryExpression() {
+	public void CopyUser() {
 
 		try {
 			Thread.sleep(3000);
@@ -68,7 +70,7 @@ public class LPS_Admin_Adhoc extends BaseClass {
 			e.printStackTrace();
 		}
 
-		ExpressionHelp.click();
+		CopyUser.click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -76,25 +78,22 @@ public class LPS_Admin_Adhoc extends BaseClass {
 			e.printStackTrace();
 		}
 
-		DataEntryShipment.sendKeys("Test");
-		LoadDataEntryShipment.click();
-		captureScreenShot(driver, "Verify Data Entry Expression Help");
+		CopyFrom.sendKeys("mubashir.tariq@globaltranz.com");
+		// Emailaddress.sendKeys("dempseytestingformorgan2@shiplps.com ");
+		Random randomEmail = new Random();
+		int randomInt = randomEmail.nextInt(1000);
 
-	}
+		// Construct a random email address
+		String randomEmailStr = "username" + randomInt + "@lps.com";
 
-	// This will search Expression
-	public void SearchExpression() {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		FilterExpand.click();
-		Name.sendKeys("ValidateCurrency");
-		Save.click();
-
-		captureScreenShot(driver, "Verify Search Data Expression");
+		// Use the generated email
+		CopyFrom.sendKeys(randomEmailStr);
+		Emailaddress.sendKeys(randomEmailStr);
+		
+		FirstName.sendKeys("Test");
+		LastName.sendKeys("LPS");
+		Submit.click();
+		driver.switchTo().alert().accept();
 
 	}
 

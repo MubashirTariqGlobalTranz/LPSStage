@@ -71,5 +71,28 @@
 
 		</classes>
 	</test>
+	<test name="LPS Admin - Adhoc CopyUser">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocTest" />
 
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc ResetPass">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Adhoc ChangeCustomer">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest" />
+
+		</classes>
+	</test>
+<test name="LPS Admin - Adhoc ChangeInvoiceCustomer">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest" />
+
+		</classes>
+	</test>
 </suite>

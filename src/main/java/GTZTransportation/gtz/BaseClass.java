@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,28 +27,32 @@ public class BaseClass {
 	 */
 
 	public static void initialization() {
-		/*{ System.setProperty("webdriver.chrome.driver",
-				  "C://Users//mubashir.tariq//Downloads//chromedriver_win32 (1)//chromedriver.exe"
-				  ); driver = new ChromeDriver(); driver.manage().window().maximize(); }*/
-		//WebDriverManager.firefoxdriver().setup();
+        /*{ System.setProperty("webdriver.chrome.driver",
+                  "C://Users//mubashir.tariq//Downloads//chromedriver_win32 (1)//chromedriver.exe"
+                  ); driver = new ChromeDriver(); driver.manage().window().maximize(); }*/
+        //WebDriverManager.firefoxdriver().setup();
        //driver = new FirefoxDriver();
-		//WebDriverManager.chromedriver ().clearDriverCache ();
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		//driver.get("https://my-dev.shiplps.com/Default.aspx");
-		driver.get("https://my-stage.shiplps.com/Default.aspx");
-		driver.manage().window().maximize();
+        //WebDriverManager.chromedriver ().clearDriverCache ();
+        WebDriverManager.chromedriver().setup();
+        
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--remote-debugging-port=9222");  // Added this line
+        
+        driver = new ChromeDriver(chromeOptions);
+        //driver.get("https://my-dev.shiplps.com/Default.aspx");
+        driver.get("https://my-stage.shiplps.com/Default.aspx");
+        driver.manage().window().maximize();
 
-		/*driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("jinal.shah@shiplps.com");
-		driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("7Q6DEK81GR3<");*/
-		/*driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("mubashir.tariq@shiplps.com");
-		driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("RET\\d85VTK2T");*/
-		driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("mubashir.tariq@shiplps.com");
-		driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("Pakistan1234M");
-		
-		driver.findElement(By.id("ContentPlaceHolder1_container_btnLogin")).click();
+        /*driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("jinal.shah@shiplps.com");
+        driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("7Q6DEK81GR3<");*/
+        /*driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("mubashir.tariq@shiplps.com");
+        driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("RET\\d85VTK2T");*/
+        driver.findElement(By.id("ContentPlaceHolder1_container_txtUserName")).sendKeys("mubashir.tariq@shiplps.com");
+        driver.findElement(By.id("ContentPlaceHolder1_container_txtPassword")).sendKeys("Pakistan1234M");
+        
+        driver.findElement(By.id("ContentPlaceHolder1_container_btnLogin")).click();
 
-	}
+    }
 
 	public void captureScreenShot(WebDriver driver, String testcaseName) {
 		TakesScreenshot myScreenshot = (TakesScreenshot) driver;

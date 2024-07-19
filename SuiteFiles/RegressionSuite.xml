@@ -480,4 +480,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS Report - Quick Report">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_QuickReportTest" />
+
+		</classes>
+	</test>
 </suite>

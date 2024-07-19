@@ -207,7 +207,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CustomerName.sendKeys("10663");//10637
+		CustomerName.sendKeys("10637");//10637,10663
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

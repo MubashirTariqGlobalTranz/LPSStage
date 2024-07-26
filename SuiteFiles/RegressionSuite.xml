@@ -383,6 +383,7 @@
 
 		</classes>
 	</test>
+	
 	<test name="LPS Resources - News Items">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest" />
@@ -425,7 +426,9 @@
 			<class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
 
 		</classes>
-	</test> -->
+	</test>
+	
+	 -->
 	<test name="LPS Admin - Adhoc CopyUser">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Admin_AdhocTest" />

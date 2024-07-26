@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest">
+      <class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test">
         <methods>
           <include name="setup"/>
-          <include name="LPS_Admin_Adhoc_ZeroInvoicer_Tests"/>
-          <include name="tearDown"/>
+          <include name="spotQuote_CompleteLoadFlow_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest -->
+      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

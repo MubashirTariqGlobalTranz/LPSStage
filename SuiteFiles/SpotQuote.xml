@@ -149,4 +149,16 @@
 
 		</classes>
 	</test>
+	<test name="LPS Ericson PETA DETA - Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_GlobalTest" />
+
+		</classes>
+	</test>
+	<test name="LPS PD Confirmation Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test" />
+
+		</classes>
+	</test>
 </suite>

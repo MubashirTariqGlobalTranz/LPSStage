@@ -2,9 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="GTZ_Find Rates" parallel="none" thread-count="1">
-	<listeners>
-        <listener class-name="utilities.Reporting" />
-    </listeners>
+	
     	<test name="FindRate-Carriers">
 		<classes>
 			<class name="GTZTransportation.gtz.FindRatesCarriersTest" />

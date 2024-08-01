@@ -3,7 +3,9 @@
 
 <suite name="GTZ_VICS" parallel="none" thread-count="1">
 	
-
+<listeners>
+		<listener class-name="Utility.TestListener" />
+	</listeners>
     
 	<test name="VICS">
 		<classes>

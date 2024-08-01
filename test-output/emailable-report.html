@@ -8,11 +8,116 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">44,931</td><td></td><td></td></tr>
+<tr><th colspan="8">GTZ_VICS</th></tr>
+<tr><td><a href="#t0">VICS</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,578</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">VICS BOL Creation</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">112,924</td><td></td><td></td></tr>
+<tr><td><a href="#t2">VICS View Order</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,041</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">1</th><th class="num">129,543</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test</td><td><a href="#m0">spotQuote_Ericson_PD_Confirmation_Tests</a></td><td rowspan="1">1722447449149</td><td rowspan="1">38644</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GTZ_VICS</th></tr></tbody><tbody id="t0"><tr><th colspan="4">VICS &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.VICS_VerifyCustomerTest</td><td><a href="#m0">VICS_CustomersList_Tests</a></td><td rowspan="1">1722539162146</td><td rowspan="1">4764</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">VICS BOL Creation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">GTZTransportation.gtz.VICS_VerifyBOLCreationTest</td><td><a href="#m1">VICS_BOLCreation_Tests</a></td><td rowspan="1">1722539280162</td><td rowspan="1">11</td></tr><tr><th colspan="4">VICS BOL Creation &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">GTZTransportation.gtz.VICS_VerifyBOLCreationTest</td><td><a href="#m2">VICS_BOLCreation_Tests</a></td><td rowspan="3">1722539280149</td><td rowspan="3">12</td></tr><tr class="retriedeven"><td><a href="#m3">VICS_BOLCreation_Tests</a></td></tr><tr class="retriedeven"><td><a href="#m4">VICS_BOLCreation_Tests</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">VICS View Order &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">GTZTransportation.gtz.VICS_VeiwOrdersTest</td><td><a href="#m5">VICS_ViewOrders_Tests</a></td><td rowspan="1">1722539283031</td><td rowspan="1">5235</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test#spotQuote_Ericson_PD_Confirmation_Tests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VICS</h2><h3 id="m0">GTZTransportation.gtz.VICS_VerifyCustomerTest#VICS_CustomersList_Tests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VICS BOL Creation</h2><h3 id="m1">GTZTransportation.gtz.VICS_VerifyBOLCreationTest#VICS_BOLCreation_Tests</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;VICS&apos;]&quot;}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()=&apos;VICS&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+	at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">GTZTransportation.gtz.VICS_VerifyBOLCreationTest#VICS_BOLCreation_Tests</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;VICS&apos;]&quot;}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()=&apos;VICS&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+	at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">GTZTransportation.gtz.VICS_VerifyBOLCreationTest#VICS_BOLCreation_Tests</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading&quot;}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at GTZTransportation.pages.VICS_VerifyBOLCreation.VICS_ShipmentRecommendations(VICS_VerifyBOLCreation.java:149)
+	at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">GTZTransportation.gtz.VICS_VerifyBOLCreationTest#VICS_BOLCreation_Tests</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;VICS&apos;]&quot;}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()=&apos;VICS&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+	at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VICS View Order</h2><h3 id="m5">GTZTransportation.gtz.VICS_VeiwOrdersTest#VICS_ViewOrders_Tests</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

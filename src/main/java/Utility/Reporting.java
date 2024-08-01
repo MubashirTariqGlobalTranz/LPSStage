@@ -3,6 +3,8 @@ package Utility;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Reporting {
     private static ExtentReports extent;
@@ -10,7 +12,9 @@ public class Reporting {
 
     public static ExtentReports getInstance() {
         if (extent == null) {
-            String reportPath = "F:\\LPS_Stage\\LPS_Stage\\LPSStage\\Reports\\extent-report.html";
+            // Adding date and time to the filename
+            String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+            String reportPath = "C:\\Users\\mubashir.tariq.FSL0\\Desktop\\LPS_Stage\\gtz\\Reports\\extent-report_" + timestamp + ".html";
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);

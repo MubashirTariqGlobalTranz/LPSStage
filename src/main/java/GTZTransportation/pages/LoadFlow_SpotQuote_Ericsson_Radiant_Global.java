@@ -334,7 +334,7 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global extends BaseClass {
 
 		}
 		// Customer.sendKeys("10262");
-		Ref.sendKeys("LPS-240725-16484227");
+		Ref.sendKeys("LPS-240729-19473852");
 		Alload.click();
 		try {
 			Thread.sleep(3000);
@@ -560,6 +560,7 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global extends BaseClass {
 		Date.sendKeys("10/10/2024");
 		saveStatus.click();
 		driver.switchTo().defaultContent();
+		captureScreenShot(driver, "success");
 	}
 
 }

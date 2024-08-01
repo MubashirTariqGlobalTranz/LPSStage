@@ -1,28 +1,345 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="3" ignored="0" total="6" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-31T22:37:23 PKT" name="Default suite" finished-at="2024-07-31T22:38:08 PKT" duration-ms="44931">
+  <suite started-at="2024-08-02T00:05:58 PKT" name="GTZ_VICS" finished-at="2024-08-02T00:08:08 PKT" duration-ms="129939">
     <groups>
       <group name="Regression">
-        <method signature="LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test.spotQuote_Ericson_PD_Confirmation_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" name="spotQuote_Ericson_PD_Confirmation_Tests" class="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test"/>
+        <method signature="VICS_VerifyCustomerTest.VICS_CustomersList_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@223d2c72]" name="VICS_CustomersList_Tests" class="GTZTransportation.gtz.VICS_VerifyCustomerTest"/>
+        <method signature="VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" name="VICS_BOLCreation_Tests" class="GTZTransportation.gtz.VICS_VerifyBOLCreationTest"/>
+        <method signature="VICS_VeiwOrdersTest.VICS_ViewOrders_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@4218d6a3]" name="VICS_ViewOrders_Tests" class="GTZTransportation.gtz.VICS_VeiwOrdersTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-07-31T22:37:23 PKT" name="Default test" finished-at="2024-07-31T22:38:08 PKT" duration-ms="44931">
-      <class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:37:23 PKT" name="setup" finished-at="2024-07-31T22:37:29 PKT" duration-ms="5828" status="PASS">
+    <test started-at="2024-08-02T00:05:58 PKT" name="VICS" finished-at="2024-08-02T00:06:07 PKT" duration-ms="8578">
+      <class name="GTZTransportation.gtz.VICS_VerifyCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@223d2c72]" started-at="2024-08-02T00:05:58 PKT" name="setup" finished-at="2024-08-02T00:06:02 PKT" duration-ms="3496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="spotQuote_Ericson_PD_Confirmation_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:37:29 PKT" name="spotQuote_Ericson_PD_Confirmation_Tests" finished-at="2024-07-31T22:38:07 PKT" duration-ms="38644" status="PASS">
+        <test-method signature="VICS_CustomersList_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@223d2c72]" started-at="2024-08-02T00:06:02 PKT" name="VICS_CustomersList_Tests" finished-at="2024-08-02T00:06:06 PKT" duration-ms="4764" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- spotQuote_Ericson_PD_Confirmation_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:38:07 PKT" name="tearDown" finished-at="2024-07-31T22:38:08 PKT" duration-ms="408" status="PASS">
+        </test-method> <!-- VICS_CustomersList_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@223d2c72]" started-at="2024-08-02T00:06:06 PKT" name="tearDown" finished-at="2024-08-02T00:06:07 PKT" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- GTZTransportation.gtz.VICS_VerifyCustomerTest -->
+    </test> <!-- VICS -->
+    <test started-at="2024-08-02T00:06:07 PKT" name="VICS BOL Creation" finished-at="2024-08-02T00:08:00 PKT" duration-ms="112924">
+      <class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:06:07 PKT" name="setup" finished-at="2024-08-02T00:06:10 PKT" duration-ms="2768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:06:10 PKT" name="VICS_BOLCreation_Tests" finished-at="2024-08-02T00:08:00 PKT" duration-ms="109981" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at GTZTransportation.pages.VICS_VerifyBOLCreation.VICS_ShipmentRecommendations(VICS_VerifyBOLCreation.java:149)
+at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_BOLCreation_Tests -->
+        <test-method retried="true" signature="VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:08:00 PKT" name="VICS_BOLCreation_Tests" finished-at="2024-08-02T00:08:00 PKT" duration-ms="22" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_BOLCreation_Tests -->
+        <test-method retried="true" signature="VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:08:00 PKT" name="VICS_BOLCreation_Tests" finished-at="2024-08-02T00:08:00 PKT" duration-ms="12" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_BOLCreation_Tests -->
+        <test-method signature="VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:08:00 PKT" name="VICS_BOLCreation_Tests" finished-at="2024-08-02T00:08:00 PKT" duration-ms="11" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='VICS']"}
+  (Session info: chrome-headless-shell=127.0.6533.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [77a09f8692b1415dfdd36c4c9ad46832, findElement {value=//*[text()='VICS'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 127.0.6533.88, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\LOCAL_~3.FSL\Temp\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 127.0.6533.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77a09f8692b1415dfdd36c4c9ad46832
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at GTZTransportation.pages.VICS_VerifyBOLCreation.VICSTab(VICS_VerifyBOLCreation.java:99)
+at GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(VICS_VerifyBOLCreationTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_BOLCreation_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@1aafa419]" started-at="2024-08-02T00:08:00 PKT" name="tearDown" finished-at="2024-08-02T00:08:00 PKT" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.VICS_VerifyBOLCreationTest -->
+    </test> <!-- VICS BOL Creation -->
+    <test started-at="2024-08-02T00:08:00 PKT" name="VICS View Order" finished-at="2024-08-02T00:08:08 PKT" duration-ms="8041">
+      <class name="GTZTransportation.gtz.VICS_VeiwOrdersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@4218d6a3]" started-at="2024-08-02T00:08:00 PKT" name="setup" finished-at="2024-08-02T00:08:03 PKT" duration-ms="2669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VICS_ViewOrders_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@4218d6a3]" started-at="2024-08-02T00:08:03 PKT" name="VICS_ViewOrders_Tests" finished-at="2024-08-02T00:08:08 PKT" duration-ms="5235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_ViewOrders_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@4218d6a3]" started-at="2024-08-02T00:08:08 PKT" name="tearDown" finished-at="2024-08-02T00:08:08 PKT" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.VICS_VeiwOrdersTest -->
+    </test> <!-- VICS View Order -->
+  </suite> <!-- GTZ_VICS -->
 </testng-results>

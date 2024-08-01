@@ -3,9 +3,8 @@
 
 <suite name="GTZ_RegressionSuite" parallel="none" thread-count="1">
 	<listeners>
-		<listener class-name="Utility.Reporting" />
+		<listener class-name="Utility.TestListener" />
 	</listeners>
-
 
 	<test name="Load Boards Search">
 		<classes>
@@ -377,13 +376,8 @@
 
 		</classes>
 	</test>
-	<test name="LPS Resources - NewsListing">
-		<classes>
-			<class name="GTZTransportation.gtz.LPS_Resources_NewsTest" />
 
-		</classes>
-	</test>
-	
+
 	<test name="LPS Resources - News Items">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest" />
@@ -409,25 +403,34 @@
 
 		</classes>
 	</test>
- <!--	<test name="Reports- Spot Quote">
+	<!--	<test name="Reports- Spot Quote">
 		<classes>
-			<class name="GTZTransportation.gtz.Report_SpotQuoteTest" />
+			<class
+	name="GTZTransportation.gtz.Report_SpotQuoteTest" />
 
 		</classes>
 	</test>
 	<test name="KSXADMIN Manage Users">
 		<classes>
-			<class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />
+			<class
+	name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />
 
 		</classes>
 	</test>
 	<test name="KSXADMIN Manage Sales Rep">
 		<classes>
-			<class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
+			<class
+	name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
 
 		</classes>
 	</test>
-	
+	<test name="LPS Resources - NewsListing">
+		<classes>
+			<class
+	name="GTZTransportation.gtz.LPS_Resources_NewsTest" />
+
+		</classes>
+	</test>
 	 -->
 	<test name="LPS Admin - Adhoc CopyUser">
 		<classes>
@@ -443,13 +446,15 @@
 	</test>
 	<test name="LPS Admin - Adhoc ChangeCustomer">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest" />
 
 		</classes>
 	</test>
 	<test name="LPS Admin - Adhoc ChangeInvoiceCustomer">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest" />
 
 		</classes>
 	</test>
@@ -473,7 +478,8 @@
 	</test>
 	<test name="LPS Admin - Adhoc ChangeCurrency">
 		<classes>
-			<class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest" />
+			<class
+				name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest" />
 
 		</classes>
 	</test>

@@ -334,7 +334,7 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global_PDConfirmation extends B
 
 		}
 		// Customer.sendKeys("10262");
-		Ref.sendKeys("LPS-240725-16484230");
+		Ref.sendKeys("LPS-240729-19473856");
 		Alload.click();
 		try {
 			Thread.sleep(3000);

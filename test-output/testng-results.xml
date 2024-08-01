@@ -2,22 +2,26 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-26T10:55:03 PKT" name="Default suite" finished-at="2024-07-26T10:55:47 PKT" duration-ms="43825">
+  <suite started-at="2024-07-31T22:37:23 PKT" name="Default suite" finished-at="2024-07-31T22:38:08 PKT" duration-ms="44931">
     <groups>
       <group name="Regression">
-        <method signature="LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test.spotQuote_CompleteLoadFlow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@74fe5c40]" name="spotQuote_CompleteLoadFlow_Tests" class="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test"/>
+        <method signature="LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test.spotQuote_Ericson_PD_Confirmation_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" name="spotQuote_Ericson_PD_Confirmation_Tests" class="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-07-26T10:55:03 PKT" name="Default test" finished-at="2024-07-26T10:55:47 PKT" duration-ms="43825">
+    <test started-at="2024-07-31T22:37:23 PKT" name="Default test" finished-at="2024-07-31T22:38:08 PKT" duration-ms="44931">
       <class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@74fe5c40]" started-at="2024-07-26T10:55:03 PKT" name="setup" finished-at="2024-07-26T10:55:09 PKT" duration-ms="5564" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:37:23 PKT" name="setup" finished-at="2024-07-31T22:37:29 PKT" duration-ms="5828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="spotQuote_CompleteLoadFlow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@74fe5c40]" started-at="2024-07-26T10:55:09 PKT" name="spotQuote_CompleteLoadFlow_Tests" finished-at="2024-07-26T10:55:47 PKT" duration-ms="38219" status="PASS">
+        <test-method signature="spotQuote_Ericson_PD_Confirmation_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:37:29 PKT" name="spotQuote_Ericson_PD_Confirmation_Tests" finished-at="2024-07-31T22:38:07 PKT" duration-ms="38644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- spotQuote_CompleteLoadFlow_Tests -->
+        </test-method> <!-- spotQuote_Ericson_PD_Confirmation_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test@10e31a9a]" started-at="2024-07-31T22:38:07 PKT" name="tearDown" finished-at="2024-07-31T22:38:08 PKT" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

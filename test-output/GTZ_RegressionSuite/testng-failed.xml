@@ -4,26 +4,59 @@
   <listeners>
     <listener class-name="Utility.Reporting"/>
   </listeners>
-  <test thread-count="1" name="VICS(failed)">
+  <test thread-count="1" name="CreateBOL-FindRates(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.VICS_VerifyCustomerTest">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesTest">
         <methods>
-          <include name="VICS_CustomersList_Tests"/>
+          <include name="tearDown"/>
+          <include name="FindRates_BOL_Creation_Tests"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesTest -->
+    </classes>
+  </test> <!-- CreateBOL-FindRates(failed) -->
+  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <methods>
+          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.VICS_VerifyCustomerTest -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
     </classes>
-  </test> <!-- VICS(failed) -->
-  <test thread-count="1" name="LPS_Key Revenue- InvoiceGeneral(failed)">
+  </test> <!-- CutomerRouted-FindRates(failed) -->
+  <test thread-count="1" name="Parcel-FindRates(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesParcelTest">
         <methods>
-          <include name="KeyRevenue_InvoiceGeneral_tests"/>
+          <include name="FindRatesParcel_BOL_Creation_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesParcelTest -->
+    </classes>
+  </test> <!-- Parcel-FindRates(failed) -->
+  <test thread-count="1" name="KSXADMIN ManageShipment(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+        <methods>
+          <include name="KSXAdmin_ManageShipment_Tests"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest -->
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
     </classes>
-  </test> <!-- LPS_Key Revenue- InvoiceGeneral(failed) -->
+  </test> <!-- KSXADMIN ManageShipment(failed) -->
+  <test thread-count="1" name="LPS Resources - NewsListing(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Resources_NewsTest">
+        <methods>
+          <include name="LPS_Resources_News_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsTest -->
+    </classes>
+  </test> <!-- LPS Resources - NewsListing(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

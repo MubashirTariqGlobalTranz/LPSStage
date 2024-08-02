@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="GTZ_KSX Admin" parallel="none" thread-count="1">
-
+<listeners>
+		<listener class-name="Utility.TestListener" />
+	</listeners>
 	<test name="KSXADMIN ManageShipment">
 		<classes>
 			<class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest" />

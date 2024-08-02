@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="GTZ_SanitySuite" parallel="none" thread-count="1">
+<listeners>
+		<listener class-name="Utility.TestListener" />
+	</listeners>
 	<test name="QuickLoad">
 		<classes>
 			<class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest" />

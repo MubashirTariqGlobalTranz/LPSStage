@@ -16,6 +16,11 @@ public class Reporting {
             String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
             String reportPath = "C:\\Users\\mubashir.tariq.FSL0\\Desktop\\LPS_Stage\\gtz\\Reports\\extent-report_" + timestamp + ".html";
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+            
+            // Set the heading text for the report
+            sparkReporter.config().setDocumentTitle("GTZ Manage Test Automation Report");
+            sparkReporter.config().setReportName("GTZ Manage Test Automation Report");
+
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
         }
@@ -24,6 +29,10 @@ public class Reporting {
 
     public static ExtentTest createTest(String testName) {
         test = getInstance().createTest(testName);
+        return test;
+    }
+
+    public static ExtentTest getTest() {
         return test;
     }
 

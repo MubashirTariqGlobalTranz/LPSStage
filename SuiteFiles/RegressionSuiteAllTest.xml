@@ -3,7 +3,7 @@
 
 <suite name="GTZ_RegressionSuite" parallel="classes" thread-count="1">
 	<listeners>
-		<listener class-name="utilities.Reporting" />
+		<listener class-name="Utility.TestListener" />
 	</listeners>
 
 	<test name="Spot Quote">

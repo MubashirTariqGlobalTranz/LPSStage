@@ -6,7 +6,7 @@
 		<listener class-name="Utility.TestListener" />
 	</listeners>
 
-<!--	<test name="Load Boards Search">
+	<test name="Load Boards Search">
 		<classes>
 			<class name="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest" />
 
@@ -402,7 +402,7 @@
 			<class name="GTZTransportation.gtz.LPS_Admin_SecurityTest" />
 
 		</classes>
-	</test> -->
+	</test>
 	<!--	<test name="Reports- Spot Quote">
 		<classes>
 			<class

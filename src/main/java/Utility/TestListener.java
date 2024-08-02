@@ -19,17 +19,17 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        Reporting.getInstance().createTest(result.getMethod().getMethodName()).pass("Test Passed");
+        Reporting.getTest().pass("Test Passed");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        Reporting.getInstance().createTest(result.getMethod().getMethodName()).fail(result.getThrowable());
+        Reporting.getTest().fail(result.getThrowable());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        Reporting.getInstance().createTest(result.getMethod().getMethodName()).skip("Test Skipped");
+        Reporting.getTest().skip("Test Skipped");
     }
 
     @Override

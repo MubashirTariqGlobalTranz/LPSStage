@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-02T15:07:59 PKT" name="GTZ_MyShipments" finished-at="2024-08-02T15:08:46 PKT" duration-ms="47720">
+  <suite started-at="2024-08-05T14:19:29 PKT" name="GTZ_MyShipments" finished-at="2024-08-05T14:20:16 PKT" duration-ms="47346">
     <groups>
       <group name="Regression">
         <method signature="LPS_MyShipmentsTest.LPS_MyshipmentsTest()[pri:1, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" name="LPS_MyshipmentsTest" class="GTZTransportation.gtz.LPS_MyShipmentsTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-08-02T15:07:59 PKT" name="LPS_MyShipments" finished-at="2024-08-02T15:08:46 PKT" duration-ms="47720">
+    <test started-at="2024-08-05T14:19:29 PKT" name="LPS_MyShipments" finished-at="2024-08-05T14:20:16 PKT" duration-ms="47346">
       <class name="GTZTransportation.gtz.LPS_MyShipmentsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-02T15:07:59 PKT" name="setup" finished-at="2024-08-02T15:08:09 PKT" duration-ms="9558" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-05T14:19:29 PKT" name="setup" finished-at="2024-08-05T14:19:39 PKT" duration-ms="9824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LPS_MyshipmentsTest()[pri:1, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-02T15:08:09 PKT" name="LPS_MyshipmentsTest" finished-at="2024-08-02T15:08:46 PKT" duration-ms="37601" status="PASS">
+        <test-method signature="LPS_MyshipmentsTest()[pri:1, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-05T14:19:39 PKT" name="LPS_MyshipmentsTest" finished-at="2024-08-05T14:20:16 PKT" duration-ms="37146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LPS_MyshipmentsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-02T15:08:46 PKT" name="tearDown" finished-at="2024-08-02T15:08:46 PKT" duration-ms="173" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@223d2c72]" started-at="2024-08-05T14:20:16 PKT" name="tearDown" finished-at="2024-08-05T14:20:16 PKT" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.io.File;
 
 public class Reporting {
     private static ExtentReports extent;
@@ -14,7 +15,13 @@ public class Reporting {
         if (extent == null) {
             // Adding date and time to the filename
             String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-            String reportPath = "C:\\Users\\mubashir.tariq.FSL0\\Desktop\\LPS_Stage\\gtz\\Reports\\extent-report_" + timestamp + ".html";
+            
+            // Get the current working directory
+            String workingDir = System.getProperty("user.dir");
+            
+            // Construct the report path
+            String reportPath = workingDir + File.separator + "Reports" + File.separator + "extent-report_" + timestamp + ".html";
+            
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
             
             // Set the heading text for the report

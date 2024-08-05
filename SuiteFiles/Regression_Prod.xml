@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GTZ_Production" parallel="none" thread-count="1">
+
+	
+	<test name="Load Board Search">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Reports- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	<test name="Customers-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Customer_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Users-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.User_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Loads-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Load_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Carriers-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Transport-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Transport_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="Requirments-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="ServiceType-Admin- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	<test name="Email Template-Admin- Spot Quote">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	<test name="Expressions- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest" />
+
+		</classes>
+	</test>
+
+	<test name="FindRate-Carriers">
+		<classes>
+			<class name="GTZTransportation.gtz.FindRatesCarriersTest" />
+
+		</classes>
+	</test>
+	<test name="History-FindRates">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.History_FindRatesTest" />
+
+		</classes>
+	</test>
+	<test name="CustomerCarrier-CustomerList">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest" />
+
+		</classes>
+	</test>
+
+	<test name="CustomerCarrier-Prospect Queue">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest" />
+
+		</classes>
+	</test>
+
+	<test name="CustomerCarrier-Carrier List">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest" />
+
+		</classes>
+	</test>
+
+	<test name="CustomerCarrier-Carrier Import">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest" />
+
+		</classes>
+	</test>
+
+	<test name="FreightPayment-Missing Carriers">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest" />
+
+		</classes>
+	</test>
+	
+	<test name="FreightPayment-Reports">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ReportsTest" />
+
+		</classes>
+	</test>
+
+	<test name="FreightPayment-ClientAdmin">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ClientAdminTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-CarrierPortal_Others">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_CarrierPortalTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-GTZ_WebQueues">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_GTZTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-GTZ_Links">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_GTZ_Links_Test" />
+
+		</classes>
+	</test>
+	<test name="LPS_Key Revenue Reports">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_ReportsTest" />
+
+		</classes>
+	</test>
+
+	<test name="LPS_Key Revenue- Customer">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_CustomerTest" />
+
+		</classes>
+	</test>
+	<test name="LPS_Key Revenue- Admin">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_AdminTest" />
+
+		</classes>
+	</test>
+
+	<test name="LPS_Key Revenue- InvoiceGeneral">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest" />
+
+		</classes>
+	</test>
+
+	<test name="KSXADMIN ManageShipment">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest" />
+
+		</classes>
+	</test>
+
+	<test name="KSXADMIN ManageClient">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageClientTest" />
+
+		</classes>
+	</test>
+
+	<test name="KSXADMIN Manage Sales Rep">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest" />
+
+		</classes>
+	</test>
+
+	<test name="KSXADMIN Manage Users">
+		<classes>
+			<class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />
+
+		</classes>
+	</test>
+	<test name="LPS General">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_GeneralTest" />
+
+		</classes>
+	</test>
+
+	<test name="LPS_MyShipments">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPS_MyShipmentsTest" />
+
+		</classes>
+	</test>
+
+	<test name="VICS">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VerifyCustomerTest" />
+
+		</classes>
+	</test>
+
+
+	<test name="VICS View Order">
+		<classes>
+			<class name="GTZTransportation.gtz.VICS_VeiwOrdersTest" />
+
+		</classes>
+	</test>
+
+</suite>

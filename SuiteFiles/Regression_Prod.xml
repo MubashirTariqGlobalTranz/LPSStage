@@ -263,5 +263,29 @@
 
 		</classes>
 	</test>
+<test name="LPS Report - Quick Report">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_QuickReportTest" />
 
+		</classes>
+	</test>
+<test name="LPS Resources - News Items">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest" />
+
+		</classes>
+	</test>
+	<test name="LPS AccountManagement - Addressbook">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest" />
+
+		</classes>
+	</test>
+	<test name="LPS AccountManagement - ProductCatalog-Myteam">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest" />
+
+		</classes>
+	</test>
 </suite>

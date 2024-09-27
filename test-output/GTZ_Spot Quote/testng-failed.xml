@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Failed suite [GTZ_Spot Quote]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" name="DirectLoad(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest">
-        <methods>
-          <include name="spotQuote_DirectLoad_Tests"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CreateDirectLoad_AwardTest -->
-    </classes>
-  </test> <!-- DirectLoad(failed) -->
+  <listeners>
+    <listener class-name="Utility.TestListener"/>
+  </listeners>
   <test thread-count="1" name="Reports- Spot Quote(failed)">
     <classes>
       <class name="GTZTransportation.gtz.Report_SpotQuoteTest">

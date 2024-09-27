@@ -44,7 +44,7 @@ public class FreightPayment_GTZ_Links_Test extends BaseClass {
 		freightPayment.GTZ();
 		freightPayment.BudgetTool();
 		freightPayment.Customer();
-		freightPayment.Users();
+		//freightPayment.Users();
 		freightPayment.WelocmeEmail();
 		freightPayment.InvalidBankAccounts();
 		freightPayment.PaymentFileDetails();

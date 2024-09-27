@@ -495,4 +495,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS V22 Load creation- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest" />
+
+		</classes>
+	</test>
 </suite>

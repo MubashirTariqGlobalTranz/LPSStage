@@ -133,4 +133,16 @@
 
 		</classes>
 	</test>
+	<test name="LPS Admin - Add Shipment Batch">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test" />
+
+		</classes>
+	</test>
+	<test name="LPS Admin - Remove Shipment Batch">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test" />
+
+		</classes>
+	</test>
 </suite>

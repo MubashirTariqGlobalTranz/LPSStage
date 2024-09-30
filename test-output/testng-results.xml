@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T15:08:11 PKT" name="Default suite" finished-at="2024-09-27T15:09:50 PKT" duration-ms="99177">
+  <suite started-at="2024-09-30T19:27:25 PKT" name="Default suite" finished-at="2024-09-30T19:27:44 PKT" duration-ms="18877">
     <groups>
       <group name="Regression">
-        <method signature="Create_V22_LPSDirectLoad_AwardTest.spotQuote_V22_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@10e31a9a]" name="spotQuote_V22_LPSDirect_Tests" class="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest"/>
+        <method signature="LPS_Admin_Adhoc_RemoveBatch_Test.LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" name="LPS_Admin_Adhoc_RemoveBatch_Tests" class="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-27T15:08:11 PKT" name="Default test" finished-at="2024-09-27T15:09:50 PKT" duration-ms="99177">
-      <class name="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@10e31a9a]" started-at="2024-09-27T15:08:11 PKT" name="setup" finished-at="2024-09-27T15:08:18 PKT" duration-ms="6831" status="PASS">
+    <test started-at="2024-09-30T19:27:25 PKT" name="Default test" finished-at="2024-09-30T19:27:44 PKT" duration-ms="18877">
+      <class name="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:25 PKT" name="setup" finished-at="2024-09-30T19:27:29 PKT" duration-ms="4357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="spotQuote_V22_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@10e31a9a]" started-at="2024-09-27T15:08:18 PKT" name="spotQuote_V22_LPSDirect_Tests" finished-at="2024-09-27T15:09:50 PKT" duration-ms="91899" status="PASS">
+        <test-method signature="LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:29 PKT" name="LPS_Admin_Adhoc_RemoveBatch_Tests" finished-at="2024-09-30T19:27:43 PKT" duration-ms="13800" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- spotQuote_V22_LPSDirect_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@10e31a9a]" started-at="2024-09-27T15:09:50 PKT" name="tearDown" finished-at="2024-09-27T15:09:50 PKT" duration-ms="394" status="PASS">
+        </test-method> <!-- LPS_Admin_Adhoc_RemoveBatch_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:43 PKT" name="tearDown" finished-at="2024-09-30T19:27:44 PKT" duration-ms="671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

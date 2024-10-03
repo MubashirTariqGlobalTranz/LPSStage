@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
         <methods>
-          <include name="spotQuote_Ericson_PD_Confirmation_Tests"/>
+          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuote_Ericsson_Radiant_Global_PD_Test -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,27 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-30T19:27:25 PKT" name="Default suite" finished-at="2024-09-30T19:27:44 PKT" duration-ms="18877">
+  <suite started-at="2024-10-03T20:12:32 PKT" name="Default suite" finished-at="2024-10-03T20:13:28 PKT" duration-ms="55209">
     <groups>
       <group name="Regression">
-        <method signature="LPS_Admin_Adhoc_RemoveBatch_Test.LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" name="LPS_Admin_Adhoc_RemoveBatch_Tests" class="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test"/>
+        <method signature="CreateBOL_FindRates_CustomerRouted_Test.FindRates_BOL_Creation_CustomerRouted_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@74fe5c40]" name="FindRates_BOL_Creation_CustomerRouted_Tests" class="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-09-30T19:27:25 PKT" name="Default test" finished-at="2024-09-30T19:27:44 PKT" duration-ms="18877">
-      <class name="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:25 PKT" name="setup" finished-at="2024-09-30T19:27:29 PKT" duration-ms="4357" status="PASS">
+    <test started-at="2024-10-03T20:12:32 PKT" name="Default test" finished-at="2024-10-03T20:13:28 PKT" duration-ms="55209">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@74fe5c40]" started-at="2024-10-03T20:12:32 PKT" name="setup" finished-at="2024-10-03T20:12:37 PKT" duration-ms="4478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:29 PKT" name="LPS_Admin_Adhoc_RemoveBatch_Tests" finished-at="2024-09-30T19:27:43 PKT" duration-ms="13800" status="PASS">
+        <test-method signature="FindRates_BOL_Creation_CustomerRouted_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@74fe5c40]" started-at="2024-10-03T20:12:37 PKT" name="FindRates_BOL_Creation_CustomerRouted_Tests" finished-at="2024-10-03T20:13:28 PKT" duration-ms="50696" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LPS_Admin_Adhoc_RemoveBatch_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@10e31a9a]" started-at="2024-09-30T19:27:43 PKT" name="tearDown" finished-at="2024-09-30T19:27:44 PKT" duration-ms="671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test -->
+        </test-method> <!-- FindRates_BOL_Creation_CustomerRouted_Tests -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

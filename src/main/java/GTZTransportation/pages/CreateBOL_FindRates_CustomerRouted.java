@@ -169,7 +169,8 @@ public class CreateBOL_FindRates_CustomerRouted extends BaseClass {
 		Weight.sendKeys("100");
 		Length.clear();
 		Length.sendKeys("11");
-
+		Width.clear();
+		Width.sendKeys("11");
 		Height.clear();
 
 		Height.sendKeys("11");
@@ -187,7 +188,7 @@ public class CreateBOL_FindRates_CustomerRouted extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[18]/div/div[2]/table/tbody/tr[4]/td[6]/a[1]")).click();
+		driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[18]/div/div[2]/table/tbody/tr[3]/td[6]/a[1]")).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

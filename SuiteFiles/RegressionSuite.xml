@@ -507,6 +507,13 @@
 
 		</classes>
 	</test>
+	<test name="FreightPayment-ShipmentLookup">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest" />
+
+		</classes>
+	</test>
 	<test name="LPS Admin - Remove Shipment Batch">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test" />

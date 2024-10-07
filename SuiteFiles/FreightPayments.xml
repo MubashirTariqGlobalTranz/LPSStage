@@ -55,4 +55,11 @@
 
 		</classes>
 	</test>
+	<test name="FreightPayment-ShipmentLookup">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest" />
+
+		</classes>
+	</test>
 </suite>

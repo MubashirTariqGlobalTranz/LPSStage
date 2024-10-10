@@ -61,5 +61,13 @@
 				name="GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest" />
 
 		</classes>
+		
+	</test>
+	<test name="FreightPayment-Reports1">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_Reports1Test" />
+
+		</classes>
 	</test>
 </suite>

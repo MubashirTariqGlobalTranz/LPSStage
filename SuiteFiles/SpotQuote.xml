@@ -170,4 +170,10 @@
 
 		</classes>
 	</test>
+	<test name="Reports 1- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report1_SpotQuoteTest" />
+
+		</classes>
+	</test>
 </suite>

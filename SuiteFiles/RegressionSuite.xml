@@ -501,6 +501,12 @@
 
 		</classes>
 	</test>
+	<test name="Reports 1- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report1_SpotQuoteTest" />
+
+		</classes>
+	</test>
 	<test name="LPS Admin - Add Shipment Batch">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test" />

@@ -489,6 +489,13 @@
 
 		</classes>
 	</test>
+	<test name="LPS_Key Revenue Reports1">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue1_ReportsTest" />
+
+		</classes>
+	</test>
 	<test name="LPS Report - Quick Report">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_QuickReportTest" />

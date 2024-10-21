@@ -364,14 +364,14 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 		String kt = K.getText();
 		System.out.println(kt);
 		
-		CarrierPage.click();
+		//CarrierPage.click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		uncheckCarrierMatching.click();
+		/*uncheckCarrierMatching.click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -396,7 +396,7 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		Send.click();
 		try {
 			Thread.sleep(3000);

@@ -4,15 +4,37 @@
   <listeners>
     <listener class-name="Utility.TestListener"/>
   </listeners>
-  <test thread-count="1" name="VICS BOL Creation(failed)">
+  <test thread-count="1" name="LPS Resources - NewsListing(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest">
+      <class name="GTZTransportation.gtz.LPS_Resources_NewsTest">
+        <methods>
+          <include name="LPS_Resources_News_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsTest -->
+    </classes>
+  </test> <!-- LPS Resources - NewsListing(failed) -->
+  <test thread-count="1" name="LPS Admin - Adhoc ChangeCustomer(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest">
+        <methods>
+          <include name="setup"/>
+          <include name="LPS_Admin_Adhoc_ChangeCustomer_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest -->
+    </classes>
+  </test> <!-- LPS Admin - Adhoc ChangeCustomer(failed) -->
+  <test thread-count="1" name="LPS Report - Quick Report(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
         <methods>
           <include name="tearDown"/>
+          <include name="LPS_QuickReport_Tests"/>
           <include name="setup"/>
-          <include name="VICS_BOLCreation_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.VICS_VerifyBOLCreationTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
     </classes>
-  </test> <!-- VICS BOL Creation(failed) -->
+  </test> <!-- LPS Report - Quick Report(failed) -->
 </suite> <!-- Failed suite [GTZ_VICS] -->

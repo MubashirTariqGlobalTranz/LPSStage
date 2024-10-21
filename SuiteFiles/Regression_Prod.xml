@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="GTZ_Production" parallel="none" thread-count="1">
-
+<listeners>
+		<listener class-name="Utility.TestListener" />
+	</listeners>
 	
 	<test name="Load Board Search">
 		<classes>
@@ -263,6 +265,13 @@
 
 		</classes>
 	</test>
+	<test name="LPS_Key Revenue Reports1">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.KeyRevenue1_ReportsTest" />
+
+		</classes>
+	</test>
 <test name="LPS Report - Quick Report">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_QuickReportTest" />
@@ -272,6 +281,12 @@
 <test name="LPS Resources - News Items">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest" />
+
+		</classes>
+	</test>
+	<test name="Reports 1- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.Report1_SpotQuoteTest" />
 
 		</classes>
 	</test>
@@ -285,6 +300,13 @@
 	<test name="LPS AccountManagement - ProductCatalog-Myteam">
 		<classes>
 			<class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-Reports1">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_Reports1Test" />
 
 		</classes>
 	</test>

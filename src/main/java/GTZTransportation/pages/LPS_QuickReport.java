@@ -38,7 +38,7 @@ public class LPS_QuickReport extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.get("https://my-stage.shiplps.com/QuickData/?fk=KPOutstandingChecks"); //https://my-stage.shiplps.com/QuickData/?fk=KPOutstandingChecks, https://my.shiplps.com/QuickData/?fk=KPOutstandingChecks
+		driver.get("//https://my-stage.shiplps.com/QuickData/?fk=KPOutstandingChecks"); //https://my-stage.shiplps.com/QuickData/?fk=KPOutstandingChecks, https://my.shiplps.com/QuickData/?fk=KPOutstandingChecks
 
 		{
 			try {

@@ -25,7 +25,7 @@ public class Report_SpotQuoteTest extends BaseClass {
 	/**
 
 	Test case description:
-	This test case contains test cases for the following reports in the customer/carrier app:
+	This test case contains test cases for the following reports in the Spot Quote app:
 	LinkedLoad
 	CarrierList
 	CarrierGroup

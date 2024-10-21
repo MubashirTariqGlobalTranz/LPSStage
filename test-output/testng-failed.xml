@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [GTZ_VICS]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Utility.TestListener"/>
-  </listeners>
-  <test thread-count="1" name="LPS Resources - NewsListing(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPS_Resources_NewsTest">
+      <class name="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest">
         <methods>
-          <include name="LPS_Resources_News_Tests"/>
-          <include name="setup"/>
+          <include name="spotQuote_V22_LPSDirect_Tests"/>
           <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsTest -->
-    </classes>
-  </test> <!-- LPS Resources - NewsListing(failed) -->
-  <test thread-count="1" name="LPS Admin - Adhoc ChangeCustomer(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest">
-        <methods>
-          <include name="setup"/>
-          <include name="LPS_Admin_Adhoc_ChangeCustomer_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest -->
-    </classes>
-  </test> <!-- LPS Admin - Adhoc ChangeCustomer(failed) -->
-  <test thread-count="1" name="LPS Report - Quick Report(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="LPS_QuickReport_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
+      </class> <!-- GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest -->
     </classes>
-  </test> <!-- LPS Report - Quick Report(failed) -->
-</suite> <!-- Failed suite [GTZ_VICS] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

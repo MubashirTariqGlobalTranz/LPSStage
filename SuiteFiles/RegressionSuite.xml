@@ -540,4 +540,10 @@
 
 		</classes>
 	</test>
+	<test name="Load Management">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest" />
+
+		</classes>
+	</test>
 </suite>

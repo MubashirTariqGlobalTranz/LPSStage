@@ -546,4 +546,23 @@
 
 		</classes>
 	</test>
+	<test name="Open Load">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="Orders">
+		<classes>
+			<class name="GTZTransportation.gtz.Orders_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	
+	<test name="PO- Orders">
+		<classes>
+			<class name="GTZTransportation.gtz.Orders_PO_SpotQuoteTest" />
+
+		</classes>
+	</test>
 </suite>

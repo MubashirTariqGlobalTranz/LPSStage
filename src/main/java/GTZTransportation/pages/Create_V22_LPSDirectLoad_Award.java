@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -186,28 +189,28 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 
 	@FindBy(id = "ContentPlaceHolder1_grid_linkAward_0")
 	WebElement AwardBidLoad;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Carriers']")
 	WebElement CarrierPage;
-	
+
 	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_chkCarrierEquipmentMatch']")
 	WebElement uncheckCarrierMatching;
-	
+
 	@FindBy(id = "ContentPlaceHolder1_containerFilter_btnFilter")
 	WebElement FilteruncheckCarrierMatching;
-	
+
 	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerAvailableCarriers_gridAvailableCarriers_gridAvailableCarriers_chk_0']")
 	WebElement v22selection;
-	
+
 	@FindBy(id = "ContentPlaceHolder1_containerAvailableCarriers_btnAddToWave")
 	WebElement AddWave;
-	
+
 	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerSelectedCarriers_gridSelectedCarriers_gridSelectedCarriers_chk_0']")
 	WebElement RemoveLPSDirectWave;
-	
+
 	@FindBy(id = "ContentPlaceHolder1_containerSelectedCarriers_btnRemoveFromWave")
 	WebElement RemoveWave;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Send']")
 	WebElement Send;
 
@@ -254,7 +257,7 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CustomerName.sendKeys("10310");//Aramacell 10637 Cameron's coffee 10310, Nokia 10663, ConEdison 10148
+		CustomerName.sendKeys("10310");// Aramacell 10637 Cameron's coffee 10310, Nokia 10663, ConEdison 10148
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -322,9 +325,13 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 		ReferenceNo.sendKeys("Ref123456");
 		CommodityCode.sendKeys("air cooler");
 
-		DestinationTimeWindow.sendKeys("7/19/2024");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
-		PickTimeWindow.sendKeys("7/16/2024");
+		// Set the Delivery Date (current date)
+		DestinationTimeWindow.sendKeys(formattedDate);
+		PickTimeWindow.sendKeys(formattedDate);
 //Copy
 		PickupEmail.sendKeys("Test@gmail.com");
 
@@ -363,7 +370,7 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 		WebElement K = driver.findElement(By.className("success-validation"));
 		String kt = K.getText();
 		System.out.println(kt);
-		
+
 		CarrierPage.click();
 		try {
 			Thread.sleep(3000);
@@ -371,32 +378,18 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*uncheckCarrierMatching.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		FilteruncheckCarrierMatching.click();
-		v22selection.click();
-		AddWave.click();
-		driver.switchTo().alert().accept();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		RemoveLPSDirectWave.click();
-		RemoveWave.click();
-		driver.switchTo().alert().accept();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
+		/*
+		 * uncheckCarrierMatching.click(); try { Thread.sleep(3000); } catch
+		 * (InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); } FilteruncheckCarrierMatching.click();
+		 * v22selection.click(); AddWave.click(); driver.switchTo().alert().accept();
+		 * try { Thread.sleep(3000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 * RemoveLPSDirectWave.click(); RemoveWave.click();
+		 * driver.switchTo().alert().accept(); try { Thread.sleep(3000); } catch
+		 * (InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 */
 		Send.click();
 		try {
 			Thread.sleep(3000);
@@ -439,7 +432,14 @@ public class Create_V22_LPSDirectLoad_Award extends BaseClass {
 			e.printStackTrace();
 		}
 		BidWithAmount.sendKeys("1000");
-		SecureDate.sendKeys("11/1/2024");
+
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+
+		SecureDate.sendKeys(formattedDate);
 
 		LoadContactName.sendKeys("MubashirTariq");
 		LoadContactPhoneNo.sendKeys("(651) 789-5782");

@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -120,11 +123,17 @@ public class VICS_VerifyBOLCreation extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//PageNo.click();
+		// PageNo.click();
 		driver.get(
 				"http://vics-stage.keyship.net/Client/Search.aspx?__eqs=O3KiBkncpoqSybBtJzgMEtSckYl229n91pohvz4NIAMb+HBbRVOcUkOy7blnAlZ4ulcukt6vAYEJ62bXcoAuAHQYvzKtB9QFiNYdYE1WyqEMh1FrtzCLjeYasVCMmVvOSfrxbyfafMFldhxvoL5efCa2TEodn1ndn0VpGo4sMB9iCzqrnG6SA/IIuIp6rewiG5aYM7ETj4XBG/ruxv1rpJHKKqL9dUfCDEim+Pnl2vA=");
 		PO.sendKeys("2233356");
-		DeliveryDate.sendKeys("5/16/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		DeliveryDate.sendKeys(formattedDate);
+
 		Origin.sendKeys("30303");
 		Destination.sendKeys("30303");
 		Weight.clear();

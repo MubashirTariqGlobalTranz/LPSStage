@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -327,7 +330,31 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		originCity.sendKeys("ANKENY");
 		OriginState.sendKeys("IA");
 		OriginPostalCode.sendKeys("50021");
-		OriginTimeWindow.sendKeys("11/10/2022 8:00 AM CST - 11/10/2022 3:00 PM CST");
+
+		// Use LocalDate to get the current date
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+
+		// Format date as MM/dd/yyyy
+		String formattedDate = currentDate.format(dateFormatter);
+
+		// Add 1 day for the destination date
+		LocalDate destinationDate = currentDate.plusDays(1);
+		String formattedDestinationDate = destinationDate.format(dateFormatter);
+
+		// Define time range strings
+		String startTime = "8:00 AM CST";
+		String endTime = "3:00 PM CST";
+
+		// Combine date and time range into the desired format
+		String originTimeWindow = formattedDate + " " + startTime + " - " + formattedDate + " " + endTime;
+		String destinationTimeWindow = formattedDestinationDate + " " + startTime + " - " + formattedDestinationDate
+				+ " " + endTime;
+
+		// Set the fields
+		OriginTimeWindow.sendKeys(originTimeWindow);
+		DestinationTimeWindow.sendKeys(destinationTimeWindow);
+
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -339,7 +366,7 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		DestinationCity.sendKeys("ONTARIO");
 		DestinationState.sendKeys("WA");
 		DestinationPostalCode.sendKeys("98424");
-		DestinationTimeWindow.sendKeys("11/10/2022 8:00 AM CST - 11/10/2022 3:00 PM CST");
+
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -433,7 +460,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 			e.printStackTrace();
 		}
 		BidWithAmount.sendKeys("1000");
-		SecureDate.sendKeys("11/1/2001");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		SecureDate.sendKeys(formattedDate);
 
 		LoadContactName.sendKeys("MubashirTariq");
 		LoadContactPhoneNo.sendKeys("(651) 789-5782");
@@ -525,7 +557,13 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		driver.switchTo().frame("TB_iframeContent");
 		PRONo.sendKeys("123456");
-		Date.sendKeys("10/10/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
+
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 
@@ -547,7 +585,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		driver.switchTo().frame("TB_iframeContent");
 		PRONo.sendKeys("123456");
-		Date.sendKeys("10/10/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 
@@ -569,7 +612,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		driver.switchTo().frame("TB_iframeContent");
 		// PRONo.sendKeys("123456");
-		Date.sendKeys("10/10/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 
@@ -591,7 +639,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		driver.switchTo().frame("TB_iframeContent");
 		POD.sendKeys("123456");
-		Date.sendKeys("10/10/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 	}

@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -277,9 +280,14 @@ public class CopyLoad_SpotQuote extends BaseClass {
 		ReferenceNo.sendKeys("Ref123456");
 		CommodityCode.sendKeys("air cooler");
 
-		DestinationTimeWindow.sendKeys("4/11/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
-		PickTimeWindow.sendKeys("4/11/2023");
+		// Set the Delivery Date (current date)
+		DestinationTimeWindow.sendKeys(formattedDate);
+		PickTimeWindow.sendKeys(formattedDate);
+
 //Copy
 		PickupEmail.sendKeys("Test@gmail.com");
 

@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -334,7 +337,7 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global_PDConfirmation extends B
 
 		}
 		// Customer.sendKeys("10262");
-		Ref.sendKeys("LPS-240729-19473856");
+		Ref.sendKeys("LPS-240725-16484230");
 		Alload.click();
 		try {
 			Thread.sleep(3000);
@@ -378,7 +381,13 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global_PDConfirmation extends B
 
 		driver.switchTo().frame("TB_iframeContent");
 		PRONo.sendKeys("123456");
-		Date.sendKeys("10/10/2024");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
+		
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 
@@ -400,7 +409,12 @@ public class LoadFlow_SpotQuote_Ericsson_Radiant_Global_PDConfirmation extends B
 
 		driver.switchTo().frame("TB_iframeContent");
 		POD.sendKeys("123456");
-		Date.sendKeys("10/10/2024");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
 	}

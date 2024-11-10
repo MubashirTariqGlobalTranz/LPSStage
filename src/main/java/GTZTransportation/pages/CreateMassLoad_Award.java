@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,13 +38,12 @@ public class CreateMassLoad_Award extends BaseClass {
 	@FindBy(id = "ContentPlaceHolder1_createButton")
 	WebElement Create;
 
-	//initialization
+	// initialization
 	public CreateMassLoad_Award() {
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	//This will open spot quote application
+	// This will open spot quote application
 	public void openSpotQuote()
 
 	{
@@ -54,9 +56,9 @@ public class CreateMassLoad_Award extends BaseClass {
 
 		SpotQuote.click();
 	}
-	
 
-	//This will click on Create Mass load page &  Fill all the required fields. Load will be create 
+	// This will click on Create Mass load page & Fill all the required fields. Load
+	// will be create
 	public void Create_Load() {
 
 		try {
@@ -95,12 +97,13 @@ public class CreateMassLoad_Award extends BaseClass {
 			e.printStackTrace();
 		}
 
-		// BidAmount.sendKeys("1000");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
-		PickUpWindow.sendKeys("4/11/2023");
-		// Name.sendKeys("Devon Daggenstoss");
-
-		DeliveryWindow.sendKeys("4/11/2023");
+		// Set the Delivery Date (current date)
+		PickUpWindow.sendKeys(formattedDate);
+		DeliveryWindow.sendKeys(formattedDate);
 		Create.click();
 		WebElement K = driver.findElement(By.className("info-validation"));
 		String kt = K.getText();

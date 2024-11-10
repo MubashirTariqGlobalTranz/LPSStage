@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Utility.TestListener"/>
   </listeners>
-  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
+  <test thread-count="1" name="Reports 1- Spot Quote(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
+      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
         <methods>
-          <include name="KeyRevenue_Report_tests"/>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="spotQuote_Reports_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
+      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
     </classes>
-  </test> <!-- LPS_Key Revenue Reports(failed) -->
+  </test> <!-- Reports 1- Spot Quote(failed) -->
 </suite> <!-- Failed suite [GTZ_Production] -->

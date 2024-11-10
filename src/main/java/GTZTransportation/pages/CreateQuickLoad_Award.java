@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -157,20 +160,19 @@ public class CreateQuickLoad_Award extends BaseClass {
 
 	@FindBy(id = "ContentPlaceHolder1_containerFilter_btnRefresh")
 	WebElement FilterLoad;
-	
+
 	@FindBy(id = "ContentPlaceHolder1_quickLoad_itemList_DdlCommodityCode")
 	WebElement CommodityCode;
-	
+
 	@FindBy(id = "ContentPlaceHolder1_chkOnlyShowBidsWithAmounts")
 	WebElement UncheckBidResponse;
 
-	
-	//initialization
+	// initialization
 	public CreateQuickLoad_Award() {
 		PageFactory.initElements(driver, this);
 	}
 
-	//This will open spot quote application
+	// This will open spot quote application
 	public void openSpotQuote()
 
 	{
@@ -184,7 +186,8 @@ public class CreateQuickLoad_Award extends BaseClass {
 		SpotQuote.click();
 	}
 
-	//This will click on Create Quick load page &  Fill all the required fields. Load will be create 
+	// This will click on Create Quick load page & Fill all the required fields.
+	// Load will be create
 	public void Create_Load() {
 
 		try {
@@ -207,7 +210,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CustomerName.sendKeys("10637");//10637,10663
+		CustomerName.sendKeys("10637");// 10637,10663
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -249,7 +252,6 @@ public class CreateQuickLoad_Award extends BaseClass {
 		PickupPhone.sendKeys("(919) 304-3846");
 		originCity.sendKeys("Fife");
 		OriginState.sendKeys("WA");
-		
 
 		try {
 			Thread.sleep(3000);
@@ -257,7 +259,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -276,12 +278,17 @@ public class CreateQuickLoad_Award extends BaseClass {
 		ReferenceNo.sendKeys("Ref123456");
 		CommodityCode.sendKeys("air cooler");
 
-		DestinationTimeWindow.sendKeys("7/19/2023");
-		
-		PickTimeWindow.sendKeys("7/16/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
+
+		// Set the Delivery Date (current date)
+		DestinationTimeWindow.sendKeys(formattedDate);
+		PickTimeWindow.sendKeys(formattedDate);
+
 //Copy
 		PickupEmail.sendKeys("Test@gmail.com");
-		
+
 		DestinationName.sendKeys("REFRIGERATION SUPPLIES DIST");
 		DestinationAddress.sendKeys("2521 PACIFIC HIGHWAY E, SUITE C");
 		PickupContactDestination.sendKeys("Test");
@@ -289,18 +296,18 @@ public class CreateQuickLoad_Award extends BaseClass {
 		DestinationCity.sendKeys("TACOMA");
 		DestinationState.sendKeys("WA");
 		DestinationPostalCode.sendKeys("98424");
-		//DestinationCountry.sendKeys("US");
-		
-		//Paste
+		// DestinationCountry.sendKeys("US");
+
+		// Paste
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//Flatbed.click();
+		// Flatbed.click();
 		TruckLoad.click();
-		//Expedited.click();
+		// Expedited.click();
 		LTLGuaranted.click();
 		Create.click();
 
@@ -319,7 +326,7 @@ public class CreateQuickLoad_Award extends BaseClass {
 		System.out.println(kt);
 
 		SendBid.click();
-		
+
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -327,14 +334,14 @@ public class CreateQuickLoad_Award extends BaseClass {
 			e.printStackTrace();
 		}
 		driver.switchTo().alert().accept();
-		
+
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//UncheckBidResponse.click();
+		// UncheckBidResponse.click();
 		AwardBid.click();
 		driver.switchTo().alert().accept();
 		try {

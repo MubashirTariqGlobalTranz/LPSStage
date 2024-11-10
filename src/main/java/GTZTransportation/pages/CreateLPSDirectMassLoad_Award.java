@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -87,7 +90,7 @@ public class CreateLPSDirectMassLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		SourceLPS.sendKeys("LPS-240308-124342");
+		SourceLPS.sendKeys("LPS-230120-151152"); //LPS-240308-124342 , Cameroncoffee  LPS-240819-131931, ConEdison LPS-240814-050350
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -102,10 +105,15 @@ public class CreateLPSDirectMassLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
-		PickUpWindow.sendKeys("4/11/2023");
+		// Set the Delivery Date (current date)
+		PickUpWindow.sendKeys(formattedDate);
+		DeliveryWindow.sendKeys(formattedDate);
 
-		DeliveryWindow.sendKeys("4/11/2023");
+	
 		Create.click();
 		WebElement K = driver.findElement(By.className("info-validation"));
 		String kt = K.getText();

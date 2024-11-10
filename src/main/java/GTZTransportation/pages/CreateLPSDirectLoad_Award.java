@@ -1,5 +1,8 @@
 package GTZTransportation.pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -230,7 +233,7 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		CustomerName.sendKeys("10663");// 10637
+		CustomerName.sendKeys("10310");// Aramacell 10637 Cameron's coffee 10310, Nokia 10663, ConEdison 10148
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -298,9 +301,13 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 		ReferenceNo.sendKeys("Ref123456");
 		CommodityCode.sendKeys("air cooler");
 
-		DestinationTimeWindow.sendKeys("7/19/2023");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
-		PickTimeWindow.sendKeys("7/16/2023");
+		// Set the Delivery Date (current date)
+		DestinationTimeWindow.sendKeys(formattedDate);
+		PickTimeWindow.sendKeys(formattedDate);
 //Copy
 		PickupEmail.sendKeys("Test@gmail.com");
 
@@ -375,8 +382,13 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 			e.printStackTrace();
 		}
 		BidWithAmount.sendKeys("1000");
-		SecureDate.sendKeys("11/1/2001");
+		LocalDate currentDate = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		String formattedDate = currentDate.format(formatter);
 
+		// Set the Delivery Date (current date)
+
+		SecureDate.sendKeys(formattedDate);
 		LoadContactName.sendKeys("MubashirTariq");
 		LoadContactPhoneNo.sendKeys("(651) 789-5782");
 		SubmitLoadInformation.click();

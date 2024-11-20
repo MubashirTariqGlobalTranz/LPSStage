@@ -4,6 +4,7 @@
 <suite name="GTZ_KSX Admin" parallel="none" thread-count="1">
 <listeners>
 		<listener class-name="Utility.TestListener" />
+		<listener class-name="listeners.RetryListener" />
 	</listeners>
 	<test name="KSXADMIN ManageShipment">
 		<classes>

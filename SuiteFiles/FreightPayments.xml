@@ -4,6 +4,7 @@
 <suite name="GTZ_Freight Payments" parallel="none" thread-count="1">
 <listeners>
 		<listener class-name="Utility.TestListener" />
+		<listener class-name="listeners.RetryListener" />
 	</listeners>	
 	<test name="FreightPayment-Missing Carriers">
 		<classes>

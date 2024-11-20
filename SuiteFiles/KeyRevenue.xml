@@ -4,6 +4,7 @@
 <suite name="LPS_Key Revenue" parallel="none" thread-count="1">
 <listeners>
 		<listener class-name="Utility.TestListener" />
+		<listener class-name="listeners.RetryListener" />
 	</listeners>
 
 	<test name="LPS_Key Revenue Reports">

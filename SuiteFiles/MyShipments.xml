@@ -4,6 +4,7 @@
 <suite name="GTZ_MyShipments" parallel="none" thread-count="1">
 <listeners>
 		<listener class-name="Utility.TestListener" />
+		<listener class-name="listeners.RetryListener" />
 	</listeners>
 
 	<test name="LPS_MyShipments">

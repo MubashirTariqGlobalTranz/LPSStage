@@ -5,6 +5,7 @@
 	
 <listeners>
 		<listener class-name="Utility.TestListener" />
+		<listener class-name="listeners.RetryListener" />
 	</listeners>
     
 	<test name="VICS">

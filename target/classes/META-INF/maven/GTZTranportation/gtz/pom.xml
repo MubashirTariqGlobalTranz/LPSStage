@@ -123,8 +123,8 @@
                 <configuration>
                     <!-- Specify the test suite file path -->
                      <suiteXmlFiles>
-                    <suiteXmlFile>${basedir}/SuiteFiles/RegressionSuite.xml</suiteXmlFile> 
-                  <!--   <suiteXmlFile>${basedir}/SuiteFiles/Regression_Prod.xml</suiteXmlFile>-->
+                   <suiteXmlFile>${basedir}/SuiteFiles/RegressionSuite.xml</suiteXmlFile> 
+                    <!-- <suiteXmlFile>${basedir}/SuiteFiles/Regression_Prod.xml</suiteXmlFile>-->
                 </suiteXmlFiles>
                 </configuration>
             </plugin>

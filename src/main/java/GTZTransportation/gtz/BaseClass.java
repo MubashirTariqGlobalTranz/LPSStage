@@ -22,8 +22,8 @@ public class BaseClass {
     // Load configuration settings
     static {
         config.setProperty("browser", "chrome"); // Options: chrome, firefox
-        config.setProperty("headless", "true"); // Options: true, false
-        config.setProperty("environment", "stage"); // Options: stage, dev, prod
+        config.setProperty("headless", "false"); // Options: true, false
+        config.setProperty("environment", "prod"); // Options: stage, dev, prod
     }
 
     public static void initialization() {

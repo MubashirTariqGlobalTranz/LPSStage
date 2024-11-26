@@ -146,4 +146,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS Dashboard - Report">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_ReportsTest" />
+
+		</classes>
+	</test>
 </suite>

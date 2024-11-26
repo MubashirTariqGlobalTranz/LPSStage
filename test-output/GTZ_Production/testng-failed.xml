@@ -3,16 +3,28 @@
 <suite thread-count="1" name="Failed suite [GTZ_Production]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="Utility.TestListener"/>
+    <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="Reports 1- Spot Quote(failed)">
+  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
         <methods>
-          <include name="setup"/>
+          <include name="KeyRevenue_Report_tests"/>
           <include name="tearDown"/>
-          <include name="spotQuote_Reports_Tests"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
     </classes>
-  </test> <!-- Reports 1- Spot Quote(failed) -->
+  </test> <!-- LPS_Key Revenue Reports(failed) -->
+  <test thread-count="1" name="Load Management(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest">
+        <methods>
+          <include name="spotQuote_LoadBoard_LoadManagement_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Load Management(failed) -->
 </suite> <!-- Failed suite [GTZ_Production] -->

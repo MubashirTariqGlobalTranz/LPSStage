@@ -404,14 +404,14 @@
 
 		</classes>
 	</test>
-	<!--	<test name="Reports- Spot Quote">
+		<test name="Reports- Spot Quote">
 		<classes>
 			<class
 	name="GTZTransportation.gtz.Report_SpotQuoteTest" />
 
 		</classes>
 	</test>
-	<test name="KSXADMIN Manage Users">
+	<!--<test name="KSXADMIN Manage Users">
 		<classes>
 			<class
 	name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest" />

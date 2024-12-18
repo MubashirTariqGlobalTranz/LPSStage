@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T20:29:27 PKT" name="Default suite" finished-at="2024-12-09T20:32:13 PKT" duration-ms="165775">
+  <suite started-at="2024-12-18T20:40:06 PKT" name="Default suite" finished-at="2024-12-18T20:41:19 PKT" duration-ms="73476">
     <groups>
       <group name="Regression">
-        <method signature="KeyRevenue_ReportsTest.KeyRevenue_Report_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@10e31a9a]" name="KeyRevenue_Report_tests" class="GTZTransportation.gtz.KeyRevenue_ReportsTest"/>
+        <method signature="LPS_QuickReportTest.LPS_QuickReport_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_QuickReportTest@10e31a9a]" name="LPS_QuickReport_Tests" class="GTZTransportation.gtz.LPS_QuickReportTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-12-09T20:29:27 PKT" name="Default test" finished-at="2024-12-09T20:32:13 PKT" duration-ms="165775">
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@10e31a9a]" started-at="2024-12-09T20:29:27 PKT" name="setup" finished-at="2024-12-09T20:29:32 PKT" duration-ms="5171" status="PASS">
+    <test started-at="2024-12-18T20:40:06 PKT" name="Default test" finished-at="2024-12-18T20:41:19 PKT" duration-ms="73476">
+      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_QuickReportTest@10e31a9a]" started-at="2024-12-18T20:40:06 PKT" name="setup" finished-at="2024-12-18T20:40:11 PKT" duration-ms="5133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="KeyRevenue_Report_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@10e31a9a]" started-at="2024-12-09T20:29:32 PKT" name="KeyRevenue_Report_tests" finished-at="2024-12-09T20:32:13 PKT" duration-ms="160112" status="PASS">
+        <test-method signature="LPS_QuickReport_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_QuickReportTest@10e31a9a]" started-at="2024-12-18T20:40:11 PKT" name="LPS_QuickReport_Tests" finished-at="2024-12-18T20:41:19 PKT" duration-ms="67951" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KeyRevenue_Report_tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@10e31a9a]" started-at="2024-12-09T20:32:13 PKT" name="tearDown" finished-at="2024-12-09T20:32:13 PKT" duration-ms="465" status="PASS">
+        </test-method> <!-- LPS_QuickReport_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_QuickReportTest@10e31a9a]" started-at="2024-12-18T20:41:19 PKT" name="tearDown" finished-at="2024-12-18T20:41:19 PKT" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

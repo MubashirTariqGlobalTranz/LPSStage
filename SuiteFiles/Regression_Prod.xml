@@ -323,4 +323,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS Dashboard - All Report">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest" />
+
+		</classes>
+	</test>
 </suite>

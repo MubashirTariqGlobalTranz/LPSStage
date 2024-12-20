@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.Report_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest">
         <methods>
+          <include name="KeyRevenue_InvoiceGeneral_tests"/>
           <include name="setup"/>
-          <include name="spotQuote_Reports_Tests"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

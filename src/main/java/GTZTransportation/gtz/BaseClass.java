@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.logging.LogManager;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -12,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
@@ -24,24 +27,43 @@ public class BaseClass {
         config.setProperty("browser", "chrome"); // Options: chrome, firefox
         config.setProperty("headless", "true"); // Options: true, false
         config.setProperty("environment", "stage"); // Options: stage, dev, prod
+        config.setProperty("incognito", "true"); // Options: true, false
     }
 
     public static void initialization() {
         String browser = config.getProperty("browser");
         boolean headless = Boolean.parseBoolean(config.getProperty("headless"));
+        boolean incognito = Boolean.parseBoolean(config.getProperty("incognito"));
         String environment = config.getProperty("environment");
 
         if ("chrome".equalsIgnoreCase(browser)) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
+
             if (headless) {
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--window-size=1920,1080");
             }
+
+            if (incognito) {
+                chromeOptions.addArguments("--incognito");
+            }
+
             driver = new ChromeDriver(chromeOptions);
+
         } else if ("firefox".equalsIgnoreCase(browser)) {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+
+            if (headless) {
+                firefoxOptions.addArguments("--headless");
+            }
+
+            if (incognito) {
+                firefoxOptions.addArguments("-private");
+            }
+
+            driver = new FirefoxDriver(firefoxOptions);
         }
 
         String baseUrl = "";

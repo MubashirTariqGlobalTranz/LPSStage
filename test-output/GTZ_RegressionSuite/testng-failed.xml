@@ -5,26 +5,15 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
+  <test thread-count="1" name="Reports- Spot Quote(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
+      <class name="GTZTransportation.gtz.Report_SpotQuoteTest">
         <methods>
-          <include name="KeyRevenue_Report_tests"/>
-          <include name="tearDown"/>
           <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
-    </classes>
-  </test> <!-- LPS_Key Revenue Reports(failed) -->
-  <test thread-count="1" name="Load Management(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest">
-        <methods>
-          <include name="spotQuote_LoadBoard_LoadManagement_Tests"/>
+          <include name="spotQuote_Reports_Tests"/>
           <include name="tearDown"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
     </classes>
-  </test> <!-- Load Management(failed) -->
+  </test> <!-- Reports- Spot Quote(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

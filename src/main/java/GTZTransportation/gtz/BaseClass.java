@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
@@ -24,7 +26,7 @@ public class BaseClass {
 
     // Load configuration settings
     static {
-        config.setProperty("browser", "chrome"); // Options: chrome, firefox
+        config.setProperty("browser", "chrome"); // Options: chrome, firefox, edge
         config.setProperty("headless", "true"); // Options: true, false
         config.setProperty("environment", "stage"); // Options: stage, dev, prod
         config.setProperty("incognito", "true"); // Options: true, false
@@ -36,34 +38,47 @@ public class BaseClass {
         boolean incognito = Boolean.parseBoolean(config.getProperty("incognito"));
         String environment = config.getProperty("environment");
 
-        if ("chrome".equalsIgnoreCase(browser)) {
-            WebDriverManager.chromedriver().setup();
-            ChromeOptions chromeOptions = new ChromeOptions();
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if (headless) {
+                    chromeOptions.addArguments("--headless");
+                    chromeOptions.addArguments("--window-size=1920,1080");
+                }
+                if (incognito) {
+                    chromeOptions.addArguments("--incognito");
+                }
+                driver = new ChromeDriver(chromeOptions);
+                break;
 
-            if (headless) {
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--window-size=1920,1080");
-            }
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if (headless) {
+                    firefoxOptions.addArguments("--headless");
+                }
+                if (incognito) {
+                    firefoxOptions.addArguments("-private");
+                }
+                driver = new FirefoxDriver(firefoxOptions);
+                break;
 
-            if (incognito) {
-                chromeOptions.addArguments("--incognito");
-            }
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                if (headless) {
+                    edgeOptions.addArguments("headless");
+                    edgeOptions.addArguments("window-size=1920,1080");
+                }
+                if (incognito) {
+                    edgeOptions.addArguments("inprivate");
+                }
+                driver = new EdgeDriver(edgeOptions);
+                break;
 
-            driver = new ChromeDriver(chromeOptions);
-
-        } else if ("firefox".equalsIgnoreCase(browser)) {
-            WebDriverManager.firefoxdriver().setup();
-            FirefoxOptions firefoxOptions = new FirefoxOptions();
-
-            if (headless) {
-                firefoxOptions.addArguments("--headless");
-            }
-
-            if (incognito) {
-                firefoxOptions.addArguments("-private");
-            }
-
-            driver = new FirefoxDriver(firefoxOptions);
+            default:
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
         String baseUrl = "";
@@ -77,6 +92,8 @@ public class BaseClass {
             case "prod":
                 baseUrl = "https://my.shiplps.com/Login.aspx";
                 break;
+            default:
+                throw new IllegalArgumentException("Unsupported environment: " + environment);
         }
 
         driver.get(baseUrl);

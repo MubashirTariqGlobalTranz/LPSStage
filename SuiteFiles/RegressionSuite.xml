@@ -578,4 +578,28 @@
 
 		</classes>
 	</test>
+	<test name="LPS Dashboard - Load Summary Report">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Dashboard - Bill of Lading">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Dashboard - Density Calculator">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest" />
+
+		</classes>
+	</test>
+	<test name="LPS Dashboard - Claims">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_ClaimsTest" />
+
+		</classes>
+	</test>
 </suite>

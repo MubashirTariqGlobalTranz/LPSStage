@@ -21,7 +21,9 @@ public class RetryListener implements ISuiteListener {
         suite.getResults().values().forEach(result -> {
             result.getTestContext().getFailedTests().getAllMethods().forEach(failedMethod -> {
                 XmlTest failedTest = new XmlTest(failedSuite);
-                failedTest.setName("Retry - " + failedMethod.getMethodName());
+
+                // Ensure unique test name by appending the class name or other identifier
+                failedTest.setName("Retry - " + failedMethod.getTestClass().getName() + "." + failedMethod.getMethodName());
 
                 // Add the class of the failed test
                 List<XmlClass> classes = new ArrayList<>();

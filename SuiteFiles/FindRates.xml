@@ -42,5 +42,18 @@
 
 		</classes>
 	</test>
+<test name="FindRates-CopyLoad">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FindRates_CopyLoadTest" />
 
+		</classes>
+	</test>
+	<test name="FindRates-CancelLoad">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FindRates_CancelLoadTest" />
+
+		</classes>
+	</test>
 </suite>

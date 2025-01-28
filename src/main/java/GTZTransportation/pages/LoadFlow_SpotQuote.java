@@ -566,6 +566,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		saveStatus.click();
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -593,6 +599,13 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 
 	}
 
@@ -620,6 +633,13 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 
 	}
 
@@ -647,6 +667,13 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		Date.sendKeys(formattedDate);
 		saveStatus.click();
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 	public void LoadCompleteFlow() {

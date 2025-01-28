@@ -23,6 +23,9 @@ public class LPS_Dashboard_DensityCalculator extends BaseClass {
 
 	@FindBy(xpath = "//input[@placeholder='LBS']")
 	WebElement LBS;
+	
+	@FindBy(xpath = "//h3[normalize-space()='Density Calculator']")
+	WebElement Calc;
 
 	// Initialization
 	public LPS_Dashboard_DensityCalculator() {
@@ -44,7 +47,13 @@ public class LPS_Dashboard_DensityCalculator extends BaseClass {
 		Width.sendKeys("2");
 		Height.sendKeys("2");
 		LBS.sendKeys("2");
-
+		Calc.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String actual = driver.findElement(By.xpath("//span[normalize-space()='432.00']")).getText();
 		String expected = "432.00";
 		Assert.assertEquals(actual, expected);

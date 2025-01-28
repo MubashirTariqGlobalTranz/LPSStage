@@ -166,5 +166,11 @@ public class KSXAdmin_ManageShipment extends BaseClass {
 		SearchTerm.sendKeys("Test");
 		SearchClick.click();
 		captureScreenShot(driver, "Verify Advance Search for Manage Shipments");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

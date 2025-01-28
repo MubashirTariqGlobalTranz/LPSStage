@@ -353,4 +353,10 @@
 
 		</classes>
 	</test>
+		<test name="LPS Dashboard - Customer Selection">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest" />
+
+		</classes>
+	</test>
 </suite>

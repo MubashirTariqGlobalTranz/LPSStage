@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Retry Suite - GTZ_Find Rates]">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRates_BOL_Creation_CustomerRouted_Tests(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <methods>
+          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+    </classes>
+  </test> <!-- Retry - GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test.FindRates_BOL_Creation_CustomerRouted_Tests(failed) -->
+</suite> <!-- Failed suite [Retry Suite - GTZ_Find Rates] -->

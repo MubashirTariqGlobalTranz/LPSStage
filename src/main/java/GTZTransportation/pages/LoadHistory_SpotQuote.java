@@ -355,6 +355,12 @@ public class LoadHistory_SpotQuote extends BaseClass {
 		CancelLoad.click();
 		driver.switchTo().alert().accept();
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		LoadHistoryClick.click();
 		try {
 			Thread.sleep(3000);

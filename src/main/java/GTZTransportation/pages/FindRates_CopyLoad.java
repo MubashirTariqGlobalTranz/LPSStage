@@ -23,7 +23,7 @@ public class FindRates_CopyLoad extends BaseClass {
 	@FindBy(id = "ContentPlaceHolder1_containerFilter_btnExpand")
 	WebElement FilterExp;
 
-	@FindBy(id = "ContentPlaceHolder1_container_grid_linkCopy_0")
+	@FindBy(xpath = "//a[@id='ContentPlaceHolder1_container_grid_linkCopy_24']")
 	WebElement copy;
 	@FindBy(xpath = "//button[@class='btn btn-large btn-primary']")
 	WebElement FindRatesbutton;

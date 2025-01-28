@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Retry Suite - GTZ_RegressionSuite]">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.LoadHistory_SpotQuoteTest.spotQuote_LoadHistory_Tests(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LoadHistory_SpotQuoteTest">
+        <methods>
+          <include name="setup"/>
+          <include name="spotQuote_LoadHistory_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LoadHistory_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Retry - GTZTransportation.gtz.LoadHistory_SpotQuoteTest.spotQuote_LoadHistory_Tests(failed) -->
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.LoadFlow_SpotQuoteTest.spotQuote_CompleteLoadFlow_Tests(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
+        <methods>
+          <include name="setup"/>
+          <include name="spotQuote_CompleteLoadFlow_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Retry - GTZTransportation.gtz.LoadFlow_SpotQuoteTest.spotQuote_CompleteLoadFlow_Tests(failed) -->
   <test thread-count="5" name="Retry - GTZTransportation.gtz.Report_SpotQuoteTest.spotQuote_Reports_Tests(failed)">
     <classes>
       <class name="GTZTransportation.gtz.Report_SpotQuoteTest">

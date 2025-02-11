@@ -16,15 +16,15 @@
       </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
     </classes>
   </test> <!-- LPS_Key Revenue Reports(failed) -->
-  <test thread-count="1" name="Load Management(failed)">
+  <test thread-count="1" name="LPS Report - Quick Report(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
         <methods>
-          <include name="spotQuote_LoadBoard_LoadManagement_Tests"/>
           <include name="tearDown"/>
+          <include name="LPS_QuickReport_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
     </classes>
-  </test> <!-- Load Management(failed) -->
+  </test> <!-- LPS Report - Quick Report(failed) -->
 </suite> <!-- Failed suite [GTZ_Production] -->

@@ -5,50 +5,6 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="Copy Load- Spot Quote(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest">
-        <methods>
-          <include name="setup"/>
-          <include name="spotQuote_CopyLoad_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CopyLoad_SpotQuoteTest -->
-    </classes>
-  </test> <!-- Copy Load- Spot Quote(failed) -->
-  <test thread-count="1" name="Load History- Spot Quote(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LoadHistory_SpotQuoteTest">
-        <methods>
-          <include name="setup"/>
-          <include name="spotQuote_LoadHistory_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LoadHistory_SpotQuoteTest -->
-    </classes>
-  </test> <!-- Load History- Spot Quote(failed) -->
-  <test thread-count="1" name="Complete Load Flow- Spot Quote(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
-        <methods>
-          <include name="setup"/>
-          <include name="spotQuote_CompleteLoadFlow_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
-    </classes>
-  </test> <!-- Complete Load Flow- Spot Quote(failed) -->
-  <test thread-count="1" name="CreateBOL-FindRates(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.CreateBOL_FindRatesTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="FindRates_BOL_Creation_Tests"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesTest -->
-    </classes>
-  </test> <!-- CreateBOL-FindRates(failed) -->
   <test thread-count="1" name="CustomerCarrier-Prospect Queue(failed)">
     <classes>
       <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
@@ -60,48 +16,15 @@
       </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
     </classes>
   </test> <!-- CustomerCarrier-Prospect Queue(failed) -->
-  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
+  <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
         <methods>
-          <include name="KeyRevenue_Report_tests"/>
-          <include name="tearDown"/>
+          <include name="CustomerCarriers_CarrierListFilters_tests"/>
           <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
-    </classes>
-  </test> <!-- LPS_Key Revenue Reports(failed) -->
-  <test thread-count="1" name="Reports- Spot Quote(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.Report_SpotQuoteTest">
-        <methods>
-          <include name="setup"/>
-          <include name="spotQuote_Reports_Tests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
     </classes>
-  </test> <!-- Reports- Spot Quote(failed) -->
-  <test thread-count="1" name="LPS Report - Quick Report(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="LPS_QuickReport_Tests"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
-    </classes>
-  </test> <!-- LPS Report - Quick Report(failed) -->
-  <test thread-count="1" name="LPS Dashboard - Density Calculator(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="LPS_Dashboard_DensityCalulator_Tests"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest -->
-    </classes>
-  </test> <!-- LPS Dashboard - Density Calculator(failed) -->
+  </test> <!-- CustomerCarrier-Carrier Filters(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

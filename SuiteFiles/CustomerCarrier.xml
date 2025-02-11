@@ -38,6 +38,12 @@
 
 		</classes>
 	</test>
+<test name="CustomerCarrier-Carrier Filters">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest" />
 
+		</classes>
+	</test>
 
 </suite>

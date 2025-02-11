@@ -1,28 +1,1507 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="88" passed="88" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T00:37:41 PKT" name="Default suite" finished-at="2025-01-29T00:37:50 PKT" duration-ms="9327">
+  <suite started-at="2025-02-10T20:28:44 PKT" name="GTZ_RegressionSuite" finished-at="2025-02-10T21:22:33 PKT" duration-ms="3229783">
     <groups>
       <group name="Regression">
-        <method signature="LPS_Dashboard_DensityCalculatorTest.LPS_Dashboard_DensityCalulator_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@10e31a9a]" name="LPS_Dashboard_DensityCalulator_Tests" class="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest"/>
+        <method signature="LoadBoard_Search_SpotQuoteTest.spotQuote_LoadBoard_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest@8f4ea7c]" name="spotQuote_LoadBoard_Tests" class="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest"/>
+        <method signature="FreightPayment_AccountPayableTest.FreightPayment_Account_Payable()[pri:1, instance:GTZTransportation.gtz.FreightPayment_AccountPayableTest@47eaca72]" name="FreightPayment_Account_Payable" class="GTZTransportation.gtz.FreightPayment_AccountPayableTest"/>
+        <method signature="CreateQuickLoad_AwardTest.spotQuote_QuickLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@76505305]" name="spotQuote_QuickLoad_Tests" class="GTZTransportation.gtz.CreateQuickLoad_AwardTest"/>
+        <method signature="CreateMassLoad_AwardTest.spotQuote_MassLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@34123d65]" name="spotQuote_MassLoad_Tests" class="GTZTransportation.gtz.CreateMassLoad_AwardTest"/>
+        <method signature="CreateDirectLoad_AwardTest.spotQuote_DirectLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@3590fc5b]" name="spotQuote_DirectLoad_Tests" class="GTZTransportation.gtz.CreateDirectLoad_AwardTest"/>
+        <method signature="CancelLoad_SpotQuoteTest.spotQuote_CancelLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CancelLoad_SpotQuoteTest@765d7657]" name="spotQuote_CancelLoad_Tests" class="GTZTransportation.gtz.CancelLoad_SpotQuoteTest"/>
+        <method signature="CopyLoad_SpotQuoteTest.spotQuote_CopyLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CopyLoad_SpotQuoteTest@51399530]" name="spotQuote_CopyLoad_Tests" class="GTZTransportation.gtz.CopyLoad_SpotQuoteTest"/>
+        <method signature="LoadHistory_SpotQuoteTest.spotQuote_LoadHistory_Tests()[pri:1, instance:GTZTransportation.gtz.LoadHistory_SpotQuoteTest@3754a4bf]" name="spotQuote_LoadHistory_Tests" class="GTZTransportation.gtz.LoadHistory_SpotQuoteTest"/>
+        <method signature="Customer_Admin_SpotQuoteTest.spotQuote_Customers_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Customer_Admin_SpotQuoteTest@1d296da]" name="spotQuote_Customers_Admin_Tests" class="GTZTransportation.gtz.Customer_Admin_SpotQuoteTest"/>
+        <method signature="User_Admin_SpotQuoteTest.spotQuote_Users_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.User_Admin_SpotQuoteTest@c730b35]" name="spotQuote_Users_Admin_Tests" class="GTZTransportation.gtz.User_Admin_SpotQuoteTest"/>
+        <method signature="Load_Admin_SpotQuoteTest.spotQuote_LoadServices_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Load_Admin_SpotQuoteTest@3c41ed1d]" name="spotQuote_LoadServices_Admin_Tests" class="GTZTransportation.gtz.Load_Admin_SpotQuoteTest"/>
+        <method signature="Carriers_Admin_SpotQuoteTest.spotQuote_Carriers_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest@6025e1b6]" name="spotQuote_Carriers_Admin_Tests" class="GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest"/>
+        <method signature="Transport_Admin_SpotQuoteTest.spotQuote_Transport_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Transport_Admin_SpotQuoteTest@4c12331b]" name="spotQuote_Transport_Admin_Tests" class="GTZTransportation.gtz.Transport_Admin_SpotQuoteTest"/>
+        <method signature="Requirment_Admin_SpotQuoteTest.spotQuote_Requirment_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest@44c03695]" name="spotQuote_Requirment_Admin_Tests" class="GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest"/>
+        <method signature="ServiceType_Admin_SpotQuoteTest.spotQuote_ServiceTypes_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest@3fc2959f]" name="spotQuote_ServiceTypes_Admin_Tests" class="GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest"/>
+        <method signature="EmailTemplate_Admin_SpotQuoteTest.spotQuote_EmailTemplate_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest@7dcf94f8]" name="spotQuote_EmailTemplate_Admin_Tests" class="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest"/>
+        <method signature="Expressions_Admin_SpotQuoteTest.spotQuote_Expressions_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest@77c2494c]" name="spotQuote_Expressions_Admin_Tests" class="GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest"/>
+        <method signature="LoadFlow_SpotQuoteTest.spotQuote_CompleteLoadFlow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuoteTest@6f03482]" name="spotQuote_CompleteLoadFlow_Tests" class="GTZTransportation.gtz.LoadFlow_SpotQuoteTest"/>
+        <method signature="CreateLPSDirectLoad_AwardTest.spotQuote_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@4116aac9]" name="spotQuote_LPSDirect_Tests" class="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest"/>
+        <method signature="CreateLPSDirectMassLoad_AwardTest.spotQuote_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest@489115ef]" name="spotQuote_LPSDirect_Tests" class="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest"/>
+        <method signature="FindRatesCarriersTest.FindRates_Carriers_Tests()[pri:1, instance:GTZTransportation.gtz.FindRatesCarriersTest@4d1c00d0]" name="FindRates_Carriers_Tests" class="GTZTransportation.gtz.FindRatesCarriersTest"/>
+        <method signature="CreateBOL_FindRatesTest.FindRates_BOL_Creation_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRatesTest@40005471]" name="FindRates_BOL_Creation_Tests" class="GTZTransportation.gtz.CreateBOL_FindRatesTest"/>
+        <method signature="CreateBOL_FindRates_CustomerRouted_Test.FindRates_BOL_Creation_CustomerRouted_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@fbd1f6]" name="FindRates_BOL_Creation_CustomerRouted_Tests" class="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test"/>
+        <method signature="CreateBOL_FindRatesParcelTest.FindRatesParcel_BOL_Creation_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRatesParcelTest@3a52dba3]" name="FindRatesParcel_BOL_Creation_Tests" class="GTZTransportation.gtz.CreateBOL_FindRatesParcelTest"/>
+        <method signature="History_FindRatesTest.FindRates_History_Tests()[pri:1, instance:GTZTransportation.gtz.History_FindRatesTest@710f4dc7]" name="FindRates_History_Tests" class="GTZTransportation.gtz.History_FindRatesTest"/>
+        <method signature="FreightPayment_MissingCarriersTest.FreightPayment_Missing_Carriers()[pri:1, instance:GTZTransportation.gtz.FreightPayment_MissingCarriersTest@8297b3a]" name="FreightPayment_Missing_Carriers" class="GTZTransportation.gtz.FreightPayment_MissingCarriersTest"/>
+        <method signature="FreightPayment_ReportsTest.FreightPayment_Report_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ReportsTest@247bddad]" name="FreightPayment_Report_tests" class="GTZTransportation.gtz.FreightPayment_ReportsTest"/>
+        <method signature="FreightPayment_ClientAdminTest.FreightPayment_ClientAdmin_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ClientAdminTest@41a2befb]" name="FreightPayment_ClientAdmin_tests" class="GTZTransportation.gtz.FreightPayment_ClientAdminTest"/>
+        <method signature="KSXAdmin_ManageShipmentTest.KSXAdmin_ManageShipment_Tests()[pri:1, instance:GTZTransportation.gtz.KSXAdmin_ManageShipmentTest@23348b5d]" name="KSXAdmin_ManageShipment_Tests" class="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest"/>
+        <method signature="KSXAdmin_ManageClientTest.KSXAdmin_ManageClient_Tests()[pri:1, instance:GTZTransportation.gtz.KSXAdmin_ManageClientTest@69453e37]" name="KSXAdmin_ManageClient_Tests" class="GTZTransportation.gtz.KSXAdmin_ManageClientTest"/>
+        <method signature="VICS_VerifyCustomerTest.VICS_CustomersList_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@587e5365]" name="VICS_CustomersList_Tests" class="GTZTransportation.gtz.VICS_VerifyCustomerTest"/>
+        <method signature="VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@6913c1fb]" name="VICS_BOLCreation_Tests" class="GTZTransportation.gtz.VICS_VerifyBOLCreationTest"/>
+        <method signature="VICS_VeiwOrdersTest.VICS_ViewOrders_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@158a8276]" name="VICS_ViewOrders_Tests" class="GTZTransportation.gtz.VICS_VeiwOrdersTest"/>
+        <method signature="LPSCustomer_Carrier_CustomerListTest.CustomerCarriers_CustomerList_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest@58a9760d]" name="CustomerCarriers_CustomerList_tests" class="GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest"/>
+        <method signature="LPSCustomer_Carrier_ProspectQueueTest.CustomerCarriers_CustomerList_ProspectQueue_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest@75db5df9]" name="CustomerCarriers_CustomerList_ProspectQueue_tests" class="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest"/>
+        <method signature="LPSCustomer_Carrier_CarrierListTest.CustomerCarriers_CarrierList_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest@385e9564]" name="CustomerCarriers_CarrierList_tests" class="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest"/>
+        <method signature="LPSCustomer_Carrier_CarrierImportTest.CustomerCarriers_CarrierImport_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest@1e178745]" name="CustomerCarriers_CarrierImport_tests" class="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest"/>
+        <method signature="LPS_MyShipmentsTest.LPS_MyshipmentsTest()[pri:1, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@445b295b]" name="LPS_MyshipmentsTest" class="GTZTransportation.gtz.LPS_MyShipmentsTest"/>
+        <method signature="KeyRevenue_ReportsTest.KeyRevenue_Report_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@c86b9e3]" name="KeyRevenue_Report_tests" class="GTZTransportation.gtz.KeyRevenue_ReportsTest"/>
+        <method signature="KeyRevenue_CustomerTest.KeyRevenue_Customer_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_CustomerTest@37883b97]" name="KeyRevenue_Customer_tests" class="GTZTransportation.gtz.KeyRevenue_CustomerTest"/>
+        <method signature="KeyRevenue_AdminTest.KeyRevenue_Admin_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_AdminTest@6f45df59]" name="KeyRevenue_Admin_tests" class="GTZTransportation.gtz.KeyRevenue_AdminTest"/>
+        <method signature="KeyRevenue_InvoiceTest.KeyRevenue_Invoice_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_InvoiceTest@31f9b85e]" name="KeyRevenue_Invoice_tests" class="GTZTransportation.gtz.KeyRevenue_InvoiceTest"/>
+        <method signature="KeyRevenue_InvoicegeneralTest.KeyRevenue_InvoiceGeneral_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest@1ebd319f]" name="KeyRevenue_InvoiceGeneral_tests" class="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest"/>
+        <method signature="LPS_GeneralTest.LPS_General_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_GeneralTest@683dbc2c]" name="LPS_General_Tests" class="GTZTransportation.gtz.LPS_GeneralTest"/>
+        <method signature="FreightPayment_CarrierPortalTest.FreightPayment_CarrierPortal_Tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_CarrierPortalTest@548e6d58]" name="FreightPayment_CarrierPortal_Tests" class="GTZTransportation.gtz.FreightPayment_CarrierPortalTest"/>
+        <method signature="FreightPayment_GTZTest.FreightPayment_GTZ_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_GTZTest@21b2e768]" name="FreightPayment_GTZ_tests" class="GTZTransportation.gtz.FreightPayment_GTZTest"/>
+        <method signature="FreightPayment_GTZ_Links_Test.FreightPayment_GTZ_Links_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_GTZ_Links_Test@11fc564b]" name="FreightPayment_GTZ_Links_tests" class="GTZTransportation.gtz.FreightPayment_GTZ_Links_Test"/>
+        <method signature="LPS_AccountManager_ActionBillingTest.LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@3f56875e]" name="LPS_AccountManagement_Tests" class="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest"/>
+        <method signature="LPS_OptEvent_CustomerAccountTest.LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest@4470f8a6]" name="LPS_AccountManagement_Tests" class="GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest"/>
+        <method signature="LPS_ProductCatalog_MyTeamTest.LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@60015ef5]" name="LPS_AccountManagement_Tests" class="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest"/>
+        <method signature="LPS_AccountManager_AddressbookTest.LPS_AccountManagement_Addresses_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@2a266d09]" name="LPS_AccountManagement_Addresses_Tests" class="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest"/>
+        <method signature="LPS_Resources_NewsAdminTest.LPS_Resources_News_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@36b4fe2a]" name="LPS_Resources_News_Admin_Tests" class="GTZTransportation.gtz.LPS_Resources_NewsAdminTest"/>
+        <method signature="LPS_Admin_DataEntryExpressionTest.LPS_Admin_DataEntryExpressions_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest@71c3b41]" name="LPS_Admin_DataEntryExpressions_Tests" class="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest"/>
+        <method signature="LPS_Admin_AssetUploadTest.LPS_Admin_AssetUpload_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AssetUploadTest@36d585c]" name="LPS_Admin_AssetUpload_Tests" class="GTZTransportation.gtz.LPS_Admin_AssetUploadTest"/>
+        <method signature="LPS_Admin_SecurityTest.LPS_Admin_Security_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_SecurityTest@1356d4d4]" name="LPS_Admin_Security_Tests" class="GTZTransportation.gtz.LPS_Admin_SecurityTest"/>
+        <method signature="Report_SpotQuoteTest.spotQuote_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.Report_SpotQuoteTest@1fb700ee]" name="spotQuote_Reports_Tests" class="GTZTransportation.gtz.Report_SpotQuoteTest"/>
+        <method signature="LPS_Admin_AdhocTest.LPS_Admin_Adhoc_CopyUser_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocTest@68e965f5]" name="LPS_Admin_Adhoc_CopyUser_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocTest"/>
+        <method signature="LPS_Admin_AdhocResetPassTest.LPS_Admin_Adhoc_ResetPass_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest@61d6015a]" name="LPS_Admin_Adhoc_ResetPass_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest"/>
+        <method signature="LPS_Admin_AdhocChangeCustomerTest.LPS_Admin_Adhoc_ChangeCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest@37858383]" name="LPS_Admin_Adhoc_ChangeCustomer_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest"/>
+        <method signature="LPS_Admin_AdhocChangeInvocieCustomerTest.LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest@e1de817]" name="LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest"/>
+        <method signature="LPS_Admin_AdhocAssignCarrierTest.LPS_Admin_Adhoc_AssignCarrier_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest@355ce81c]" name="LPS_Admin_Adhoc_AssignCarrier_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest"/>
+        <method signature="LPS_Admin_AdhocChangeBidTest.LPS_Admin_Adhoc_ChangeBidr_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest@366647c2]" name="LPS_Admin_Adhoc_ChangeBidr_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest"/>
+        <method signature="LPS_Admin_AdhocChangePaymentTest.LPS_Admin_Adhoc_ChangePayment_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest@503d687a]" name="LPS_Admin_Adhoc_ChangePayment_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest"/>
+        <method signature="LPS_Admin_AdhocChangeCurrencyTest.LPS_Admin_Adhoc_ChangeCurrency_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest@77eca502]" name="LPS_Admin_Adhoc_ChangeCurrency_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest"/>
+        <method signature="LPS_Admin_AdhocZeroInvoiceTest.LPS_Admin_Adhoc_ZeroInvoicer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest@6b8ca3c8]" name="LPS_Admin_Adhoc_ZeroInvoicer_Tests" class="GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest"/>
+        <method signature="KeyRevenue1_ReportsTest.KeyRevenue_Report1_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue1_ReportsTest@3e6ef8ad]" name="KeyRevenue_Report1_tests" class="GTZTransportation.gtz.KeyRevenue1_ReportsTest"/>
+        <method signature="LPS_QuickReportTest.LPS_QuickReport_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_QuickReportTest@2e55dd0c]" name="LPS_QuickReport_Tests" class="GTZTransportation.gtz.LPS_QuickReportTest"/>
+        <method signature="Create_V22_LPSDirectLoad_AwardTest.spotQuote_V22_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@c333c60]" name="spotQuote_V22_LPSDirect_Tests" class="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest"/>
+        <method signature="Report1_SpotQuoteTest.spotQuote_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.Report1_SpotQuoteTest@696da30b]" name="spotQuote_Reports_Tests" class="GTZTransportation.gtz.Report1_SpotQuoteTest"/>
+        <method signature="LPS_Admin_Adhoc_AddBatch_Test.LPS_Admin_Adhoc_AddBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test@be35cd9]" name="LPS_Admin_Adhoc_AddBatch_Tests" class="GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test"/>
+        <method signature="FreightPayment_ShipmentLookUp_ReportTest.FreightPayment_ShipmentLookUp_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest@41fecb8b]" name="FreightPayment_ShipmentLookUp_tests" class="GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest"/>
+        <method signature="LPS_Admin_Adhoc_RemoveBatch_Test.LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@2accdbb5]" name="LPS_Admin_Adhoc_RemoveBatch_Tests" class="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test"/>
+        <method signature="FreightPayment_Reports1Test.FreightPayment_Report1_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_Reports1Test@649bec2e]" name="FreightPayment_Report1_tests" class="GTZTransportation.gtz.FreightPayment_Reports1Test"/>
+        <method signature="LoadBoard_LoadManagement_SpotQuoteTest.spotQuote_LoadBoard_LoadManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest@1b6e1eff]" name="spotQuote_LoadBoard_LoadManagement_Tests" class="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest"/>
+        <method signature="LoadBoard_OpenLoads_SpotQuoteTest.spotQuote_LoadBoard_OpenLoads_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest@15bbf42f]" name="spotQuote_LoadBoard_OpenLoads_Tests" class="GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest"/>
+        <method signature="Orders_SpotQuoteTest.spotQuote_Orders_Tests()[pri:1, instance:GTZTransportation.gtz.Orders_SpotQuoteTest@50ad3bc1]" name="spotQuote_Orders_Tests" class="GTZTransportation.gtz.Orders_SpotQuoteTest"/>
+        <method signature="Orders_PO_SpotQuoteTest.spotQuote_POCreation_Orders_Tests()[pri:1, instance:GTZTransportation.gtz.Orders_PO_SpotQuoteTest@932bc4a]" name="spotQuote_POCreation_Orders_Tests" class="GTZTransportation.gtz.Orders_PO_SpotQuoteTest"/>
+        <method signature="LPS_Dashboard_ReportsTest.LPS_Dashboard_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ReportsTest@69997e9d]" name="LPS_Dashboard_Reports_Tests" class="GTZTransportation.gtz.LPS_Dashboard_ReportsTest"/>
+        <method signature="LPS_Dashboard_All_ReportsTest.LPS_Dashboard_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest@4de4b452]" name="LPS_Dashboard_Reports_Tests" class="GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest"/>
+        <method signature="LPS_Dashboard_LoadSummaryReportsTest.LPS_Dashboard_LoadSummaryReports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest@10feca44]" name="LPS_Dashboard_LoadSummaryReports_Tests" class="GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest"/>
+        <method signature="LPS_Dashboard_BillOfLadingTest.LPS_Dashboard_BillOfLading_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest@7a419da4]" name="LPS_Dashboard_BillOfLading_Tests" class="GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest"/>
+        <method signature="LPS_Dashboard_DensityCalculatorTest.LPS_Dashboard_DensityCalulator_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@73700b80]" name="LPS_Dashboard_DensityCalulator_Tests" class="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest"/>
+        <method signature="LPS_Dashboard_ClaimsTest.LPS_Dashboard_Claims_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ClaimsTest@5403f35f]" name="LPS_Dashboard_Claims_Tests" class="GTZTransportation.gtz.LPS_Dashboard_ClaimsTest"/>
+        <method signature="FindRates_CopyLoadTest.FindRates_CopyLoad_Tests()[pri:1, instance:GTZTransportation.gtz.FindRates_CopyLoadTest@581ac8a8]" name="FindRates_CopyLoad_Tests" class="GTZTransportation.gtz.FindRates_CopyLoadTest"/>
+        <method signature="FindRates_CancelLoadTest.FindRates_CancelLoad_Tests()[pri:1, instance:GTZTransportation.gtz.FindRates_CancelLoadTest@662b4c69]" name="FindRates_CancelLoad_Tests" class="GTZTransportation.gtz.FindRates_CancelLoadTest"/>
+        <method signature="LPS_Dashboard_ChangeCustomerTest.LPS_Dashboard_ChangeCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest@5fbdfdcf]" name="LPS_Dashboard_ChangeCustomer_Tests" class="GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest"/>
+        <method signature="LoadFlow_Invoice_SpotQuoteTest.spotQuote_Complete_Load_Invoice_Flow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest@71def8f8]" name="spotQuote_Complete_Load_Invoice_Flow_Tests" class="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest"/>
+        <method signature="LPSCustomer_Carrier_CarrierListFiltersTest.CustomerCarriers_CarrierListFilters_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest@7133da86]" name="CustomerCarriers_CarrierListFilters_tests" class="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-01-29T00:37:41 PKT" name="Default test" finished-at="2025-01-29T00:37:50 PKT" duration-ms="9327">
-      <class name="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@10e31a9a]" started-at="2025-01-29T00:37:41 PKT" name="setup" finished-at="2025-01-29T00:37:45 PKT" duration-ms="4542" status="PASS">
+    <test started-at="2025-02-10T20:28:44 PKT" name="Load Boards Search" finished-at="2025-02-10T20:31:06 PKT" duration-ms="142407">
+      <class name="GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest@8f4ea7c]" started-at="2025-02-10T20:28:44 PKT" name="setup" finished-at="2025-02-10T20:28:50 PKT" duration-ms="6284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LPS_Dashboard_DensityCalulator_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@10e31a9a]" started-at="2025-01-29T00:37:45 PKT" name="LPS_Dashboard_DensityCalulator_Tests" finished-at="2025-01-29T00:37:50 PKT" duration-ms="4487" status="PASS">
+        <test-method signature="spotQuote_LoadBoard_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest@8f4ea7c]" started-at="2025-02-10T20:28:50 PKT" name="spotQuote_LoadBoard_Tests" finished-at="2025-02-10T20:31:06 PKT" duration-ms="135576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LoadBoard_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest@8f4ea7c]" started-at="2025-02-10T20:31:06 PKT" name="tearDown" finished-at="2025-02-10T20:31:06 PKT" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadBoard_Search_SpotQuoteTest -->
+    </test> <!-- Load Boards Search -->
+    <test started-at="2025-02-10T20:31:06 PKT" name="FreightPayment-Account Payable" finished-at="2025-02-10T20:31:42 PKT" duration-ms="35733">
+      <class name="GTZTransportation.gtz.FreightPayment_AccountPayableTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_AccountPayableTest@47eaca72]" started-at="2025-02-10T20:31:06 PKT" name="setup" finished-at="2025-02-10T20:31:11 PKT" duration-ms="4422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_Account_Payable()[pri:1, instance:GTZTransportation.gtz.FreightPayment_AccountPayableTest@47eaca72]" started-at="2025-02-10T20:31:11 PKT" name="FreightPayment_Account_Payable" finished-at="2025-02-10T20:31:42 PKT" duration-ms="31037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_Account_Payable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_AccountPayableTest@47eaca72]" started-at="2025-02-10T20:31:42 PKT" name="tearDown" finished-at="2025-02-10T20:31:42 PKT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_AccountPayableTest -->
+    </test> <!-- FreightPayment-Account Payable -->
+    <test started-at="2025-02-10T20:31:42 PKT" name="QuickLoad" finished-at="2025-02-10T20:33:11 PKT" duration-ms="88916">
+      <class name="GTZTransportation.gtz.CreateQuickLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@76505305]" started-at="2025-02-10T20:31:42 PKT" name="setup" finished-at="2025-02-10T20:31:45 PKT" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_QuickLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@76505305]" started-at="2025-02-10T20:31:45 PKT" name="spotQuote_QuickLoad_Tests" finished-at="2025-02-10T20:33:11 PKT" duration-ms="85178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_QuickLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateQuickLoad_AwardTest@76505305]" started-at="2025-02-10T20:33:11 PKT" name="tearDown" finished-at="2025-02-10T20:33:11 PKT" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateQuickLoad_AwardTest -->
+    </test> <!-- QuickLoad -->
+    <test started-at="2025-02-10T20:33:11 PKT" name="MassLoad" finished-at="2025-02-10T20:33:42 PKT" duration-ms="31197">
+      <class name="GTZTransportation.gtz.CreateMassLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@34123d65]" started-at="2025-02-10T20:33:11 PKT" name="setup" finished-at="2025-02-10T20:33:14 PKT" duration-ms="3391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_MassLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@34123d65]" started-at="2025-02-10T20:33:14 PKT" name="spotQuote_MassLoad_Tests" finished-at="2025-02-10T20:33:42 PKT" duration-ms="27497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_MassLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateMassLoad_AwardTest@34123d65]" started-at="2025-02-10T20:33:42 PKT" name="tearDown" finished-at="2025-02-10T20:33:42 PKT" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateMassLoad_AwardTest -->
+    </test> <!-- MassLoad -->
+    <test started-at="2025-02-10T20:33:42 PKT" name="DirectLoad" finished-at="2025-02-10T20:35:25 PKT" duration-ms="102446">
+      <class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@3590fc5b]" started-at="2025-02-10T20:33:42 PKT" name="setup" finished-at="2025-02-10T20:33:47 PKT" duration-ms="4639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_DirectLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@3590fc5b]" started-at="2025-02-10T20:33:47 PKT" name="spotQuote_DirectLoad_Tests" finished-at="2025-02-10T20:35:24 PKT" duration-ms="97424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_DirectLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateDirectLoad_AwardTest@3590fc5b]" started-at="2025-02-10T20:35:24 PKT" name="tearDown" finished-at="2025-02-10T20:35:25 PKT" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateDirectLoad_AwardTest -->
+    </test> <!-- DirectLoad -->
+    <test started-at="2025-02-10T20:35:25 PKT" name="Cancel Load- Spot Quote" finished-at="2025-02-10T20:36:38 PKT" duration-ms="73644">
+      <class name="GTZTransportation.gtz.CancelLoad_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CancelLoad_SpotQuoteTest@765d7657]" started-at="2025-02-10T20:35:25 PKT" name="setup" finished-at="2025-02-10T20:35:29 PKT" duration-ms="4095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_CancelLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CancelLoad_SpotQuoteTest@765d7657]" started-at="2025-02-10T20:35:29 PKT" name="spotQuote_CancelLoad_Tests" finished-at="2025-02-10T20:36:38 PKT" duration-ms="69261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_CancelLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CancelLoad_SpotQuoteTest@765d7657]" started-at="2025-02-10T20:36:38 PKT" name="tearDown" finished-at="2025-02-10T20:36:38 PKT" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CancelLoad_SpotQuoteTest -->
+    </test> <!-- Cancel Load- Spot Quote -->
+    <test started-at="2025-02-10T20:36:38 PKT" name="Copy Load- Spot Quote" finished-at="2025-02-10T20:37:39 PKT" duration-ms="60839">
+      <class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CopyLoad_SpotQuoteTest@51399530]" started-at="2025-02-10T20:36:38 PKT" name="setup" finished-at="2025-02-10T20:36:42 PKT" duration-ms="3885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_CopyLoad_Tests()[pri:1, instance:GTZTransportation.gtz.CopyLoad_SpotQuoteTest@51399530]" started-at="2025-02-10T20:36:42 PKT" name="spotQuote_CopyLoad_Tests" finished-at="2025-02-10T20:37:39 PKT" duration-ms="56697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_CopyLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CopyLoad_SpotQuoteTest@51399530]" started-at="2025-02-10T20:37:39 PKT" name="tearDown" finished-at="2025-02-10T20:37:39 PKT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CopyLoad_SpotQuoteTest -->
+    </test> <!-- Copy Load- Spot Quote -->
+    <test started-at="2025-02-10T20:37:39 PKT" name="Load History- Spot Quote" finished-at="2025-02-10T20:38:37 PKT" duration-ms="57719">
+      <class name="GTZTransportation.gtz.LoadHistory_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadHistory_SpotQuoteTest@3754a4bf]" started-at="2025-02-10T20:37:39 PKT" name="setup" finished-at="2025-02-10T20:37:43 PKT" duration-ms="3440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LoadHistory_Tests()[pri:1, instance:GTZTransportation.gtz.LoadHistory_SpotQuoteTest@3754a4bf]" started-at="2025-02-10T20:37:43 PKT" name="spotQuote_LoadHistory_Tests" finished-at="2025-02-10T20:38:37 PKT" duration-ms="53984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LoadHistory_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadHistory_SpotQuoteTest@3754a4bf]" started-at="2025-02-10T20:38:37 PKT" name="tearDown" finished-at="2025-02-10T20:38:37 PKT" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadHistory_SpotQuoteTest -->
+    </test> <!-- Load History- Spot Quote -->
+    <test started-at="2025-02-10T20:38:37 PKT" name="Customers-Admin- Spot Quote" finished-at="2025-02-10T20:38:56 PKT" duration-ms="19134">
+      <class name="GTZTransportation.gtz.Customer_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Customer_Admin_SpotQuoteTest@1d296da]" started-at="2025-02-10T20:38:37 PKT" name="setup" finished-at="2025-02-10T20:38:41 PKT" duration-ms="3649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Customers_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Customer_Admin_SpotQuoteTest@1d296da]" started-at="2025-02-10T20:38:41 PKT" name="spotQuote_Customers_Admin_Tests" finished-at="2025-02-10T20:38:56 PKT" duration-ms="15199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Customers_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Customer_Admin_SpotQuoteTest@1d296da]" started-at="2025-02-10T20:38:56 PKT" name="tearDown" finished-at="2025-02-10T20:38:56 PKT" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Customer_Admin_SpotQuoteTest -->
+    </test> <!-- Customers-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:38:56 PKT" name="Users-Admin- Spot Quote" finished-at="2025-02-10T20:39:18 PKT" duration-ms="22018">
+      <class name="GTZTransportation.gtz.User_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.User_Admin_SpotQuoteTest@c730b35]" started-at="2025-02-10T20:38:56 PKT" name="setup" finished-at="2025-02-10T20:39:00 PKT" duration-ms="3697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Users_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.User_Admin_SpotQuoteTest@c730b35]" started-at="2025-02-10T20:39:00 PKT" name="spotQuote_Users_Admin_Tests" finished-at="2025-02-10T20:39:18 PKT" duration-ms="18018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Users_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.User_Admin_SpotQuoteTest@c730b35]" started-at="2025-02-10T20:39:18 PKT" name="tearDown" finished-at="2025-02-10T20:39:18 PKT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.User_Admin_SpotQuoteTest -->
+    </test> <!-- Users-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:39:18 PKT" name="Loads-Admin- Spot Quote" finished-at="2025-02-10T20:39:34 PKT" duration-ms="15406">
+      <class name="GTZTransportation.gtz.Load_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Load_Admin_SpotQuoteTest@3c41ed1d]" started-at="2025-02-10T20:39:18 PKT" name="setup" finished-at="2025-02-10T20:39:21 PKT" duration-ms="3195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LoadServices_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Load_Admin_SpotQuoteTest@3c41ed1d]" started-at="2025-02-10T20:39:21 PKT" name="spotQuote_LoadServices_Admin_Tests" finished-at="2025-02-10T20:39:33 PKT" duration-ms="11941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LoadServices_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Load_Admin_SpotQuoteTest@3c41ed1d]" started-at="2025-02-10T20:39:33 PKT" name="tearDown" finished-at="2025-02-10T20:39:34 PKT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Load_Admin_SpotQuoteTest -->
+    </test> <!-- Loads-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:39:34 PKT" name="Carriers-Admin- Spot Quote" finished-at="2025-02-10T20:39:51 PKT" duration-ms="17032">
+      <class name="GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest@6025e1b6]" started-at="2025-02-10T20:39:34 PKT" name="setup" finished-at="2025-02-10T20:39:37 PKT" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Carriers_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest@6025e1b6]" started-at="2025-02-10T20:39:37 PKT" name="spotQuote_Carriers_Admin_Tests" finished-at="2025-02-10T20:39:50 PKT" duration-ms="12904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Carriers_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest@6025e1b6]" started-at="2025-02-10T20:39:50 PKT" name="tearDown" finished-at="2025-02-10T20:39:51 PKT" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Carriers_Admin_SpotQuoteTest -->
+    </test> <!-- Carriers-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:39:51 PKT" name="Transport-Admin- Spot Quote" finished-at="2025-02-10T20:40:07 PKT" duration-ms="15967">
+      <class name="GTZTransportation.gtz.Transport_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Transport_Admin_SpotQuoteTest@4c12331b]" started-at="2025-02-10T20:39:51 PKT" name="setup" finished-at="2025-02-10T20:39:54 PKT" duration-ms="3306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Transport_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Transport_Admin_SpotQuoteTest@4c12331b]" started-at="2025-02-10T20:39:54 PKT" name="spotQuote_Transport_Admin_Tests" finished-at="2025-02-10T20:40:06 PKT" duration-ms="12424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Transport_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Transport_Admin_SpotQuoteTest@4c12331b]" started-at="2025-02-10T20:40:06 PKT" name="tearDown" finished-at="2025-02-10T20:40:07 PKT" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Transport_Admin_SpotQuoteTest -->
+    </test> <!-- Transport-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:40:07 PKT" name="Requirments-Admin- Spot Quote" finished-at="2025-02-10T20:40:23 PKT" duration-ms="16432">
+      <class name="GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest@44c03695]" started-at="2025-02-10T20:40:07 PKT" name="setup" finished-at="2025-02-10T20:40:11 PKT" duration-ms="3981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Requirment_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest@44c03695]" started-at="2025-02-10T20:40:11 PKT" name="spotQuote_Requirment_Admin_Tests" finished-at="2025-02-10T20:40:23 PKT" duration-ms="12191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Requirment_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest@44c03695]" started-at="2025-02-10T20:40:23 PKT" name="tearDown" finished-at="2025-02-10T20:40:23 PKT" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Requirment_Admin_SpotQuoteTest -->
+    </test> <!-- Requirments-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:40:23 PKT" name="ServiceType-Admin- Spot Quote" finished-at="2025-02-10T20:40:41 PKT" duration-ms="17966">
+      <class name="GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest@3fc2959f]" started-at="2025-02-10T20:40:23 PKT" name="setup" finished-at="2025-02-10T20:40:28 PKT" duration-ms="4988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_ServiceTypes_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest@3fc2959f]" started-at="2025-02-10T20:40:28 PKT" name="spotQuote_ServiceTypes_Admin_Tests" finished-at="2025-02-10T20:40:41 PKT" duration-ms="12571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_ServiceTypes_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest@3fc2959f]" started-at="2025-02-10T20:40:41 PKT" name="tearDown" finished-at="2025-02-10T20:40:41 PKT" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.ServiceType_Admin_SpotQuoteTest -->
+    </test> <!-- ServiceType-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:40:41 PKT" name="Email Template-Admin- Spot Quote" finished-at="2025-02-10T20:40:57 PKT" duration-ms="15916">
+      <class name="GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest@7dcf94f8]" started-at="2025-02-10T20:40:41 PKT" name="setup" finished-at="2025-02-10T20:40:45 PKT" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_EmailTemplate_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest@7dcf94f8]" started-at="2025-02-10T20:40:45 PKT" name="spotQuote_EmailTemplate_Admin_Tests" finished-at="2025-02-10T20:40:57 PKT" duration-ms="11962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_EmailTemplate_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest@7dcf94f8]" started-at="2025-02-10T20:40:57 PKT" name="tearDown" finished-at="2025-02-10T20:40:57 PKT" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.EmailTemplate_Admin_SpotQuoteTest -->
+    </test> <!-- Email Template-Admin- Spot Quote -->
+    <test started-at="2025-02-10T20:40:57 PKT" name="Expressions- Spot Quote" finished-at="2025-02-10T20:41:12 PKT" duration-ms="15409">
+      <class name="GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest@77c2494c]" started-at="2025-02-10T20:40:57 PKT" name="setup" finished-at="2025-02-10T20:41:01 PKT" duration-ms="3578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Expressions_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest@77c2494c]" started-at="2025-02-10T20:41:01 PKT" name="spotQuote_Expressions_Admin_Tests" finished-at="2025-02-10T20:41:12 PKT" duration-ms="11526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Expressions_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest@77c2494c]" started-at="2025-02-10T20:41:12 PKT" name="tearDown" finished-at="2025-02-10T20:41:12 PKT" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Expressions_Admin_SpotQuoteTest -->
+    </test> <!-- Expressions- Spot Quote -->
+    <test started-at="2025-02-10T20:41:12 PKT" name="Complete Load Flow- Spot Quote" finished-at="2025-02-10T20:43:20 PKT" duration-ms="127534">
+      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuoteTest@6f03482]" started-at="2025-02-10T20:41:12 PKT" name="setup" finished-at="2025-02-10T20:41:16 PKT" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_CompleteLoadFlow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_SpotQuoteTest@6f03482]" started-at="2025-02-10T20:41:16 PKT" name="spotQuote_CompleteLoadFlow_Tests" finished-at="2025-02-10T20:43:20 PKT" duration-ms="124011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_CompleteLoadFlow_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadFlow_SpotQuoteTest@6f03482]" started-at="2025-02-10T20:43:20 PKT" name="tearDown" finished-at="2025-02-10T20:43:20 PKT" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
+    </test> <!-- Complete Load Flow- Spot Quote -->
+    <test started-at="2025-02-10T20:43:20 PKT" name="LPS Direct - Spot Quote" finished-at="2025-02-10T20:45:17 PKT" duration-ms="117079">
+      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@4116aac9]" started-at="2025-02-10T20:43:20 PKT" name="setup" finished-at="2025-02-10T20:43:23 PKT" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@4116aac9]" started-at="2025-02-10T20:43:23 PKT" name="spotQuote_LPSDirect_Tests" finished-at="2025-02-10T20:45:17 PKT" duration-ms="113451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LPSDirect_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest@4116aac9]" started-at="2025-02-10T20:45:17 PKT" name="tearDown" finished-at="2025-02-10T20:45:17 PKT" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
+    </test> <!-- LPS Direct - Spot Quote -->
+    <test started-at="2025-02-10T20:45:17 PKT" name="LPS Direct by Mass Load- Spot Quote" finished-at="2025-02-10T20:45:51 PKT" duration-ms="34049">
+      <class name="GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest@489115ef]" started-at="2025-02-10T20:45:17 PKT" name="setup" finished-at="2025-02-10T20:45:21 PKT" duration-ms="3955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest@489115ef]" started-at="2025-02-10T20:45:21 PKT" name="spotQuote_LPSDirect_Tests" finished-at="2025-02-10T20:45:51 PKT" duration-ms="29830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LPSDirect_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest@489115ef]" started-at="2025-02-10T20:45:51 PKT" name="tearDown" finished-at="2025-02-10T20:45:51 PKT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectMassLoad_AwardTest -->
+    </test> <!-- LPS Direct by Mass Load- Spot Quote -->
+    <test started-at="2025-02-10T20:45:51 PKT" name="FindRate-Carriers" finished-at="2025-02-10T20:46:29 PKT" duration-ms="37812">
+      <class name="GTZTransportation.gtz.FindRatesCarriersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FindRatesCarriersTest@4d1c00d0]" started-at="2025-02-10T20:45:51 PKT" name="setup" finished-at="2025-02-10T20:45:55 PKT" duration-ms="4010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_Carriers_Tests()[pri:1, instance:GTZTransportation.gtz.FindRatesCarriersTest@4d1c00d0]" started-at="2025-02-10T20:45:55 PKT" name="FindRates_Carriers_Tests" finished-at="2025-02-10T20:46:29 PKT" duration-ms="33552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_Carriers_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FindRatesCarriersTest@4d1c00d0]" started-at="2025-02-10T20:46:29 PKT" name="tearDown" finished-at="2025-02-10T20:46:29 PKT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FindRatesCarriersTest -->
+    </test> <!-- FindRate-Carriers -->
+    <test started-at="2025-02-10T20:46:29 PKT" name="CreateBOL-FindRates" finished-at="2025-02-10T20:47:17 PKT" duration-ms="48417">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRatesTest@40005471]" started-at="2025-02-10T20:46:29 PKT" name="setup" finished-at="2025-02-10T20:46:33 PKT" duration-ms="4088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_BOL_Creation_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRatesTest@40005471]" started-at="2025-02-10T20:46:33 PKT" name="FindRates_BOL_Creation_Tests" finished-at="2025-02-10T20:47:17 PKT" duration-ms="43824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_BOL_Creation_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRatesTest@40005471]" started-at="2025-02-10T20:47:17 PKT" name="tearDown" finished-at="2025-02-10T20:47:17 PKT" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesTest -->
+    </test> <!-- CreateBOL-FindRates -->
+    <test started-at="2025-02-10T20:47:17 PKT" name="CutomerRouted-FindRates" finished-at="2025-02-10T20:48:11 PKT" duration-ms="53704">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@fbd1f6]" started-at="2025-02-10T20:47:17 PKT" name="setup" finished-at="2025-02-10T20:47:21 PKT" duration-ms="3344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_BOL_Creation_CustomerRouted_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@fbd1f6]" started-at="2025-02-10T20:47:21 PKT" name="FindRates_BOL_Creation_CustomerRouted_Tests" finished-at="2025-02-10T20:48:11 PKT" duration-ms="50086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_BOL_Creation_CustomerRouted_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test@fbd1f6]" started-at="2025-02-10T20:48:11 PKT" name="tearDown" finished-at="2025-02-10T20:48:11 PKT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+    </test> <!-- CutomerRouted-FindRates -->
+    <test started-at="2025-02-10T20:48:11 PKT" name="Parcel-FindRates" finished-at="2025-02-10T20:49:02 PKT" duration-ms="51085">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRatesParcelTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRatesParcelTest@3a52dba3]" started-at="2025-02-10T20:48:11 PKT" name="setup" finished-at="2025-02-10T20:48:15 PKT" duration-ms="3544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRatesParcel_BOL_Creation_Tests()[pri:1, instance:GTZTransportation.gtz.CreateBOL_FindRatesParcelTest@3a52dba3]" started-at="2025-02-10T20:48:15 PKT" name="FindRatesParcel_BOL_Creation_Tests" finished-at="2025-02-10T20:49:02 PKT" duration-ms="47249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRatesParcel_BOL_Creation_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.CreateBOL_FindRatesParcelTest@3a52dba3]" started-at="2025-02-10T20:49:02 PKT" name="tearDown" finished-at="2025-02-10T20:49:02 PKT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRatesParcelTest -->
+    </test> <!-- Parcel-FindRates -->
+    <test started-at="2025-02-10T20:49:02 PKT" name="History-FindRates" finished-at="2025-02-10T20:49:27 PKT" duration-ms="24308">
+      <class name="GTZTransportation.gtz.History_FindRatesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.History_FindRatesTest@710f4dc7]" started-at="2025-02-10T20:49:02 PKT" name="setup" finished-at="2025-02-10T20:49:06 PKT" duration-ms="3467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_History_Tests()[pri:1, instance:GTZTransportation.gtz.History_FindRatesTest@710f4dc7]" started-at="2025-02-10T20:49:06 PKT" name="FindRates_History_Tests" finished-at="2025-02-10T20:49:26 PKT" duration-ms="20527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_History_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.History_FindRatesTest@710f4dc7]" started-at="2025-02-10T20:49:26 PKT" name="tearDown" finished-at="2025-02-10T20:49:27 PKT" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.History_FindRatesTest -->
+    </test> <!-- History-FindRates -->
+    <test started-at="2025-02-10T20:49:27 PKT" name="FreightPayment-Missing Carriers" finished-at="2025-02-10T20:49:47 PKT" duration-ms="19983">
+      <class name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_MissingCarriersTest@8297b3a]" started-at="2025-02-10T20:49:27 PKT" name="setup" finished-at="2025-02-10T20:49:30 PKT" duration-ms="3938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_Missing_Carriers()[pri:1, instance:GTZTransportation.gtz.FreightPayment_MissingCarriersTest@8297b3a]" started-at="2025-02-10T20:49:30 PKT" name="FreightPayment_Missing_Carriers" finished-at="2025-02-10T20:49:46 PKT" duration-ms="15793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_Missing_Carriers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_MissingCarriersTest@8297b3a]" started-at="2025-02-10T20:49:46 PKT" name="tearDown" finished-at="2025-02-10T20:49:47 PKT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_MissingCarriersTest -->
+    </test> <!-- FreightPayment-Missing Carriers -->
+    <test started-at="2025-02-10T20:49:47 PKT" name="FreightPayment-Reports" finished-at="2025-02-10T20:51:18 PKT" duration-ms="91311">
+      <class name="GTZTransportation.gtz.FreightPayment_ReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ReportsTest@247bddad]" started-at="2025-02-10T20:49:47 PKT" name="setup" finished-at="2025-02-10T20:49:50 PKT" duration-ms="3527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_Report_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ReportsTest@247bddad]" started-at="2025-02-10T20:49:50 PKT" name="FreightPayment_Report_tests" finished-at="2025-02-10T20:51:17 PKT" duration-ms="87422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_Report_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ReportsTest@247bddad]" started-at="2025-02-10T20:51:17 PKT" name="tearDown" finished-at="2025-02-10T20:51:18 PKT" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_ReportsTest -->
+    </test> <!-- FreightPayment-Reports -->
+    <test started-at="2025-02-10T20:51:18 PKT" name="FreightPayment-ClientAdmin" finished-at="2025-02-10T20:51:31 PKT" duration-ms="13643">
+      <class name="GTZTransportation.gtz.FreightPayment_ClientAdminTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ClientAdminTest@41a2befb]" started-at="2025-02-10T20:51:18 PKT" name="setup" finished-at="2025-02-10T20:51:21 PKT" duration-ms="3403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_ClientAdmin_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ClientAdminTest@41a2befb]" started-at="2025-02-10T20:51:21 PKT" name="FreightPayment_ClientAdmin_tests" finished-at="2025-02-10T20:51:31 PKT" duration-ms="9897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_ClientAdmin_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ClientAdminTest@41a2befb]" started-at="2025-02-10T20:51:31 PKT" name="tearDown" finished-at="2025-02-10T20:51:31 PKT" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_ClientAdminTest -->
+    </test> <!-- FreightPayment-ClientAdmin -->
+    <test started-at="2025-02-10T20:51:32 PKT" name="KSXADMIN ManageShipment" finished-at="2025-02-10T20:51:57 PKT" duration-ms="25675">
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KSXAdmin_ManageShipmentTest@23348b5d]" started-at="2025-02-10T20:51:32 PKT" name="setup" finished-at="2025-02-10T20:51:35 PKT" duration-ms="3214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KSXAdmin_ManageShipment_Tests()[pri:1, instance:GTZTransportation.gtz.KSXAdmin_ManageShipmentTest@23348b5d]" started-at="2025-02-10T20:51:35 PKT" name="KSXAdmin_ManageShipment_Tests" finished-at="2025-02-10T20:51:57 PKT" duration-ms="22009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KSXAdmin_ManageShipment_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KSXAdmin_ManageShipmentTest@23348b5d]" started-at="2025-02-10T20:51:57 PKT" name="tearDown" finished-at="2025-02-10T20:51:57 PKT" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
+    </test> <!-- KSXADMIN ManageShipment -->
+    <test started-at="2025-02-10T20:51:57 PKT" name="KSXADMIN ManageClient" finished-at="2025-02-10T20:52:19 PKT" duration-ms="22074">
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageClientTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KSXAdmin_ManageClientTest@69453e37]" started-at="2025-02-10T20:51:57 PKT" name="setup" finished-at="2025-02-10T20:52:01 PKT" duration-ms="4012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KSXAdmin_ManageClient_Tests()[pri:1, instance:GTZTransportation.gtz.KSXAdmin_ManageClientTest@69453e37]" started-at="2025-02-10T20:52:01 PKT" name="KSXAdmin_ManageClient_Tests" finished-at="2025-02-10T20:52:19 PKT" duration-ms="17743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KSXAdmin_ManageClient_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KSXAdmin_ManageClientTest@69453e37]" started-at="2025-02-10T20:52:19 PKT" name="tearDown" finished-at="2025-02-10T20:52:19 PKT" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageClientTest -->
+    </test> <!-- KSXADMIN ManageClient -->
+    <test started-at="2025-02-10T20:52:19 PKT" name="VICS" finished-at="2025-02-10T20:52:29 PKT" duration-ms="9514">
+      <class name="GTZTransportation.gtz.VICS_VerifyCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@587e5365]" started-at="2025-02-10T20:52:19 PKT" name="setup" finished-at="2025-02-10T20:52:23 PKT" duration-ms="3805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VICS_CustomersList_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@587e5365]" started-at="2025-02-10T20:52:23 PKT" name="VICS_CustomersList_Tests" finished-at="2025-02-10T20:52:29 PKT" duration-ms="5477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_CustomersList_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyCustomerTest@587e5365]" started-at="2025-02-10T20:52:29 PKT" name="tearDown" finished-at="2025-02-10T20:52:29 PKT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.VICS_VerifyCustomerTest -->
+    </test> <!-- VICS -->
+    <test started-at="2025-02-10T20:52:29 PKT" name="VICS BOL Creation" finished-at="2025-02-10T20:53:10 PKT" duration-ms="41247">
+      <class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@6913c1fb]" started-at="2025-02-10T20:52:29 PKT" name="setup" finished-at="2025-02-10T20:52:32 PKT" duration-ms="3264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VICS_BOLCreation_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@6913c1fb]" started-at="2025-02-10T20:52:32 PKT" name="VICS_BOLCreation_Tests" finished-at="2025-02-10T20:53:10 PKT" duration-ms="37560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_BOLCreation_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VerifyBOLCreationTest@6913c1fb]" started-at="2025-02-10T20:53:10 PKT" name="tearDown" finished-at="2025-02-10T20:53:10 PKT" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.VICS_VerifyBOLCreationTest -->
+    </test> <!-- VICS BOL Creation -->
+    <test started-at="2025-02-10T20:53:10 PKT" name="VICS View Order" finished-at="2025-02-10T20:53:20 PKT" duration-ms="9988">
+      <class name="GTZTransportation.gtz.VICS_VeiwOrdersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@158a8276]" started-at="2025-02-10T20:53:10 PKT" name="setup" finished-at="2025-02-10T20:53:14 PKT" duration-ms="4381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VICS_ViewOrders_Tests()[pri:1, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@158a8276]" started-at="2025-02-10T20:53:14 PKT" name="VICS_ViewOrders_Tests" finished-at="2025-02-10T20:53:20 PKT" duration-ms="5352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VICS_ViewOrders_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.VICS_VeiwOrdersTest@158a8276]" started-at="2025-02-10T20:53:20 PKT" name="tearDown" finished-at="2025-02-10T20:53:20 PKT" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.VICS_VeiwOrdersTest -->
+    </test> <!-- VICS View Order -->
+    <test started-at="2025-02-10T20:53:20 PKT" name="CustomerCarrier-CustomerList" finished-at="2025-02-10T20:53:55 PKT" duration-ms="35379">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest@58a9760d]" started-at="2025-02-10T20:53:20 PKT" name="setup" finished-at="2025-02-10T20:53:23 PKT" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CustomerCarriers_CustomerList_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest@58a9760d]" started-at="2025-02-10T20:53:23 PKT" name="CustomerCarriers_CustomerList_tests" finished-at="2025-02-10T20:53:55 PKT" duration-ms="31739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerCarriers_CustomerList_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest@58a9760d]" started-at="2025-02-10T20:53:55 PKT" name="tearDown" finished-at="2025-02-10T20:53:55 PKT" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CustomerListTest -->
+    </test> <!-- CustomerCarrier-CustomerList -->
+    <test started-at="2025-02-10T20:53:56 PKT" name="CustomerCarrier-Prospect Queue" finished-at="2025-02-10T20:54:31 PKT" duration-ms="35271">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest@75db5df9]" started-at="2025-02-10T20:53:56 PKT" name="setup" finished-at="2025-02-10T20:53:59 PKT" duration-ms="3723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CustomerCarriers_CustomerList_ProspectQueue_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest@75db5df9]" started-at="2025-02-10T20:53:59 PKT" name="CustomerCarriers_CustomerList_ProspectQueue_tests" finished-at="2025-02-10T20:54:31 PKT" duration-ms="31271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerCarriers_CustomerList_ProspectQueue_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest@75db5df9]" started-at="2025-02-10T20:54:31 PKT" name="tearDown" finished-at="2025-02-10T20:54:31 PKT" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
+    </test> <!-- CustomerCarrier-Prospect Queue -->
+    <test started-at="2025-02-10T20:54:31 PKT" name="CustomerCarrier-Carrier List" finished-at="2025-02-10T20:55:02 PKT" duration-ms="31495">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest@385e9564]" started-at="2025-02-10T20:54:31 PKT" name="setup" finished-at="2025-02-10T20:54:34 PKT" duration-ms="3287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CustomerCarriers_CarrierList_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest@385e9564]" started-at="2025-02-10T20:54:34 PKT" name="CustomerCarriers_CarrierList_tests" finished-at="2025-02-10T20:55:02 PKT" duration-ms="27919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerCarriers_CarrierList_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest@385e9564]" started-at="2025-02-10T20:55:02 PKT" name="tearDown" finished-at="2025-02-10T20:55:02 PKT" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest -->
+    </test> <!-- CustomerCarrier-Carrier List -->
+    <test started-at="2025-02-10T20:55:02 PKT" name="CustomerCarrier-Carrier Import" finished-at="2025-02-10T20:55:12 PKT" duration-ms="9530">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest@1e178745]" started-at="2025-02-10T20:55:02 PKT" name="setup" finished-at="2025-02-10T20:55:06 PKT" duration-ms="3278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CustomerCarriers_CarrierImport_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest@1e178745]" started-at="2025-02-10T20:55:06 PKT" name="CustomerCarriers_CarrierImport_tests" finished-at="2025-02-10T20:55:12 PKT" duration-ms="6028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerCarriers_CarrierImport_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest@1e178745]" started-at="2025-02-10T20:55:12 PKT" name="tearDown" finished-at="2025-02-10T20:55:12 PKT" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest -->
+    </test> <!-- CustomerCarrier-Carrier Import -->
+    <test started-at="2025-02-10T20:55:12 PKT" name="LPS_MyShipments" finished-at="2025-02-10T20:55:55 PKT" duration-ms="42875">
+      <class name="GTZTransportation.gtz.LPS_MyShipmentsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@445b295b]" started-at="2025-02-10T20:55:12 PKT" name="setup" finished-at="2025-02-10T20:55:16 PKT" duration-ms="3954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_MyshipmentsTest()[pri:1, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@445b295b]" started-at="2025-02-10T20:55:16 PKT" name="LPS_MyshipmentsTest" finished-at="2025-02-10T20:55:54 PKT" duration-ms="38662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_MyshipmentsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_MyShipmentsTest@445b295b]" started-at="2025-02-10T20:55:54 PKT" name="tearDown" finished-at="2025-02-10T20:55:55 PKT" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_MyShipmentsTest -->
+    </test> <!-- LPS_MyShipments -->
+    <test started-at="2025-02-10T20:55:55 PKT" name="LPS_Key Revenue Reports" finished-at="2025-02-10T20:57:15 PKT" duration-ms="80363">
+      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@c86b9e3]" started-at="2025-02-10T20:55:55 PKT" name="setup" finished-at="2025-02-10T20:55:59 PKT" duration-ms="3775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_Report_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@c86b9e3]" started-at="2025-02-10T20:55:59 PKT" name="KeyRevenue_Report_tests" finished-at="2025-02-10T20:57:15 PKT" duration-ms="76317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_Report_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_ReportsTest@c86b9e3]" started-at="2025-02-10T20:57:15 PKT" name="tearDown" finished-at="2025-02-10T20:57:15 PKT" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
+    </test> <!-- LPS_Key Revenue Reports -->
+    <test started-at="2025-02-10T20:57:15 PKT" name="LPS_Key Revenue- Customer" finished-at="2025-02-10T20:57:42 PKT" duration-ms="26866">
+      <class name="GTZTransportation.gtz.KeyRevenue_CustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_CustomerTest@37883b97]" started-at="2025-02-10T20:57:15 PKT" name="setup" finished-at="2025-02-10T20:57:19 PKT" duration-ms="3837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_Customer_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_CustomerTest@37883b97]" started-at="2025-02-10T20:57:19 PKT" name="KeyRevenue_Customer_tests" finished-at="2025-02-10T20:57:42 PKT" duration-ms="22758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_Customer_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_CustomerTest@37883b97]" started-at="2025-02-10T20:57:42 PKT" name="tearDown" finished-at="2025-02-10T20:57:42 PKT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_CustomerTest -->
+    </test> <!-- LPS_Key Revenue- Customer -->
+    <test started-at="2025-02-10T20:57:42 PKT" name="LPS_Key Revenue- Admin" finished-at="2025-02-10T20:58:24 PKT" duration-ms="41711">
+      <class name="GTZTransportation.gtz.KeyRevenue_AdminTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_AdminTest@6f45df59]" started-at="2025-02-10T20:57:42 PKT" name="setup" finished-at="2025-02-10T20:57:46 PKT" duration-ms="3694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_Admin_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_AdminTest@6f45df59]" started-at="2025-02-10T20:57:46 PKT" name="KeyRevenue_Admin_tests" finished-at="2025-02-10T20:58:23 PKT" duration-ms="37716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_Admin_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_AdminTest@6f45df59]" started-at="2025-02-10T20:58:23 PKT" name="tearDown" finished-at="2025-02-10T20:58:24 PKT" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_AdminTest -->
+    </test> <!-- LPS_Key Revenue- Admin -->
+    <test started-at="2025-02-10T20:58:24 PKT" name="LPS_Key Revenue- Invoice" finished-at="2025-02-10T20:58:50 PKT" duration-ms="25772">
+      <class name="GTZTransportation.gtz.KeyRevenue_InvoiceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_InvoiceTest@31f9b85e]" started-at="2025-02-10T20:58:24 PKT" name="setup" finished-at="2025-02-10T20:58:27 PKT" duration-ms="3335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_Invoice_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_InvoiceTest@31f9b85e]" started-at="2025-02-10T20:58:27 PKT" name="KeyRevenue_Invoice_tests" finished-at="2025-02-10T20:58:49 PKT" duration-ms="22150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_Invoice_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_InvoiceTest@31f9b85e]" started-at="2025-02-10T20:58:49 PKT" name="tearDown" finished-at="2025-02-10T20:58:50 PKT" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoiceTest -->
+    </test> <!-- LPS_Key Revenue- Invoice -->
+    <test started-at="2025-02-10T20:58:50 PKT" name="LPS_Key Revenue- InvoiceGeneral" finished-at="2025-02-10T20:59:22 PKT" duration-ms="32171">
+      <class name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest@1ebd319f]" started-at="2025-02-10T20:58:50 PKT" name="setup" finished-at="2025-02-10T20:58:53 PKT" duration-ms="3819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_InvoiceGeneral_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest@1ebd319f]" started-at="2025-02-10T20:58:53 PKT" name="KeyRevenue_InvoiceGeneral_tests" finished-at="2025-02-10T20:59:21 PKT" duration-ms="28076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_InvoiceGeneral_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest@1ebd319f]" started-at="2025-02-10T20:59:21 PKT" name="tearDown" finished-at="2025-02-10T20:59:22 PKT" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest -->
+    </test> <!-- LPS_Key Revenue- InvoiceGeneral -->
+    <test started-at="2025-02-10T20:59:22 PKT" name="LPS General" finished-at="2025-02-10T20:59:59 PKT" duration-ms="36878">
+      <class name="GTZTransportation.gtz.LPS_GeneralTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_GeneralTest@683dbc2c]" started-at="2025-02-10T20:59:22 PKT" name="setup" finished-at="2025-02-10T20:59:26 PKT" duration-ms="4045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_General_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_GeneralTest@683dbc2c]" started-at="2025-02-10T20:59:26 PKT" name="LPS_General_Tests" finished-at="2025-02-10T20:59:58 PKT" duration-ms="32488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_General_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_GeneralTest@683dbc2c]" started-at="2025-02-10T20:59:58 PKT" name="tearDown" finished-at="2025-02-10T20:59:59 PKT" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_GeneralTest -->
+    </test> <!-- LPS General -->
+    <test started-at="2025-02-10T20:59:59 PKT" name="FreightPayment-CarrierPortal_Others" finished-at="2025-02-10T21:00:20 PKT" duration-ms="21786">
+      <class name="GTZTransportation.gtz.FreightPayment_CarrierPortalTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_CarrierPortalTest@548e6d58]" started-at="2025-02-10T20:59:59 PKT" name="setup" finished-at="2025-02-10T21:00:03 PKT" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_CarrierPortal_Tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_CarrierPortalTest@548e6d58]" started-at="2025-02-10T21:00:03 PKT" name="FreightPayment_CarrierPortal_Tests" finished-at="2025-02-10T21:00:20 PKT" duration-ms="17204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_CarrierPortal_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_CarrierPortalTest@548e6d58]" started-at="2025-02-10T21:00:20 PKT" name="tearDown" finished-at="2025-02-10T21:00:20 PKT" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_CarrierPortalTest -->
+    </test> <!-- FreightPayment-CarrierPortal_Others -->
+    <test started-at="2025-02-10T21:00:20 PKT" name="FreightPayment-GTZ_WebQueues" finished-at="2025-02-10T21:00:40 PKT" duration-ms="19659">
+      <class name="GTZTransportation.gtz.FreightPayment_GTZTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_GTZTest@21b2e768]" started-at="2025-02-10T21:00:20 PKT" name="setup" finished-at="2025-02-10T21:00:25 PKT" duration-ms="4297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_GTZ_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_GTZTest@21b2e768]" started-at="2025-02-10T21:00:25 PKT" name="FreightPayment_GTZ_tests" finished-at="2025-02-10T21:00:40 PKT" duration-ms="15111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_GTZ_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_GTZTest@21b2e768]" started-at="2025-02-10T21:00:40 PKT" name="tearDown" finished-at="2025-02-10T21:00:40 PKT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_GTZTest -->
+    </test> <!-- FreightPayment-GTZ_WebQueues -->
+    <test started-at="2025-02-10T21:00:40 PKT" name="FreightPayment-GTZ_Links" finished-at="2025-02-10T21:01:00 PKT" duration-ms="19818">
+      <class name="GTZTransportation.gtz.FreightPayment_GTZ_Links_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_GTZ_Links_Test@11fc564b]" started-at="2025-02-10T21:00:40 PKT" name="setup" finished-at="2025-02-10T21:00:44 PKT" duration-ms="3936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_GTZ_Links_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_GTZ_Links_Test@11fc564b]" started-at="2025-02-10T21:00:44 PKT" name="FreightPayment_GTZ_Links_tests" finished-at="2025-02-10T21:01:00 PKT" duration-ms="15579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_GTZ_Links_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_GTZ_Links_Test@11fc564b]" started-at="2025-02-10T21:01:00 PKT" name="tearDown" finished-at="2025-02-10T21:01:00 PKT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_GTZ_Links_Test -->
+    </test> <!-- FreightPayment-GTZ_Links -->
+    <test started-at="2025-02-10T21:01:00 PKT" name="LPS AccountManagement" finished-at="2025-02-10T21:01:29 PKT" duration-ms="29025">
+      <class name="GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@3f56875e]" started-at="2025-02-10T21:01:00 PKT" name="setup" finished-at="2025-02-10T21:01:03 PKT" duration-ms="3339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@3f56875e]" started-at="2025-02-10T21:01:03 PKT" name="LPS_AccountManagement_Tests" finished-at="2025-02-10T21:01:29 PKT" duration-ms="25433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_AccountManagement_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest@3f56875e]" started-at="2025-02-10T21:01:29 PKT" name="tearDown" finished-at="2025-02-10T21:01:29 PKT" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_AccountManager_ActionBillingTest -->
+    </test> <!-- LPS AccountManagement -->
+    <test started-at="2025-02-10T21:01:29 PKT" name="LPS AccountManagement - OptimizationDetails-CustomerAccount" finished-at="2025-02-10T21:01:46 PKT" duration-ms="16859">
+      <class name="GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest@4470f8a6]" started-at="2025-02-10T21:01:29 PKT" name="setup" finished-at="2025-02-10T21:01:32 PKT" duration-ms="3231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest@4470f8a6]" started-at="2025-02-10T21:01:32 PKT" name="LPS_AccountManagement_Tests" finished-at="2025-02-10T21:01:46 PKT" duration-ms="13357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_AccountManagement_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest@4470f8a6]" started-at="2025-02-10T21:01:46 PKT" name="tearDown" finished-at="2025-02-10T21:01:46 PKT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_OptEvent_CustomerAccountTest -->
+    </test> <!-- LPS AccountManagement - OptimizationDetails-CustomerAccount -->
+    <test started-at="2025-02-10T21:01:46 PKT" name="LPS AccountManagement - ProductCatalog-Myteam" finished-at="2025-02-10T21:02:00 PKT" duration-ms="13918">
+      <class name="GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@60015ef5]" started-at="2025-02-10T21:01:46 PKT" name="setup" finished-at="2025-02-10T21:01:50 PKT" duration-ms="3861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_AccountManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@60015ef5]" started-at="2025-02-10T21:01:50 PKT" name="LPS_AccountManagement_Tests" finished-at="2025-02-10T21:02:00 PKT" duration-ms="9790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_AccountManagement_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest@60015ef5]" started-at="2025-02-10T21:02:00 PKT" name="tearDown" finished-at="2025-02-10T21:02:00 PKT" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_ProductCatalog_MyTeamTest -->
+    </test> <!-- LPS AccountManagement - ProductCatalog-Myteam -->
+    <test started-at="2025-02-10T21:02:00 PKT" name="LPS AccountManagement - Addressbook" finished-at="2025-02-10T21:02:25 PKT" duration-ms="24902">
+      <class name="GTZTransportation.gtz.LPS_AccountManager_AddressbookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@2a266d09]" started-at="2025-02-10T21:02:00 PKT" name="setup" finished-at="2025-02-10T21:02:03 PKT" duration-ms="3626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_AccountManagement_Addresses_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@2a266d09]" started-at="2025-02-10T21:02:03 PKT" name="LPS_AccountManagement_Addresses_Tests" finished-at="2025-02-10T21:02:24 PKT" duration-ms="21005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_AccountManagement_Addresses_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_AccountManager_AddressbookTest@2a266d09]" started-at="2025-02-10T21:02:24 PKT" name="tearDown" finished-at="2025-02-10T21:02:25 PKT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_AccountManager_AddressbookTest -->
+    </test> <!-- LPS AccountManagement - Addressbook -->
+    <test started-at="2025-02-10T21:02:25 PKT" name="LPS Resources - News Items" finished-at="2025-02-10T21:02:40 PKT" duration-ms="15226">
+      <class name="GTZTransportation.gtz.LPS_Resources_NewsAdminTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@36b4fe2a]" started-at="2025-02-10T21:02:25 PKT" name="setup" finished-at="2025-02-10T21:02:28 PKT" duration-ms="3683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Resources_News_Admin_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@36b4fe2a]" started-at="2025-02-10T21:02:28 PKT" name="LPS_Resources_News_Admin_Tests" finished-at="2025-02-10T21:02:38 PKT" duration-ms="9632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Resources_News_Admin_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Resources_NewsAdminTest@36b4fe2a]" started-at="2025-02-10T21:02:38 PKT" name="tearDown" finished-at="2025-02-10T21:02:40 PKT" duration-ms="1909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsAdminTest -->
+    </test> <!-- LPS Resources - News Items -->
+    <test started-at="2025-02-10T21:02:40 PKT" name="LPS Admin - Data Entry Expression" finished-at="2025-02-10T21:03:01 PKT" duration-ms="21167">
+      <class name="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest@71c3b41]" started-at="2025-02-10T21:02:40 PKT" name="setup" finished-at="2025-02-10T21:02:44 PKT" duration-ms="3591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_DataEntryExpressions_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest@71c3b41]" started-at="2025-02-10T21:02:44 PKT" name="LPS_Admin_DataEntryExpressions_Tests" finished-at="2025-02-10T21:03:01 PKT" duration-ms="17211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_DataEntryExpressions_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest@71c3b41]" started-at="2025-02-10T21:03:01 PKT" name="tearDown" finished-at="2025-02-10T21:03:01 PKT" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest -->
+    </test> <!-- LPS Admin - Data Entry Expression -->
+    <test started-at="2025-02-10T21:03:01 PKT" name="LPS Admin - Asset Upload" finished-at="2025-02-10T21:03:15 PKT" duration-ms="13877">
+      <class name="GTZTransportation.gtz.LPS_Admin_AssetUploadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AssetUploadTest@36d585c]" started-at="2025-02-10T21:03:01 PKT" name="setup" finished-at="2025-02-10T21:03:05 PKT" duration-ms="3683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_AssetUpload_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AssetUploadTest@36d585c]" started-at="2025-02-10T21:03:05 PKT" name="LPS_Admin_AssetUpload_Tests" finished-at="2025-02-10T21:03:15 PKT" duration-ms="9928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_AssetUpload_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AssetUploadTest@36d585c]" started-at="2025-02-10T21:03:15 PKT" name="tearDown" finished-at="2025-02-10T21:03:15 PKT" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AssetUploadTest -->
+    </test> <!-- LPS Admin - Asset Upload -->
+    <test started-at="2025-02-10T21:03:15 PKT" name="LPS Admin - Security" finished-at="2025-02-10T21:03:50 PKT" duration-ms="34904">
+      <class name="GTZTransportation.gtz.LPS_Admin_SecurityTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_SecurityTest@1356d4d4]" started-at="2025-02-10T21:03:15 PKT" name="setup" finished-at="2025-02-10T21:03:18 PKT" duration-ms="2997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Security_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_SecurityTest@1356d4d4]" started-at="2025-02-10T21:03:18 PKT" name="LPS_Admin_Security_Tests" finished-at="2025-02-10T21:03:50 PKT" duration-ms="31646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Security_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_SecurityTest@1356d4d4]" started-at="2025-02-10T21:03:50 PKT" name="tearDown" finished-at="2025-02-10T21:03:50 PKT" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_SecurityTest -->
+    </test> <!-- LPS Admin - Security -->
+    <test started-at="2025-02-10T21:03:50 PKT" name="Reports- Spot Quote" finished-at="2025-02-10T21:04:22 PKT" duration-ms="31961">
+      <class name="GTZTransportation.gtz.Report_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Report_SpotQuoteTest@1fb700ee]" started-at="2025-02-10T21:03:50 PKT" name="setup" finished-at="2025-02-10T21:03:54 PKT" duration-ms="3735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.Report_SpotQuoteTest@1fb700ee]" started-at="2025-02-10T21:03:54 PKT" name="spotQuote_Reports_Tests" finished-at="2025-02-10T21:04:22 PKT" duration-ms="27930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Reports_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Report_SpotQuoteTest@1fb700ee]" started-at="2025-02-10T21:04:22 PKT" name="tearDown" finished-at="2025-02-10T21:04:22 PKT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Report_SpotQuoteTest -->
+    </test> <!-- Reports- Spot Quote -->
+    <test started-at="2025-02-10T21:04:22 PKT" name="LPS Admin - Adhoc CopyUser" finished-at="2025-02-10T21:04:40 PKT" duration-ms="17787">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocTest@68e965f5]" started-at="2025-02-10T21:04:22 PKT" name="setup" finished-at="2025-02-10T21:04:26 PKT" duration-ms="3830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_CopyUser_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocTest@68e965f5]" started-at="2025-02-10T21:04:26 PKT" name="LPS_Admin_Adhoc_CopyUser_Tests" finished-at="2025-02-10T21:04:39 PKT" duration-ms="13684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_CopyUser_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocTest@68e965f5]" started-at="2025-02-10T21:04:39 PKT" name="tearDown" finished-at="2025-02-10T21:04:40 PKT" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocTest -->
+    </test> <!-- LPS Admin - Adhoc CopyUser -->
+    <test started-at="2025-02-10T21:04:40 PKT" name="LPS Admin - Adhoc ResetPass" finished-at="2025-02-10T21:04:58 PKT" duration-ms="17882">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest@61d6015a]" started-at="2025-02-10T21:04:40 PKT" name="setup" finished-at="2025-02-10T21:04:44 PKT" duration-ms="4442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ResetPass_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest@61d6015a]" started-at="2025-02-10T21:04:44 PKT" name="LPS_Admin_Adhoc_ResetPass_Tests" finished-at="2025-02-10T21:04:57 PKT" duration-ms="13170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ResetPass_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest@61d6015a]" started-at="2025-02-10T21:04:57 PKT" name="tearDown" finished-at="2025-02-10T21:04:58 PKT" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocResetPassTest -->
+    </test> <!-- LPS Admin - Adhoc ResetPass -->
+    <test started-at="2025-02-10T21:04:58 PKT" name="LPS Admin - Adhoc ChangeCustomer" finished-at="2025-02-10T21:05:15 PKT" duration-ms="17571">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest@37858383]" started-at="2025-02-10T21:04:58 PKT" name="setup" finished-at="2025-02-10T21:05:01 PKT" duration-ms="3387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ChangeCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest@37858383]" started-at="2025-02-10T21:05:01 PKT" name="LPS_Admin_Adhoc_ChangeCustomer_Tests" finished-at="2025-02-10T21:05:15 PKT" duration-ms="13931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ChangeCustomer_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest@37858383]" started-at="2025-02-10T21:05:15 PKT" name="tearDown" finished-at="2025-02-10T21:05:15 PKT" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeCustomerTest -->
+    </test> <!-- LPS Admin - Adhoc ChangeCustomer -->
+    <test started-at="2025-02-10T21:05:15 PKT" name="LPS Admin - Adhoc ChangeInvoiceCustomer" finished-at="2025-02-10T21:05:33 PKT" duration-ms="17933">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest@e1de817]" started-at="2025-02-10T21:05:15 PKT" name="setup" finished-at="2025-02-10T21:05:19 PKT" duration-ms="3894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest@e1de817]" started-at="2025-02-10T21:05:19 PKT" name="LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests" finished-at="2025-02-10T21:05:33 PKT" duration-ms="13682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest@e1de817]" started-at="2025-02-10T21:05:33 PKT" name="tearDown" finished-at="2025-02-10T21:05:33 PKT" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest -->
+    </test> <!-- LPS Admin - Adhoc ChangeInvoiceCustomer -->
+    <test started-at="2025-02-10T21:05:33 PKT" name="LPS Admin - Adhoc AssignCarrier" finished-at="2025-02-10T21:05:51 PKT" duration-ms="17763">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest@355ce81c]" started-at="2025-02-10T21:05:33 PKT" name="setup" finished-at="2025-02-10T21:05:37 PKT" duration-ms="4117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_AssignCarrier_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest@355ce81c]" started-at="2025-02-10T21:05:37 PKT" name="LPS_Admin_Adhoc_AssignCarrier_Tests" finished-at="2025-02-10T21:05:51 PKT" duration-ms="13365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_AssignCarrier_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest@355ce81c]" started-at="2025-02-10T21:05:51 PKT" name="tearDown" finished-at="2025-02-10T21:05:51 PKT" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocAssignCarrierTest -->
+    </test> <!-- LPS Admin - Adhoc AssignCarrier -->
+    <test started-at="2025-02-10T21:05:51 PKT" name="LPS Admin - Adhoc ChangeBid" finished-at="2025-02-10T21:06:09 PKT" duration-ms="17732">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest@366647c2]" started-at="2025-02-10T21:05:51 PKT" name="setup" finished-at="2025-02-10T21:05:55 PKT" duration-ms="3990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ChangeBidr_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest@366647c2]" started-at="2025-02-10T21:05:55 PKT" name="LPS_Admin_Adhoc_ChangeBidr_Tests" finished-at="2025-02-10T21:06:08 PKT" duration-ms="13479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ChangeBidr_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest@366647c2]" started-at="2025-02-10T21:06:08 PKT" name="tearDown" finished-at="2025-02-10T21:06:09 PKT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeBidTest -->
+    </test> <!-- LPS Admin - Adhoc ChangeBid -->
+    <test started-at="2025-02-10T21:06:09 PKT" name="LPS Admin - Adhoc ChangePaymentAmount" finished-at="2025-02-10T21:06:26 PKT" duration-ms="17286">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest@503d687a]" started-at="2025-02-10T21:06:09 PKT" name="setup" finished-at="2025-02-10T21:06:12 PKT" duration-ms="3575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ChangePayment_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest@503d687a]" started-at="2025-02-10T21:06:12 PKT" name="LPS_Admin_Adhoc_ChangePayment_Tests" finished-at="2025-02-10T21:06:26 PKT" duration-ms="13422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ChangePayment_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest@503d687a]" started-at="2025-02-10T21:06:26 PKT" name="tearDown" finished-at="2025-02-10T21:06:26 PKT" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangePaymentTest -->
+    </test> <!-- LPS Admin - Adhoc ChangePaymentAmount -->
+    <test started-at="2025-02-10T21:06:26 PKT" name="LPS Admin - Adhoc ChangeCurrency" finished-at="2025-02-10T21:06:44 PKT" duration-ms="17654">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest@77eca502]" started-at="2025-02-10T21:06:26 PKT" name="setup" finished-at="2025-02-10T21:06:30 PKT" duration-ms="4035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ChangeCurrency_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest@77eca502]" started-at="2025-02-10T21:06:30 PKT" name="LPS_Admin_Adhoc_ChangeCurrency_Tests" finished-at="2025-02-10T21:06:43 PKT" duration-ms="13305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ChangeCurrency_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest@77eca502]" started-at="2025-02-10T21:06:43 PKT" name="tearDown" finished-at="2025-02-10T21:06:44 PKT" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeCurrencyTest -->
+    </test> <!-- LPS Admin - Adhoc ChangeCurrency -->
+    <test started-at="2025-02-10T21:06:44 PKT" name="LPS Admin - Adhoc Zero Invoice" finished-at="2025-02-10T21:07:01 PKT" duration-ms="16831">
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest@6b8ca3c8]" started-at="2025-02-10T21:06:44 PKT" name="setup" finished-at="2025-02-10T21:06:47 PKT" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_ZeroInvoicer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest@6b8ca3c8]" started-at="2025-02-10T21:06:47 PKT" name="LPS_Admin_Adhoc_ZeroInvoicer_Tests" finished-at="2025-02-10T21:07:00 PKT" duration-ms="13270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_ZeroInvoicer_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest@6b8ca3c8]" started-at="2025-02-10T21:07:00 PKT" name="tearDown" finished-at="2025-02-10T21:07:01 PKT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocZeroInvoiceTest -->
+    </test> <!-- LPS Admin - Adhoc Zero Invoice -->
+    <test started-at="2025-02-10T21:07:01 PKT" name="LPS_Key Revenue Reports1" finished-at="2025-02-10T21:07:29 PKT" duration-ms="28564">
+      <class name="GTZTransportation.gtz.KeyRevenue1_ReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.KeyRevenue1_ReportsTest@3e6ef8ad]" started-at="2025-02-10T21:07:01 PKT" name="setup" finished-at="2025-02-10T21:07:05 PKT" duration-ms="3972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="KeyRevenue_Report1_tests()[pri:1, instance:GTZTransportation.gtz.KeyRevenue1_ReportsTest@3e6ef8ad]" started-at="2025-02-10T21:07:05 PKT" name="KeyRevenue_Report1_tests" finished-at="2025-02-10T21:07:29 PKT" duration-ms="24317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KeyRevenue_Report1_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.KeyRevenue1_ReportsTest@3e6ef8ad]" started-at="2025-02-10T21:07:29 PKT" name="tearDown" finished-at="2025-02-10T21:07:29 PKT" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue1_ReportsTest -->
+    </test> <!-- LPS_Key Revenue Reports1 -->
+    <test started-at="2025-02-10T21:07:29 PKT" name="LPS Report - Quick Report" finished-at="2025-02-10T21:08:04 PKT" duration-ms="34755">
+      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_QuickReportTest@2e55dd0c]" started-at="2025-02-10T21:07:29 PKT" name="setup" finished-at="2025-02-10T21:07:32 PKT" duration-ms="3296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_QuickReport_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_QuickReportTest@2e55dd0c]" started-at="2025-02-10T21:07:32 PKT" name="LPS_QuickReport_Tests" finished-at="2025-02-10T21:08:04 PKT" duration-ms="31173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_QuickReport_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_QuickReportTest@2e55dd0c]" started-at="2025-02-10T21:08:04 PKT" name="tearDown" finished-at="2025-02-10T21:08:04 PKT" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
+    </test> <!-- LPS Report - Quick Report -->
+    <test started-at="2025-02-10T21:08:04 PKT" name="LPS V22 Load creation- Spot Quote" finished-at="2025-02-10T21:09:37 PKT" duration-ms="92999">
+      <class name="GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@c333c60]" started-at="2025-02-10T21:08:04 PKT" name="setup" finished-at="2025-02-10T21:08:08 PKT" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_V22_LPSDirect_Tests()[pri:1, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@c333c60]" started-at="2025-02-10T21:08:08 PKT" name="spotQuote_V22_LPSDirect_Tests" finished-at="2025-02-10T21:09:37 PKT" duration-ms="88831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_V22_LPSDirect_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest@c333c60]" started-at="2025-02-10T21:09:37 PKT" name="tearDown" finished-at="2025-02-10T21:09:37 PKT" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Create_V22_LPSDirectLoad_AwardTest -->
+    </test> <!-- LPS V22 Load creation- Spot Quote -->
+    <test started-at="2025-02-10T21:09:37 PKT" name="Reports 1- Spot Quote" finished-at="2025-02-10T21:11:24 PKT" duration-ms="107329">
+      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Report1_SpotQuoteTest@696da30b]" started-at="2025-02-10T21:09:37 PKT" name="setup" finished-at="2025-02-10T21:09:41 PKT" duration-ms="3947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.Report1_SpotQuoteTest@696da30b]" started-at="2025-02-10T21:09:41 PKT" name="spotQuote_Reports_Tests" finished-at="2025-02-10T21:11:24 PKT" duration-ms="103080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Reports_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Report1_SpotQuoteTest@696da30b]" started-at="2025-02-10T21:11:24 PKT" name="tearDown" finished-at="2025-02-10T21:11:24 PKT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
+    </test> <!-- Reports 1- Spot Quote -->
+    <test started-at="2025-02-10T21:11:24 PKT" name="LPS Admin - Add Shipment Batch" finished-at="2025-02-10T21:11:42 PKT" duration-ms="17562">
+      <class name="GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test@be35cd9]" started-at="2025-02-10T21:11:24 PKT" name="setup" finished-at="2025-02-10T21:11:28 PKT" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_AddBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test@be35cd9]" started-at="2025-02-10T21:11:28 PKT" name="LPS_Admin_Adhoc_AddBatch_Tests" finished-at="2025-02-10T21:11:42 PKT" duration-ms="13177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_AddBatch_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test@be35cd9]" started-at="2025-02-10T21:11:42 PKT" name="tearDown" finished-at="2025-02-10T21:11:42 PKT" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test -->
+    </test> <!-- LPS Admin - Add Shipment Batch -->
+    <test started-at="2025-02-10T21:11:42 PKT" name="FreightPayment-ShipmentLookup" finished-at="2025-02-10T21:12:01 PKT" duration-ms="18865">
+      <class name="GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest@41fecb8b]" started-at="2025-02-10T21:11:42 PKT" name="setup" finished-at="2025-02-10T21:11:46 PKT" duration-ms="4331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_ShipmentLookUp_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest@41fecb8b]" started-at="2025-02-10T21:11:46 PKT" name="FreightPayment_ShipmentLookUp_tests" finished-at="2025-02-10T21:12:00 PKT" duration-ms="14263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_ShipmentLookUp_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest@41fecb8b]" started-at="2025-02-10T21:12:00 PKT" name="tearDown" finished-at="2025-02-10T21:12:01 PKT" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_ShipmentLookUp_ReportTest -->
+    </test> <!-- FreightPayment-ShipmentLookup -->
+    <test started-at="2025-02-10T21:12:01 PKT" name="LPS Admin - Remove Shipment Batch" finished-at="2025-02-10T21:12:19 PKT" duration-ms="18652">
+      <class name="GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@2accdbb5]" started-at="2025-02-10T21:12:01 PKT" name="setup" finished-at="2025-02-10T21:12:04 PKT" duration-ms="3660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Admin_Adhoc_RemoveBatch_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@2accdbb5]" started-at="2025-02-10T21:12:04 PKT" name="LPS_Admin_Adhoc_RemoveBatch_Tests" finished-at="2025-02-10T21:12:19 PKT" duration-ms="14691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Admin_Adhoc_RemoveBatch_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test@2accdbb5]" started-at="2025-02-10T21:12:19 PKT" name="tearDown" finished-at="2025-02-10T21:12:19 PKT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_Adhoc_RemoveBatch_Test -->
+    </test> <!-- LPS Admin - Remove Shipment Batch -->
+    <test started-at="2025-02-10T21:12:19 PKT" name="FreightPayment-Reports1" finished-at="2025-02-10T21:13:11 PKT" duration-ms="51901">
+      <class name="GTZTransportation.gtz.FreightPayment_Reports1Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FreightPayment_Reports1Test@649bec2e]" started-at="2025-02-10T21:12:19 PKT" name="setup" finished-at="2025-02-10T21:12:23 PKT" duration-ms="3601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FreightPayment_Report1_tests()[pri:1, instance:GTZTransportation.gtz.FreightPayment_Reports1Test@649bec2e]" started-at="2025-02-10T21:12:23 PKT" name="FreightPayment_Report1_tests" finished-at="2025-02-10T21:13:11 PKT" duration-ms="47999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FreightPayment_Report1_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FreightPayment_Reports1Test@649bec2e]" started-at="2025-02-10T21:13:11 PKT" name="tearDown" finished-at="2025-02-10T21:13:11 PKT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FreightPayment_Reports1Test -->
+    </test> <!-- FreightPayment-Reports1 -->
+    <test started-at="2025-02-10T21:13:11 PKT" name="Load Management" finished-at="2025-02-10T21:13:48 PKT" duration-ms="36725">
+      <class name="GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest@1b6e1eff]" started-at="2025-02-10T21:13:11 PKT" name="setup" finished-at="2025-02-10T21:13:15 PKT" duration-ms="3430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LoadBoard_LoadManagement_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest@1b6e1eff]" started-at="2025-02-10T21:13:15 PKT" name="spotQuote_LoadBoard_LoadManagement_Tests" finished-at="2025-02-10T21:13:48 PKT" duration-ms="33037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LoadBoard_LoadManagement_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest@1b6e1eff]" started-at="2025-02-10T21:13:48 PKT" name="tearDown" finished-at="2025-02-10T21:13:48 PKT" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadBoard_LoadManagement_SpotQuoteTest -->
+    </test> <!-- Load Management -->
+    <test started-at="2025-02-10T21:13:48 PKT" name="Open Load" finished-at="2025-02-10T21:14:10 PKT" duration-ms="22247">
+      <class name="GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest@15bbf42f]" started-at="2025-02-10T21:13:48 PKT" name="setup" finished-at="2025-02-10T21:13:52 PKT" duration-ms="3909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_LoadBoard_OpenLoads_Tests()[pri:1, instance:GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest@15bbf42f]" started-at="2025-02-10T21:13:52 PKT" name="spotQuote_LoadBoard_OpenLoads_Tests" finished-at="2025-02-10T21:14:10 PKT" duration-ms="18048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_LoadBoard_OpenLoads_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest@15bbf42f]" started-at="2025-02-10T21:14:10 PKT" name="tearDown" finished-at="2025-02-10T21:14:10 PKT" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadBoard_OpenLoads_SpotQuoteTest -->
+    </test> <!-- Open Load -->
+    <test started-at="2025-02-10T21:14:10 PKT" name="Orders" finished-at="2025-02-10T21:15:03 PKT" duration-ms="52304">
+      <class name="GTZTransportation.gtz.Orders_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Orders_SpotQuoteTest@50ad3bc1]" started-at="2025-02-10T21:14:10 PKT" name="setup" finished-at="2025-02-10T21:14:14 PKT" duration-ms="3330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Orders_Tests()[pri:1, instance:GTZTransportation.gtz.Orders_SpotQuoteTest@50ad3bc1]" started-at="2025-02-10T21:14:14 PKT" name="spotQuote_Orders_Tests" finished-at="2025-02-10T21:15:02 PKT" duration-ms="48701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Orders_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Orders_SpotQuoteTest@50ad3bc1]" started-at="2025-02-10T21:15:02 PKT" name="tearDown" finished-at="2025-02-10T21:15:03 PKT" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Orders_SpotQuoteTest -->
+    </test> <!-- Orders -->
+    <test started-at="2025-02-10T21:15:03 PKT" name="PO- Orders" finished-at="2025-02-10T21:15:32 PKT" duration-ms="29169">
+      <class name="GTZTransportation.gtz.Orders_PO_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.Orders_PO_SpotQuoteTest@932bc4a]" started-at="2025-02-10T21:15:03 PKT" name="setup" finished-at="2025-02-10T21:15:06 PKT" duration-ms="3520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_POCreation_Orders_Tests()[pri:1, instance:GTZTransportation.gtz.Orders_PO_SpotQuoteTest@932bc4a]" started-at="2025-02-10T21:15:06 PKT" name="spotQuote_POCreation_Orders_Tests" finished-at="2025-02-10T21:15:32 PKT" duration-ms="25393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_POCreation_Orders_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.Orders_PO_SpotQuoteTest@932bc4a]" started-at="2025-02-10T21:15:32 PKT" name="tearDown" finished-at="2025-02-10T21:15:32 PKT" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.Orders_PO_SpotQuoteTest -->
+    </test> <!-- PO- Orders -->
+    <test started-at="2025-02-10T21:15:32 PKT" name="LPS Dashboard - Report" finished-at="2025-02-10T21:16:08 PKT" duration-ms="35857">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ReportsTest@69997e9d]" started-at="2025-02-10T21:15:32 PKT" name="setup" finished-at="2025-02-10T21:15:36 PKT" duration-ms="4271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ReportsTest@69997e9d]" started-at="2025-02-10T21:15:36 PKT" name="LPS_Dashboard_Reports_Tests" finished-at="2025-02-10T21:16:07 PKT" duration-ms="31239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_Reports_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ReportsTest@69997e9d]" started-at="2025-02-10T21:16:07 PKT" name="tearDown" finished-at="2025-02-10T21:16:08 PKT" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ReportsTest -->
+    </test> <!-- LPS Dashboard - Report -->
+    <test started-at="2025-02-10T21:16:08 PKT" name="LPS Dashboard - All Report" finished-at="2025-02-10T21:17:30 PKT" duration-ms="82001">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest@4de4b452]" started-at="2025-02-10T21:16:08 PKT" name="setup" finished-at="2025-02-10T21:16:12 PKT" duration-ms="4305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_Reports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest@4de4b452]" started-at="2025-02-10T21:16:12 PKT" name="LPS_Dashboard_Reports_Tests" finished-at="2025-02-10T21:17:29 PKT" duration-ms="77385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_Reports_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest@4de4b452]" started-at="2025-02-10T21:17:29 PKT" name="tearDown" finished-at="2025-02-10T21:17:30 PKT" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_All_ReportsTest -->
+    </test> <!-- LPS Dashboard - All Report -->
+    <test started-at="2025-02-10T21:17:30 PKT" name="LPS Dashboard - Load Summary Report" finished-at="2025-02-10T21:17:38 PKT" duration-ms="8688">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest@10feca44]" started-at="2025-02-10T21:17:30 PKT" name="setup" finished-at="2025-02-10T21:17:34 PKT" duration-ms="3952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_LoadSummaryReports_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest@10feca44]" started-at="2025-02-10T21:17:34 PKT" name="LPS_Dashboard_LoadSummaryReports_Tests" finished-at="2025-02-10T21:17:38 PKT" duration-ms="4478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_LoadSummaryReports_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest@10feca44]" started-at="2025-02-10T21:17:38 PKT" name="tearDown" finished-at="2025-02-10T21:17:38 PKT" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_LoadSummaryReportsTest -->
+    </test> <!-- LPS Dashboard - Load Summary Report -->
+    <test started-at="2025-02-10T21:17:38 PKT" name="LPS Dashboard - Bill of Lading" finished-at="2025-02-10T21:17:47 PKT" duration-ms="8593">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest@7a419da4]" started-at="2025-02-10T21:17:38 PKT" name="setup" finished-at="2025-02-10T21:17:42 PKT" duration-ms="3864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_BillOfLading_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest@7a419da4]" started-at="2025-02-10T21:17:42 PKT" name="LPS_Dashboard_BillOfLading_Tests" finished-at="2025-02-10T21:17:47 PKT" duration-ms="4472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_BillOfLading_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest@7a419da4]" started-at="2025-02-10T21:17:47 PKT" name="tearDown" finished-at="2025-02-10T21:17:47 PKT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_BillOfLadingTest -->
+    </test> <!-- LPS Dashboard - Bill of Lading -->
+    <test started-at="2025-02-10T21:17:47 PKT" name="LPS Dashboard - Density Calculator" finished-at="2025-02-10T21:17:55 PKT" duration-ms="8185">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@73700b80]" started-at="2025-02-10T21:17:47 PKT" name="setup" finished-at="2025-02-10T21:17:50 PKT" duration-ms="3400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_DensityCalulator_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@73700b80]" started-at="2025-02-10T21:17:50 PKT" name="LPS_Dashboard_DensityCalulator_Tests" finished-at="2025-02-10T21:17:55 PKT" duration-ms="4426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LPS_Dashboard_DensityCalulator_Tests -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@10e31a9a]" started-at="2025-01-29T00:37:50 PKT" name="tearDown" finished-at="2025-01-29T00:37:50 PKT" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest@73700b80]" started-at="2025-02-10T21:17:55 PKT" name="tearDown" finished-at="2025-02-10T21:17:55 PKT" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- GTZTransportation.gtz.LPS_Dashboard_DensityCalculatorTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LPS Dashboard - Density Calculator -->
+    <test started-at="2025-02-10T21:17:55 PKT" name="LPS Dashboard - Claims" finished-at="2025-02-10T21:18:05 PKT" duration-ms="9332">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ClaimsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ClaimsTest@5403f35f]" started-at="2025-02-10T21:17:55 PKT" name="setup" finished-at="2025-02-10T21:17:59 PKT" duration-ms="3306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_Claims_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ClaimsTest@5403f35f]" started-at="2025-02-10T21:17:59 PKT" name="LPS_Dashboard_Claims_Tests" finished-at="2025-02-10T21:18:04 PKT" duration-ms="5782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_Claims_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ClaimsTest@5403f35f]" started-at="2025-02-10T21:18:04 PKT" name="tearDown" finished-at="2025-02-10T21:18:05 PKT" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ClaimsTest -->
+    </test> <!-- LPS Dashboard - Claims -->
+    <test started-at="2025-02-10T21:18:05 PKT" name="FindRates-CopyLoad" finished-at="2025-02-10T21:19:05 PKT" duration-ms="59980">
+      <class name="GTZTransportation.gtz.FindRates_CopyLoadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FindRates_CopyLoadTest@581ac8a8]" started-at="2025-02-10T21:18:05 PKT" name="setup" finished-at="2025-02-10T21:18:08 PKT" duration-ms="3841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_CopyLoad_Tests()[pri:1, instance:GTZTransportation.gtz.FindRates_CopyLoadTest@581ac8a8]" started-at="2025-02-10T21:18:08 PKT" name="FindRates_CopyLoad_Tests" finished-at="2025-02-10T21:19:04 PKT" duration-ms="55831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_CopyLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FindRates_CopyLoadTest@581ac8a8]" started-at="2025-02-10T21:19:04 PKT" name="tearDown" finished-at="2025-02-10T21:19:05 PKT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FindRates_CopyLoadTest -->
+    </test> <!-- FindRates-CopyLoad -->
+    <test started-at="2025-02-10T21:19:05 PKT" name="FindRates-CancelLoad" finished-at="2025-02-10T21:19:31 PKT" duration-ms="26539">
+      <class name="GTZTransportation.gtz.FindRates_CancelLoadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.FindRates_CancelLoadTest@662b4c69]" started-at="2025-02-10T21:19:05 PKT" name="setup" finished-at="2025-02-10T21:19:08 PKT" duration-ms="3421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="FindRates_CancelLoad_Tests()[pri:1, instance:GTZTransportation.gtz.FindRates_CancelLoadTest@662b4c69]" started-at="2025-02-10T21:19:08 PKT" name="FindRates_CancelLoad_Tests" finished-at="2025-02-10T21:19:31 PKT" duration-ms="22817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FindRates_CancelLoad_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.FindRates_CancelLoadTest@662b4c69]" started-at="2025-02-10T21:19:31 PKT" name="tearDown" finished-at="2025-02-10T21:19:31 PKT" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.FindRates_CancelLoadTest -->
+    </test> <!-- FindRates-CancelLoad -->
+    <test started-at="2025-02-10T21:19:31 PKT" name="LPS Dashboard - Customer Selection" finished-at="2025-02-10T21:19:41 PKT" duration-ms="10210">
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest@5fbdfdcf]" started-at="2025-02-10T21:19:31 PKT" name="setup" finished-at="2025-02-10T21:19:35 PKT" duration-ms="3416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LPS_Dashboard_ChangeCustomer_Tests()[pri:1, instance:GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest@5fbdfdcf]" started-at="2025-02-10T21:19:35 PKT" name="LPS_Dashboard_ChangeCustomer_Tests" finished-at="2025-02-10T21:19:41 PKT" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LPS_Dashboard_ChangeCustomer_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest@5fbdfdcf]" started-at="2025-02-10T21:19:41 PKT" name="tearDown" finished-at="2025-02-10T21:19:41 PKT" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest -->
+    </test> <!-- LPS Dashboard - Customer Selection -->
+    <test started-at="2025-02-10T21:19:41 PKT" name="Complete Load -Invoice Flow- Spot Quote" finished-at="2025-02-10T21:22:12 PKT" duration-ms="150484">
+      <class name="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest@71def8f8]" started-at="2025-02-10T21:19:41 PKT" name="setup" finished-at="2025-02-10T21:19:45 PKT" duration-ms="3310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="spotQuote_Complete_Load_Invoice_Flow_Tests()[pri:1, instance:GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest@71def8f8]" started-at="2025-02-10T21:19:45 PKT" name="spotQuote_Complete_Load_Invoice_Flow_Tests" finished-at="2025-02-10T21:22:11 PKT" duration-ms="146752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spotQuote_Complete_Load_Invoice_Flow_Tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest@71def8f8]" started-at="2025-02-10T21:22:11 PKT" name="tearDown" finished-at="2025-02-10T21:22:12 PKT" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest -->
+    </test> <!-- Complete Load -Invoice Flow- Spot Quote -->
+    <test started-at="2025-02-10T21:22:12 PKT" name="CustomerCarrier-Carrier Filters" finished-at="2025-02-10T21:22:33 PKT" duration-ms="21469">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest@7133da86]" started-at="2025-02-10T21:22:12 PKT" name="setup" finished-at="2025-02-10T21:22:16 PKT" duration-ms="4017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CustomerCarriers_CarrierListFilters_tests()[pri:1, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest@7133da86]" started-at="2025-02-10T21:22:16 PKT" name="CustomerCarriers_CarrierListFilters_tests" finished-at="2025-02-10T21:22:33 PKT" duration-ms="17163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerCarriers_CarrierListFilters_tests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest@7133da86]" started-at="2025-02-10T21:22:33 PKT" name="tearDown" finished-at="2025-02-10T21:22:33 PKT" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
+    </test> <!-- CustomerCarrier-Carrier Filters -->
+  </suite> <!-- GTZ_RegressionSuite -->
 </testng-results>

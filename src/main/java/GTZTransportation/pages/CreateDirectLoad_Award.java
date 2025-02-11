@@ -456,7 +456,7 @@ public class CreateDirectLoad_Award extends BaseClass {
 		// This will click on award and load will be awarded
 		AwardBid.click();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

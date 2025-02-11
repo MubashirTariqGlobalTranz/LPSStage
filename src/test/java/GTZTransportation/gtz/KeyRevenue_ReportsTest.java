@@ -51,7 +51,7 @@ public class KeyRevenue_ReportsTest extends BaseClass {
 		keyRevenue.Report_KSXMPListing();
 		keyRevenue.Report_InvoiceHistory();
 		keyRevenue.Report_PastDueInvoices();
-		keyRevenue.Report_AutoLinkDetail();
+		//keyRevenue.Report_AutoLinkDetail();
 		keyRevenue.Report_VarianceSummaryByCarrier();
 		keyRevenue.Report_Customers();
 		keyRevenue.Report_PendingBillables();

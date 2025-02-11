@@ -622,4 +622,17 @@
 
 		</classes>
 	</test>
+	<test name="Complete Load -Invoice Flow- Spot Quote">
+		<classes>
+			<class name="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest" />
+
+		</classes>
+	</test>
+	<test name="CustomerCarrier-Carrier Filters">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest" />
+
+		</classes>
+	</test>
 </suite>

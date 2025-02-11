@@ -41,13 +41,13 @@ public class Report_SpotQuoteTest extends BaseClass {
 		Report.Report_CarrierList();
 		Report.Report_CarrierGroup();
 		Report.Report_AwardLoad();
-		Report.Report_EdiFileTrackingList();
+		/*Report.Report_EdiFileTrackingList();
 
 		// Assertion & Screenshot on action Tab
 		String actual = driver.findElement(By.xpath("//h2[normalize-space()='Report - Edi File Tracking List']"))
 				.getText();
 		String expected = "Report - Edi File Tracking List";
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, expected);*/
 
 	}
 

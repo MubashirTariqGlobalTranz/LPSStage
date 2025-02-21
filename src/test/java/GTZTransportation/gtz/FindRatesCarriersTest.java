@@ -27,18 +27,22 @@ public class FindRatesCarriersTest extends BaseClass {
 	Test case description:
 	Find Rates Result:
 	Verify carrier Rates are displayed.
+	Verify DiscountedPrice Detail
+	Verify Carrier Details page
 	*/
 	@Test(priority = 1, groups = ("Regression"),retryAnalyzer = listeners.MyRetry.class)
 	public void FindRates_Carriers_Tests() {
 //This will run all the methods
 		loadPage.openFindRates();
 		loadPage.FindRates();
+		loadPage.DiscountedPriceDetails();
+		loadPage.CarrierDetails();
 		
 //After creating BOL, This assertion will work
-	/*	String actual = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[20]/div/div[2]/table/tbody/tr[1]/th[5]/a")).getText();
-		String expected = "Total Discounted Price ";
+		String actual = driver.findElement(By.xpath("//div[@class='body-fixed']//small[contains(text(),'CARRIER INFORMATION')]")).getText();
+		String expected = "CARRIER INFORMATION";
 		Assert.assertEquals(actual, expected);
-		captureScreenShot(driver,"Verify Find Rates Against Carriers");*/
+		captureScreenShot(driver,"Verify Find Rates CarrierDetails");
 	}
 
 	@AfterTest(groups = ("Regression"))

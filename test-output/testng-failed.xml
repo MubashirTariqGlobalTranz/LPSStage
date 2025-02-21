@@ -5,26 +5,15 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="CustomerCarrier-Prospect Queue(failed)">
+  <test thread-count="1" name="LPS Dashboard - InboundRoutingOrders(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
+      <class name="GTZTransportation.gtz.LPS_InboundRouting_OrderTest">
         <methods>
-          <include name="CustomerCarriers_CustomerList_ProspectQueue_tests"/>
-          <include name="setup"/>
           <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
-    </classes>
-  </test> <!-- CustomerCarrier-Prospect Queue(failed) -->
-  <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
-        <methods>
-          <include name="CustomerCarriers_CarrierListFilters_tests"/>
+          <include name="LPS_InboundRouting_Order_Tests"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_InboundRouting_OrderTest -->
     </classes>
-  </test> <!-- CustomerCarrier-Carrier Filters(failed) -->
+  </test> <!-- LPS Dashboard - InboundRoutingOrders(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

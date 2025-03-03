@@ -123,7 +123,6 @@ public class CreateBOL_FindRatesParcel extends BaseClass {
 		}
 		Destination.clear();
 		Destination.sendKeys("30303");
-		;
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

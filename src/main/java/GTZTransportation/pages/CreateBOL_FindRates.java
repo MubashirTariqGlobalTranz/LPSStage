@@ -109,7 +109,7 @@ public class CreateBOL_FindRates extends BaseClass {
 		}
 		Destination.clear();
 		Destination.sendKeys("30303");
-		;
+	
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

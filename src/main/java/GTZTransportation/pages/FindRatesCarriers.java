@@ -1,8 +1,10 @@
 package GTZTransportation.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import GTZTransportation.gtz.BaseClass;
 
@@ -54,14 +56,22 @@ public class FindRatesCarriers extends BaseClass {
 
 	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div[2]/div[2]/div[11]/a[1]")
 	WebElement BOLCreate;
-
 	
-	//Initialization
+	@FindBy(xpath = "(//td[contains(@class, 'price')]/a)[1]")
+	WebElement DiscountedPrice;
+	
+	@FindBy(xpath = "//div[@class='body-fixed']//a[@class='btn btn-primary'][normalize-space()='Back to Results']")
+	WebElement Back;
+	
+	@FindBy(xpath = "(//td[contains(@class, 'carrier')]/span/a)[1]")
+	WebElement CarrierLink;
+
+	// Initialization
 	public FindRatesCarriers() {
 		PageFactory.initElements(driver, this);
 	}
-      
-	//This will open Find Rate Application
+
+	// This will open Find Rate Application
 	public void openFindRates()
 
 	{
@@ -74,8 +84,9 @@ public class FindRatesCarriers extends BaseClass {
 
 		FindRates.click();
 	}
-  
-	//This will fill the find rate fields and click on find rates button & Create Button
+
+	// This will fill the find rate fields and click on find rates button & Create
+	// Button
 	public void FindRates() {
 
 		try {
@@ -134,12 +145,47 @@ public class FindRatesCarriers extends BaseClass {
 
 		FindRatesButton.click();
 		try {
-			Thread.sleep(9000);
+			Thread.sleep(11000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 
-}
+	}
+	public void DiscountedPriceDetails() {
+		DiscountedPrice.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String actual = driver.findElement(By.xpath("//div[@class='body-fixed']//div[@data-bind=\"'if': activeSection() == 'carrierCharges'\"]//div//h2[contains(text(),'SEARCH CRITERIA')]")).getText();
+		String expected = "SEARCH CRITERIA";
+		Assert.assertEquals(actual, expected);
+		captureScreenShot(driver,"Verify Discounted Price Details");
+	}
+	
+	public void CarrierDetails() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Back.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		CarrierLink.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

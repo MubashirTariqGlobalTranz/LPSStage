@@ -5,26 +5,15 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
+  <test thread-count="1" name="CustomerCarrier-Prospect Queue(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
         <methods>
-          <include name="KeyRevenue_Report_tests"/>
-          <include name="tearDown"/>
+          <include name="CustomerCarriers_CustomerList_ProspectQueue_tests"/>
           <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
-    </classes>
-  </test> <!-- LPS_Key Revenue Reports(failed) -->
-  <test thread-count="1" name="LPS Report - Quick Report(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
-        <methods>
           <include name="tearDown"/>
-          <include name="LPS_QuickReport_Tests"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
     </classes>
-  </test> <!-- LPS Report - Quick Report(failed) -->
+  </test> <!-- CustomerCarrier-Prospect Queue(failed) -->
 </suite> <!-- Failed suite [GTZ_Production] -->

@@ -5,15 +5,37 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="LPS Dashboard - InboundRoutingOrders(failed)">
+  <test thread-count="1" name="FindRate-Carriers(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPS_InboundRouting_OrderTest">
+      <class name="GTZTransportation.gtz.FindRatesCarriersTest">
         <methods>
+          <include name="FindRates_Carriers_Tests"/>
           <include name="tearDown"/>
-          <include name="LPS_InboundRouting_Order_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_InboundRouting_OrderTest -->
+      </class> <!-- GTZTransportation.gtz.FindRatesCarriersTest -->
     </classes>
-  </test> <!-- LPS Dashboard - InboundRoutingOrders(failed) -->
+  </test> <!-- FindRate-Carriers(failed) -->
+  <test thread-count="1" name="KSXADMIN ManageShipment(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+        <methods>
+          <include name="KSXAdmin_ManageShipment_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
+    </classes>
+  </test> <!-- KSXADMIN ManageShipment(failed) -->
+  <test thread-count="1" name="Reports 1- Spot Quote(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="spotQuote_Reports_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Reports 1- Spot Quote(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

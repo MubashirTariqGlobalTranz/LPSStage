@@ -1,7 +1,5 @@
 package GTZTransportation.gtz;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -36,14 +34,10 @@ public class LPS_InboundRouting_OrderTest extends BaseClass {
 		Claims.OrderCreation();
 		Claims.FindRates();
 		Claims.CreateBOL();
+		Claims.selectAndSaveCustomer();
 	    
 	
-//Text Compare, This assertion will work
-		String actual = driver.findElement(By.xpath("//small[normalize-space()='Bill of Lading']"))
-				.getText();
-		String expected = "Bill of Lading";
-		Assert.assertEquals(actual, expected);
-		captureScreenShot(driver,"Verify order InboundRouting;");
+
 	}
 
 	@AfterTest(groups = ("Regression"))

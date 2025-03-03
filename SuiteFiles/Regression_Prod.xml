@@ -365,4 +365,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS Dashboard - Glossary">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Dashboard_GlossaryTest" />
+
+		</classes>
+	</test>
 </suite>

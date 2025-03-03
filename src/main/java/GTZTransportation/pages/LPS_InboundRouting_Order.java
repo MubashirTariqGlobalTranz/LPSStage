@@ -3,6 +3,13 @@ package GTZTransportation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import GTZTransportation.gtz.BaseClass;
 
@@ -72,6 +79,15 @@ public class LPS_InboundRouting_Order extends BaseClass {
 
 	@FindBy(xpath = "//*[@id=\"content\"]/div/div[3]/div[2]/div[1]/button")
 	WebElement SendBOL;
+	
+	 @FindBy(xpath = "//a[@id='navheader_updateActiveCustomer_btnChange']")
+	    WebElement Change;
+
+	    @FindBy(xpath = "//a[@id='navheader_updateActiveCustomer_btnSave']")
+	    WebElement Save;
+
+	    @FindBy(xpath = "//select[@id='navheader_updateActiveCustomer_lstCustomer']")
+	    WebElement customerDropdown;
 
 	// Initialization
 	public LPS_InboundRouting_Order() {
@@ -136,6 +152,7 @@ public class LPS_InboundRouting_Order extends BaseClass {
 		}
 		Destination.clear();
 		Destination.sendKeys("60606");
+		Origin.clear();
 		Origin.sendKeys("30303");
 		try {
 			Thread.sleep(3000);
@@ -206,6 +223,61 @@ public class LPS_InboundRouting_Order extends BaseClass {
 		}
 		Emailtext.sendKeys("mubashir.tariq@globaltranz.com");
 		SendBOL.click();
+		//Text Compare, This assertion will work
+				String actual = driver.findElement(By.xpath("//small[normalize-space()='Bill of Lading']"))
+						.getText();
+				String expected = "Bill of Lading";
+				Assert.assertEquals(actual, expected);
+				captureScreenShot(driver,"Verify order InboundRouting;");
 	}
+	 public void selectAndSaveCustomer() {
+	        
+         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+         // Click the Change button
+         System.out.println("Clicking Change button...");
+         Change.click();
+
+         // Wait for the customer dropdown to be visible
+         System.out.println("Waiting for customer dropdown...");
+         wait.until(ExpectedConditions.visibilityOf(customerDropdown));
+
+         // Select "Nokia" from the dropdown
+         Select customerSelect = new Select(customerDropdown);
+         System.out.println("Selecting 'Nokia' from the dropdown...");
+         customerSelect.selectByVisibleText("NOKIA");
+
+         // Click Save to save the selection
+         System.out.println("Saving the Nokia selection...");
+         Save.click();
+
+         // Wait for the page to load before clicking Change again
+         System.out.println("Waiting for Change button to be clickable...");
+         wait.until(ExpectedConditions.elementToBeClickable(Change));
+
+         // Click the Change button again to change the customer
+         Change.click();
+
+         // Wait for the customer dropdown to be visible again
+         System.out.println("Waiting for customer dropdown again...");
+         wait.until(ExpectedConditions.visibilityOf(customerDropdown));
+
+         // Select "Cameron's Coffee" from the dropdown
+         System.out.println("Selecting 'Cameron's Coffee' from the dropdown...");
+         customerSelect.selectByVisibleText("Cameron's Coffee");
+
+         // Click Save to save the selection
+         System.out.println("Saving the Cameron's Coffee selection...");
+         Save.click();
+         
+         try {
+ 			Thread.sleep(3000);
+ 		} catch (InterruptedException e) {
+ 			// TODO Auto-generated catch block
+ 			e.printStackTrace();
+ 		}
+
+        
+     } 
 
 }

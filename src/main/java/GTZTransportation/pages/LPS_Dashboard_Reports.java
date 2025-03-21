@@ -26,6 +26,9 @@ public class LPS_Dashboard_Reports extends BaseClass {
 
 	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_btnExecute']")
 	WebElement Execute;
+	
+	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_ctl00_btnClear']")
+	WebElement Clear;
 
 	// Initialization
 	public LPS_Dashboard_Reports() {
@@ -55,6 +58,7 @@ public class LPS_Dashboard_Reports extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Clear.click();
 		SearchReport.sendKeys("Application Error Detail");
 		Filter.click();
 		ApplicationErrorReport.click();

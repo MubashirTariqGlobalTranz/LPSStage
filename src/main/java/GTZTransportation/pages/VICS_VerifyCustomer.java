@@ -25,65 +25,7 @@ public class VICS_VerifyCustomer extends BaseClass {
 	@FindBy(id = "ctl00_ContentPlaceHolder1_dateRequiredDeliveryDate_txtDate")
 	WebElement DeliveryDate;
 
-	/*@FindBy(id = "ctl00_ContentPlaceHolder1_txtOrigin")
-	WebElement Origin;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtDestination")
-	WebElement Destination;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_requestItems_repeater_ctl00_intWeight")
-	WebElement Weight;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_requestItems_repeater_ctl00_intPallets")
-	WebElement Pallets;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_requestItems_repeater_ctl00_intPieces")
-	WebElement Pieces;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_TxtDeclaredValue")
-	WebElement DeclaredValue;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_Submit")
-	WebElement Submit;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_LtlGrid_ctl02_btnBillOfLading")
-	WebElement Create;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtFromName")
-	WebElement ShipFromName;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtFromAddress1")
-	WebElement ShipFromAddress;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtFromPhone")
-	WebElement ShipFromPhoneNo;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtShipperReferenceNumber")
-	WebElement ShipFromRefNo;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtToName")
-	WebElement ShipToName;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtToAddress1")
-	WebElement ShipToAddress;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtToPhone")
-	WebElement ShipToPhoneNo;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtToContactLast")
-	WebElement ContactLastName;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_txtToContactFirst")
-	WebElement ContactFirstName;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_gridRequestItems_ctl02_txtDescription")
-	WebElement Description;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_btnGenerate")
-	WebElement Generate;
-
-	@FindBy(id = "ctl00_ContentPlaceHolder1_btnGenerate")
-	WebElement DownloadPDF;*/
+	
 
 	// Initialization
 	public VICS_VerifyCustomer() {
@@ -121,6 +63,13 @@ public class VICS_VerifyCustomer extends BaseClass {
 			e.printStackTrace();
 		}
 		PageNo.click();
+
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Retry Suite - GTZ_VICS]">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.VICS_VeiwOrdersTest.VICS_ViewOrders_Tests(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.VICS_VeiwOrdersTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="VICS_ViewOrders_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.VICS_VeiwOrdersTest -->
+    </classes>
+  </test> <!-- Retry - GTZTransportation.gtz.VICS_VeiwOrdersTest.VICS_ViewOrders_Tests(failed) -->
+</suite> <!-- Failed suite [Retry Suite - GTZ_VICS] -->

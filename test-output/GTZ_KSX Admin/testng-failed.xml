@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Failed suite [GTZ_KSX Admin]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.TestListener"/>
+    <listener class-name="listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="1" name="KSXADMIN ManageClient(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageClientTest">
+        <methods>
+          <include name="setup"/>
+          <include name="KSXAdmin_ManageClient_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageClientTest -->
+    </classes>
+  </test> <!-- KSXADMIN ManageClient(failed) -->
+  <test thread-count="1" name="KSXADMIN Manage Sales Rep(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest">
+        <methods>
+          <include name="KSXAdmin_ManageSalesRep_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageSalesReptTest -->
+    </classes>
+  </test> <!-- KSXADMIN Manage Sales Rep(failed) -->
   <test thread-count="1" name="KSXADMIN Manage Users(failed)">
     <classes>
       <class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest">

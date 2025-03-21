@@ -47,9 +47,21 @@ public class FindRates_CancelLoad extends BaseClass {
 		FindRates.click();
 		History.click();
 		FilterExp.click();
+		try {                                                                             
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Filter.click();
 		//captureScreenShot(driver, "Verify Find Rate History");
 		//cancel.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Loadno.click();
 		String currentWindowHandle = driver.getWindowHandle();
 

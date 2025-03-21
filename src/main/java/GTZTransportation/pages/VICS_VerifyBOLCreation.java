@@ -150,12 +150,25 @@ public class VICS_VerifyBOLCreation extends BaseClass {
 			e.printStackTrace();
 		}
 		Submit.click();
+		
 	}
 
 	// This will click on create button for shipment Recommendations
 	public void VICS_ShipmentRecommendations() {
+		try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 
 		Create.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

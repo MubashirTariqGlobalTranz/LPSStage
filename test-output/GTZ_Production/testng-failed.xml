@@ -5,15 +5,125 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="CustomerCarrier-Prospect Queue(failed)">
+  <test thread-count="1" name="FreightPayment-Missing Carriers(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
+      <class name="GTZTransportation.gtz.FreightPayment_MissingCarriersTest">
         <methods>
-          <include name="CustomerCarriers_CustomerList_ProspectQueue_tests"/>
+          <include name="tearDown"/>
+          <include name="FreightPayment_Missing_Carriers"/>
           <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.FreightPayment_MissingCarriersTest -->
+    </classes>
+  </test> <!-- FreightPayment-Missing Carriers(failed) -->
+  <test thread-count="1" name="FreightPayment-ClientAdmin(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.FreightPayment_ClientAdminTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="FreightPayment_ClientAdmin_tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.FreightPayment_ClientAdminTest -->
+    </classes>
+  </test> <!-- FreightPayment-ClientAdmin(failed) -->
+  <test thread-count="1" name="FreightPayment-GTZ_WebQueues(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.FreightPayment_GTZTest">
+        <methods>
+          <include name="FreightPayment_GTZ_tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.FreightPayment_GTZTest -->
+    </classes>
+  </test> <!-- FreightPayment-GTZ_WebQueues(failed) -->
+  <test thread-count="1" name="LPS_Key Revenue- Customer(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KeyRevenue_CustomerTest">
+        <methods>
+          <include name="KeyRevenue_Customer_tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_CustomerTest -->
+    </classes>
+  </test> <!-- LPS_Key Revenue- Customer(failed) -->
+  <test thread-count="1" name="LPS_Key Revenue- Admin(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KeyRevenue_AdminTest">
+        <methods>
+          <include name="setup"/>
+          <include name="KeyRevenue_Admin_tests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_AdminTest -->
     </classes>
-  </test> <!-- CustomerCarrier-Prospect Queue(failed) -->
+  </test> <!-- LPS_Key Revenue- Admin(failed) -->
+  <test thread-count="1" name="KSXADMIN ManageShipment(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+        <methods>
+          <include name="KSXAdmin_ManageShipment_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
+    </classes>
+  </test> <!-- KSXADMIN ManageShipment(failed) -->
+  <test thread-count="1" name="KSXADMIN ManageClient(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageClientTest">
+        <methods>
+          <include name="setup"/>
+          <include name="KSXAdmin_ManageClient_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageClientTest -->
+    </classes>
+  </test> <!-- KSXADMIN ManageClient(failed) -->
+  <test thread-count="1" name="KSXADMIN Manage Users(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KSXAdmin_ManageUsersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="KSXAdmin_ManageUsers_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageUsersTest -->
+    </classes>
+  </test> <!-- KSXADMIN Manage Users(failed) -->
+  <test thread-count="1" name="LPS General(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_GeneralTest">
+        <methods>
+          <include name="setup"/>
+          <include name="LPS_General_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_GeneralTest -->
+    </classes>
+  </test> <!-- LPS General(failed) -->
+  <test thread-count="1" name="VICS View Order(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.VICS_VeiwOrdersTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="VICS_ViewOrders_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.VICS_VeiwOrdersTest -->
+    </classes>
+  </test> <!-- VICS View Order(failed) -->
+  <test thread-count="1" name="LPS Dashboard - Customer Selection(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="LPS_Dashboard_ChangeCustomer_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ChangeCustomerTest -->
+    </classes>
+  </test> <!-- LPS Dashboard - Customer Selection(failed) -->
 </suite> <!-- Failed suite [GTZ_Production] -->

@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Retry Suite - GTZ_RegressionSuite]">
-  <test thread-count="5" name="Retry - GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.VICS_VerifyBOLCreationTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="VICS_BOLCreation_Tests"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.VICS_VerifyBOLCreationTest -->
-    </classes>
-  </test> <!-- Retry - GTZTransportation.gtz.VICS_VerifyBOLCreationTest.VICS_BOLCreation_Tests(failed) -->
   <test thread-count="5" name="Retry - GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest.CustomerCarriers_CarrierListFilters_tests(failed)">
     <classes>
       <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">

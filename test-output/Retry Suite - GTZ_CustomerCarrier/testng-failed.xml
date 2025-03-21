@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Retry Suite - GTZ_CustomerCarrier]">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest.CustomerCarriers_CarrierListFilters_tests(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
+        <methods>
+          <include name="CustomerCarriers_CarrierListFilters_tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
+    </classes>
+  </test> <!-- Retry - GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest.CustomerCarriers_CarrierListFilters_tests(failed) -->
+</suite> <!-- Failed suite [Retry Suite - GTZ_CustomerCarrier] -->

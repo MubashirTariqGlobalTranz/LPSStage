@@ -5,6 +5,17 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
+  <test thread-count="1" name="LPS Direct - Spot Quote(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="spotQuote_LPSDirect_Tests"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
+    </classes>
+  </test> <!-- LPS Direct - Spot Quote(failed) -->
   <test thread-count="1" name="FindRate-Carriers(failed)">
     <classes>
       <class name="GTZTransportation.gtz.FindRatesCarriersTest">
@@ -16,26 +27,26 @@
       </class> <!-- GTZTransportation.gtz.FindRatesCarriersTest -->
     </classes>
   </test> <!-- FindRate-Carriers(failed) -->
-  <test thread-count="1" name="KSXADMIN ManageShipment(failed)">
+  <test thread-count="1" name="FindRates-CopyLoad(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.KSXAdmin_ManageShipmentTest">
+      <class name="GTZTransportation.gtz.FindRates_CopyLoadTest">
         <methods>
-          <include name="KSXAdmin_ManageShipment_Tests"/>
+          <include name="FindRates_CopyLoad_Tests"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.KSXAdmin_ManageShipmentTest -->
+      </class> <!-- GTZTransportation.gtz.FindRates_CopyLoadTest -->
     </classes>
-  </test> <!-- KSXADMIN ManageShipment(failed) -->
-  <test thread-count="1" name="Reports 1- Spot Quote(failed)">
+  </test> <!-- FindRates-CopyLoad(failed) -->
+  <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
         <methods>
+          <include name="CustomerCarriers_CarrierListFilters_tests"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="spotQuote_Reports_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
     </classes>
-  </test> <!-- Reports 1- Spot Quote(failed) -->
+  </test> <!-- CustomerCarrier-Carrier Filters(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

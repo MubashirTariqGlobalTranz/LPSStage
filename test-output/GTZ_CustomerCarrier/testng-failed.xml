@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [GTZ_CustomerCarrier]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.TestListener"/>
+    <listener class-name="listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="1" name="CustomerCarrier-Prospect Queue(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest">
+        <methods>
+          <include name="CustomerCarriers_CustomerList_ProspectQueue_tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_ProspectQueueTest -->
+    </classes>
+  </test> <!-- CustomerCarrier-Prospect Queue(failed) -->
+  <test thread-count="1" name="CustomerCarrier-Carrier List(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="CustomerCarriers_CarrierList_tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListTest -->
+    </classes>
+  </test> <!-- CustomerCarrier-Carrier List(failed) -->
+  <test thread-count="1" name="CustomerCarrier-Carrier Import(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest">
+        <methods>
+          <include name="CustomerCarriers_CarrierImport_tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierImportTest -->
+    </classes>
+  </test> <!-- CustomerCarrier-Carrier Import(failed) -->
+</suite> <!-- Failed suite [GTZ_CustomerCarrier] -->

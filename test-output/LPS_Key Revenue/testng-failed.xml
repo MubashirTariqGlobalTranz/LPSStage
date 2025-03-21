@@ -5,17 +5,6 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="LPS_Key Revenue Reports(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.KeyRevenue_ReportsTest">
-        <methods>
-          <include name="KeyRevenue_Report_tests"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.KeyRevenue_ReportsTest -->
-    </classes>
-  </test> <!-- LPS_Key Revenue Reports(failed) -->
   <test thread-count="1" name="LPS_Key Revenue- InvoiceGeneral(failed)">
     <classes>
       <class name="GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest">
@@ -27,4 +16,15 @@
       </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoicegeneralTest -->
     </classes>
   </test> <!-- LPS_Key Revenue- InvoiceGeneral(failed) -->
+  <test thread-count="1" name="LPS_Key Revenue Reports1(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.KeyRevenue1_ReportsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="KeyRevenue_Report1_tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KeyRevenue1_ReportsTest -->
+    </classes>
+  </test> <!-- LPS_Key Revenue Reports1(failed) -->
 </suite> <!-- Failed suite [LPS_Key Revenue] -->

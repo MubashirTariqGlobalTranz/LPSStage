@@ -145,7 +145,7 @@ public class FindRatesCarriers extends BaseClass {
 
 		FindRatesButton.click();
 		try {
-			Thread.sleep(11000);
+			Thread.sleep(13000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -155,7 +155,7 @@ public class FindRatesCarriers extends BaseClass {
 	public void DiscountedPriceDetails() {
 		DiscountedPrice.click();
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

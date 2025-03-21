@@ -444,6 +444,13 @@ public class CancelLoad_SpotQuote extends BaseClass {
 
 		AllLoad.click();
 		FilterLoad.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+
+		}
 
 	}
 

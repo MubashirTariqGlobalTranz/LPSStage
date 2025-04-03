@@ -665,4 +665,10 @@
 
 		</classes>
 	</test>
+	<test name="LPS Dashboard - GenerateBOL">
+		<classes>
+			<class name="GTZTransportation.gtz.Dashboard_GenerateBOLTest" />
+
+		</classes>
+	</test>
 </suite>

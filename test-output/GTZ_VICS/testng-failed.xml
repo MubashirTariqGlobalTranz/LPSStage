@@ -5,15 +5,81 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="VICS View Order(failed)">
+  <test thread-count="1" name="LPS Resources - NewsListing(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.VICS_VeiwOrdersTest">
+      <class name="GTZTransportation.gtz.LPS_Resources_NewsTest">
+        <methods>
+          <include name="LPS_Resources_News_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Resources_NewsTest -->
+    </classes>
+  </test> <!-- LPS Resources - NewsListing(failed) -->
+  <test thread-count="1" name="LPS Admin - Data Entry Expression(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest">
+        <methods>
+          <include name="LPS_Admin_DataEntryExpressions_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_DataEntryExpressionTest -->
+    </classes>
+  </test> <!-- LPS Admin - Data Entry Expression(failed) -->
+  <test thread-count="1" name="LPS Admin - Adhoc ChangeInvoiceCustomer(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest">
+        <methods>
+          <include name="LPS_Admin_Adhoc_ChangeInvoiceCustomer_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_AdhocChangeInvocieCustomerTest -->
+    </classes>
+  </test> <!-- LPS Admin - Adhoc ChangeInvoiceCustomer(failed) -->
+  <test thread-count="1" name="LPS Admin - Add Shipment Batch(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test">
+        <methods>
+          <include name="LPS_Admin_Adhoc_AddBatch_Tests"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Admin_Adhoc_AddBatch_Test -->
+    </classes>
+  </test> <!-- LPS Admin - Add Shipment Batch(failed) -->
+  <test thread-count="1" name="LPS Dashboard - Report(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ReportsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="LPS_Dashboard_Reports_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ReportsTest -->
+    </classes>
+  </test> <!-- LPS Dashboard - Report(failed) -->
+  <test thread-count="1" name="LPS Dashboard - AuditDashboard(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.Dashboard_AuditDashboardTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="VICS_ViewOrders_Tests"/>
+          <include name="Dashboard_AuditDashboard_Test"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.VICS_VeiwOrdersTest -->
+      </class> <!-- GTZTransportation.gtz.Dashboard_AuditDashboardTest -->
     </classes>
-  </test> <!-- VICS View Order(failed) -->
+  </test> <!-- LPS Dashboard - AuditDashboard(failed) -->
+  <test thread-count="1" name="LPS Dashboard - GenerateBOL(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.Dashboard_GenerateBOLTest">
+        <methods>
+          <include name="Dashboard_GenerateBOL_Test"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.Dashboard_GenerateBOLTest -->
+    </classes>
+  </test> <!-- LPS Dashboard - GenerateBOL(failed) -->
 </suite> <!-- Failed suite [GTZ_VICS] -->

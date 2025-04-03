@@ -2,6 +2,7 @@ package listeners;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
+import GTZTransportation.gtz.BaseClass;
 
 public class MyRetry implements IRetryAnalyzer {
 
@@ -13,6 +14,7 @@ public class MyRetry implements IRetryAnalyzer {
         if (retryCount < maxRetryCount) {
             retryCount++;
             System.out.println("Retrying " + result.getName() + " again and the count is " + retryCount);
+            BaseClass.checkForServerErrors(); // Capture network logs on retry
             return true;
         }
         return false;

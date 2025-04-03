@@ -3,17 +3,16 @@ package Utility;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import GTZTransportation.gtz.BaseClass;
 
 public class TestListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
-        // Initialize the report
         Reporting.getInstance();
     }
 
     @Override
     public void onTestStart(ITestResult result) {
-        // Create a test entry in the report
         Reporting.createTest(result.getMethod().getMethodName());
     }
 
@@ -34,7 +33,8 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-        // Flush the report at the end of the suite
+        BaseClass.checkForServerErrors(); // Capture network logs at the end of the test suite
         Reporting.flush();
+        System.out.println("✅ Network logs saved: " + BaseClass.logFilePath);
     }
 }

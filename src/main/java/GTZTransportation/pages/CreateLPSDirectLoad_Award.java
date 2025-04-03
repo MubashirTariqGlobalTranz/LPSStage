@@ -331,6 +331,12 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 		TruckLoad.click();
 		// Expedited.click();
 		// LTLGuaranted.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Create.click();
 
 		try {
@@ -346,7 +352,12 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 		WebElement K = driver.findElement(By.className("success-validation"));
 		String kt = K.getText();
 		System.out.println(kt);
-
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		SendBid.click();
 
 		try {
@@ -416,5 +427,11 @@ public class CreateLPSDirectLoad_Award extends BaseClass {
 		WebElement M = driver.findElement(By.className("success-validation"));
 		String mt = M.getText();
 		System.out.println("LPS Direct Carrier: " + mt);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

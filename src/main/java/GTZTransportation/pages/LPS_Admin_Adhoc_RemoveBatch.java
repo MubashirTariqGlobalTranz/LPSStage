@@ -68,13 +68,17 @@ public class LPS_Admin_Adhoc_RemoveBatch extends BaseClass {
 			e.printStackTrace();
 		}
 
-		ShipmentNo.sendKeys("413157814");
+		ShipmentNo.sendKeys("392131025");
 
 		Batch.sendKeys("201497");
-
 		Submit.click();
 		driver.switchTo().alert().accept();
-
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

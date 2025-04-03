@@ -14,61 +14,71 @@
 	<url>https://my.shiplps.com/Login.aspx</url>
 
 	<properties>
-    <!-- Use Java 8 or later -->
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
+		<!-- Use Java 8 or later -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
 	<dependencies>
-
 
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>4.1.5</version>
+		<version>4.1.5</version>
 		</dependency>
 
-
-		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.5.3</version>
-</dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.5.3</version>
+		</dependency>
 
 		<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.7.0</version>
-    <scope>compile</scope>
-</dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.7.0</version>
+			<scope>compile</scope>
+		</dependency>
 
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.18.1</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>4.18.1</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-testng</artifactId>
+			<version>2.22.1</version>
+			<scope>test</scope>
+		</dependency>
 
-<dependency>
+		<!-- SLF4J logging dependencies -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+		
+		
+
+		<!-- Chrome DevTools Protocol dependency -->
+		<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.18.1</version>
+    <artifactId>selenium-devtools-v131</artifactId>
+    <version>4.29.0</version>
 </dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-chrome-driver</artifactId>
-    <version>4.17.0</version>
-</dependency>
-
-
-
-		<dependency>
-            <groupId>org.apache.maven.surefire</groupId>
-            <artifactId>surefire-testng</artifactId>
-            <version>2.22.1</version>
-            <scope>test</scope>
-        </dependency>
 
 	</dependencies>
 
@@ -81,7 +91,6 @@
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
 					<version>3.1.0</version>
-				
 				</plugin>
 				<!-- default lifecycle, jar packaging: see
 				https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
@@ -93,7 +102,6 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.8.0</version>
 				</plugin>
-				
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.0.2</version>
@@ -117,17 +125,17 @@
 					<version>3.0.0</version>
 				</plugin>
 				<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.1</version>
-                <configuration>
-                    <!-- Specify the test suite file path -->
-                     <suiteXmlFiles>
-                   <suiteXmlFile>${basedir}/SuiteFiles/RegressionSuite.xml</suiteXmlFile> 
-                    <!-- <suiteXmlFile>${basedir}/SuiteFiles/Regression_Prod.xml</suiteXmlFile>-->
-                </suiteXmlFiles>
-                </configuration>
-            </plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.1</version>
+					<configuration>
+						<!-- Specify the test suite file path -->
+						<suiteXmlFiles>
+							<suiteXmlFile>${basedir}/SuiteFiles/RegressionSuite.xml</suiteXmlFile>
+							<!--  <suiteXmlFile>${basedir}/SuiteFiles/Regression_Prod.xml</suiteXmlFile>-->
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>

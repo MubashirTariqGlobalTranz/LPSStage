@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [GTZ_RegressionSuite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="Utility.TestListener"/>
-    <listener class-name="listeners.RetryListener"/>
-  </listeners>
-  <test thread-count="1" name="LPS Direct - Spot Quote(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
-        <methods>
-          <include name="setup"/>
-          <include name="spotQuote_LPSDirect_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
-    </classes>
-  </test> <!-- LPS Direct - Spot Quote(failed) -->
-  <test thread-count="1" name="FindRate-Carriers(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.FindRatesCarriersTest">
-        <methods>
-          <include name="FindRates_Carriers_Tests"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.FindRatesCarriersTest -->
-    </classes>
-  </test> <!-- FindRate-Carriers(failed) -->
-  <test thread-count="1" name="FindRates-CopyLoad(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.FindRates_CopyLoadTest">
-        <methods>
-          <include name="FindRates_CopyLoad_Tests"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.FindRates_CopyLoadTest -->
-    </classes>
-  </test> <!-- FindRates-CopyLoad(failed) -->
-  <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
         <methods>
@@ -48,5 +11,5 @@
         </methods>
       </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
     </classes>
-  </test> <!-- CustomerCarrier-Carrier Filters(failed) -->
-</suite> <!-- Failed suite [GTZ_RegressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

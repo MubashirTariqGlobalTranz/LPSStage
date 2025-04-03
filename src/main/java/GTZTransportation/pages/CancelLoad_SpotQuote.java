@@ -355,8 +355,19 @@ public class CancelLoad_SpotQuote extends BaseClass {
 		// Screenshot Capture
 		captureScreenShot(driver, "Verify Cancelled Load");
 		driver.switchTo().defaultContent();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		LoadBoard.click();
-
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		FilterClick.click();
 		try {
 			Thread.sleep(2000);
@@ -367,6 +378,12 @@ public class CancelLoad_SpotQuote extends BaseClass {
 		// Open Load Board
 
 		Exception.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		FilterLoad.click();
 		// FilterClick.click();
 		Cancelled.click();
@@ -443,6 +460,12 @@ public class CancelLoad_SpotQuote extends BaseClass {
 		LoadId.sendKeys(Keys.BACK_SPACE);
 
 		AllLoad.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		FilterLoad.click();
 		try {
 			Thread.sleep(2000);

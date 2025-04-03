@@ -95,6 +95,13 @@ public class LPS_Admin_DataEntryExpression extends BaseClass {
 		Save.click();
 
 		captureScreenShot(driver, "Verify Search Data Expression");
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

@@ -5,39 +5,39 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="LPS Direct - Spot Quote(failed)">
+  <test thread-count="1" name="DirectLoad(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest">
+      <class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest">
         <methods>
+          <include name="spotQuote_DirectLoad_Tests"/>
           <include name="setup"/>
-          <include name="spotQuote_LPSDirect_Tests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.CreateLPSDirectLoad_AwardTest -->
+      </class> <!-- GTZTransportation.gtz.CreateDirectLoad_AwardTest -->
     </classes>
-  </test> <!-- LPS Direct - Spot Quote(failed) -->
-  <test thread-count="1" name="FindRate-Carriers(failed)">
+  </test> <!-- DirectLoad(failed) -->
+  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.FindRatesCarriersTest">
+      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
         <methods>
-          <include name="FindRates_Carriers_Tests"/>
+          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
+          <include name="setup"/>
           <include name="tearDown"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
+    </classes>
+  </test> <!-- CutomerRouted-FindRates(failed) -->
+  <test thread-count="1" name="FindRates-CancelLoad(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.FindRates_CancelLoadTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="FindRates_CancelLoad_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.FindRatesCarriersTest -->
+      </class> <!-- GTZTransportation.gtz.FindRates_CancelLoadTest -->
     </classes>
-  </test> <!-- FindRate-Carriers(failed) -->
-  <test thread-count="1" name="FindRates-CopyLoad(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.FindRates_CopyLoadTest">
-        <methods>
-          <include name="FindRates_CopyLoad_Tests"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.FindRates_CopyLoadTest -->
-    </classes>
-  </test> <!-- FindRates-CopyLoad(failed) -->
+  </test> <!-- FindRates-CancelLoad(failed) -->
   <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
     <classes>
       <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">

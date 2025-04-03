@@ -188,7 +188,7 @@ public class CreateBOL_FindRates_CustomerRouted extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[18]/div/div[2]/table/tbody/tr[9]/td[6]/a[1]")).click();
+		driver.findElement(By.xpath("(//td[@class='carrier']//span[contains(text(),'Customer Routed')]/ancestor::tr//td[@class='create-bol']//a[contains(text(),'Create')])[1]")).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -218,6 +218,12 @@ public class CreateBOL_FindRates_CustomerRouted extends BaseClass {
 		PostalCode.sendKeys("30303");
 		Country.sendKeys("USA");
 		PhoneNo.sendKeys("(919) 304-3846");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		BOLCreate.click();
 		try {
 			Thread.sleep(3000);

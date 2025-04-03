@@ -539,7 +539,12 @@ public class LoadFlow_Invoice_SpotQuote extends BaseClass {
 		WebElement L = driver.findElement(By.id("ContentPlaceHolder1_loadDetails_containerDetails_btnCollapse"));
 		String st = L.getText();
 		System.out.println("Text is : " + st);
-
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		LoadBoard.click();
 		try {
 			Thread.sleep(2000);
@@ -581,6 +586,12 @@ public class LoadFlow_Invoice_SpotQuote extends BaseClass {
 		LoadId.sendKeys(Keys.BACK_SPACE);
 
 		AllLoad.click();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		FilterLoad.click();
 		RespondBid.click();
 		try {
@@ -602,6 +613,12 @@ public class LoadFlow_Invoice_SpotQuote extends BaseClass {
 		WebElement M = driver.findElement(By.className("success-validation"));
 		String mt = M.getText();
 		System.out.println("Text is : " + mt);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -783,7 +800,12 @@ public class LoadFlow_Invoice_SpotQuote extends BaseClass {
 				"/html[1]/body[1]/form[1]/div[3]/div[3]/div[1]/div[5]/div[1]/table[1]/tbody[1]/tr[2]/td[4]/a[1]"));
 		String st = L.getText();
 		System.out.println(st);
-
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Logout.click();
 		driver.switchTo().alert().accept();
 		try {

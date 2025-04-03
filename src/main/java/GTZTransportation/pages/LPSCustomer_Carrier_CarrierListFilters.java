@@ -1,139 +1,149 @@
 package GTZTransportation.pages;
 
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.StaleElementReferenceException;
 import GTZTransportation.gtz.BaseClass;
 
 public class LPSCustomer_Carrier_CarrierListFilters extends BaseClass {
 
-	// public static WebDriver driver;
+    @FindBy(xpath = "//span[normalize-space()='Client Admin']")
+    WebElement ClientAdmin;
 
-	@FindBy(xpath = "//span[normalize-space()='Client Admin']")
-	WebElement ClientAdmin;
+    @FindBy(xpath = "//a[@id='ctl00_TopHeader_linkCarrierListCryptoHeader']")
+    WebElement Carrier;
 
-	@FindBy(xpath = "//a[@id='ctl00_TopHeader_linkCarrierListCryptoHeader']")
-	WebElement Carrier;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_txtCarrierName")
+    WebElement SearchCarrier;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_txtCarrierName")
-	WebElement SearchCarrier;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierMcNumber")
+    WebElement McNumber;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierMcNumber")
-	WebElement McNumber;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_btnSearch")
+    WebElement SearchButton;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_btnSearch")
-	WebElement SearchButton;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_btnClear")
+    WebElement ClearAll;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_btnClear")
-	WebElement ClearAll;
+    @FindBy(id = "ctl00_MainContentHolder_container_grid_ctl02_linkDetails")
+    WebElement CarrierId;
 
-	@FindBy(id = "ctl00_MainContentHolder_container_grid_ctl02_linkDetails")
-	WebElement CarrierId;
+    @FindBy(id = "ctl00_MainContentHolder_container_btnSave")
+    WebElement Save;
 
-	@FindBy(id = "ctl00_MainContentHolder_container_btnSave")
-	WebElement Save;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierDotNumber")
+    WebElement DotNumber;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierDotNumber")
-	WebElement DotNumber;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierScacCode")
+    WebElement SCAC;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierScacCode")
-	WebElement SCAC;
+    @FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierActive")
+    WebElement Active;
 
-	@FindBy(id = "ctl00_MainContentHolder_containerFilter_carrierActive")
-	WebElement Active;
+    @FindBy(id = "ctl00_MainContentHolder_linkBanks")
+    WebElement Banks;
 
-	@FindBy(id = "ctl00_MainContentHolder_linkBanks")
-	WebElement Banks;
+    // Initialization
+    public LPSCustomer_Carrier_CarrierListFilters() {
+        PageFactory.initElements(driver, this);
+    }
 
-	// Initialization
-	public LPSCustomer_Carrier_CarrierListFilters() {
-		PageFactory.initElements(driver, this);
-	}
+    // Tab
+    public void CarrierGTZ() {
+        String currentWindowHandle = driver.getWindowHandle();
 
-	// Tab
-	public void CarrierGTZ() {
-		String currentWindowHandle = driver.getWindowHandle();
+        // Click on an element that opens a new tab
+        driver.findElement(By.xpath("//*[text()='Customer/Carrier']")).click();
 
-		// Click on an element that opens a new tab
-		driver.findElement(By.xpath("//*[text()='Customer/Carrier']")).click();
+        // Loop through all the available window handles
+        for (String windowHandle : driver.getWindowHandles()) {
+            // If it's not the current window handle, switch to it
+            if (!windowHandle.equals(currentWindowHandle)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
 
-		// Loop through all the available window handles
-		for (String windowHandle : driver.getWindowHandles()) {
-			// If it's not the current window handle, switch to it
-			if (!windowHandle.equals(currentWindowHandle)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
+        // Now you're on the new tab, you can perform actions on it
+        driver.findElement(By.xpath("//a[@id='ctl00_TopHeader_linkCustomerListCryptoHeader']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(Carrier)).click();
+    }
 
-		// Now you're on the new tab, you can perform actions on it
-		driver.findElement(By.xpath("//a[@id='ctl00_TopHeader_linkCustomerListCryptoHeader']")).click();
-		Carrier.click();
-	}
+    // This will open users
+    public void CarrierList() {
+        try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        captureScreenShot(driver, "Verify CarrierList");
+    }
 
-	// This will open users
-	public void CarrierList() {
+    public void Search() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 
-		try {
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		captureScreenShot(driver, "Verify CarrierList");
+        retryingFindSendKeys(SearchCarrier, "Test");
+        retryingFindClick(SearchButton);
+        captureScreenShot(driver, "Verify Carrier Search");
+        retryingFindClick(ClearAll);
 
-	}
+        retryingFindSendKeys(McNumber, "1234567");
+        retryingFindClick(SearchButton);
+        retryingFindClick(ClearAll);
 
-	public void Search() {
-		SearchCarrier.sendKeys("Test");
-		SearchButton.click();
+        retryingFindSendKeys(DotNumber, "9876543");
+        retryingFindClick(SearchButton);
+        retryingFindClick(ClearAll);
 
-		captureScreenShot(driver, "Verify Carrier Search");
-		ClearAll.click();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		McNumber.sendKeys("1234567");
-		SearchButton.click();
-		ClearAll.click();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		DotNumber.sendKeys("9876543");
-		SearchButton.click();
-		ClearAll.click();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        retryingFindSendKeys(SCAC, "HYTI");
+        retryingFindClick(SearchButton);
+        retryingFindClick(ClearAll);
 
-		SCAC.sendKeys("HYTI");
-		SearchButton.click();
-		ClearAll.click();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Active.click();
-		SearchButton.click();
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+        retryingFindClick(Active);
+        retryingFindClick(SearchButton);
+    }
 
+    private void retryingFindSendKeys(WebElement element, String keys) {
+        boolean result = false;
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(keys);
+                result = true;
+                break;
+            } catch (StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException: Retrying sendKeys for element");
+            }
+            attempts++;
+        }
+        if (!result) {
+            throw new RuntimeException("Failed to send keys to element after 3 attempts");
+        }
+    }
+
+    private void retryingFindClick(WebElement element) {
+        boolean result = false;
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+                result = true;
+                break;
+            } catch (StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException: Retrying click for element");
+            }
+            attempts++;
+        }
+        if (!result) {
+            throw new RuntimeException("Failed to click element after 3 attempts");
+        }
+    }
 }

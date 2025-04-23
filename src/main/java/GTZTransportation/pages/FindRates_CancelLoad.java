@@ -25,7 +25,7 @@ public class FindRates_CancelLoad extends BaseClass {
 	@FindBy(id = "//a[@id='ContentPlaceHolder1_container_grid_btnCancel_1']")
 	WebElement cancel;
 	
-	@FindBy(xpath = "/html/body/form/div[3]/div[3]/div/span[2]/div/div/div/div/table/tbody/tr[2]/td[2]/a")
+	@FindBy(xpath = "/html[1]/body[1]/form[1]/div[3]/div[3]/div[1]/span[2]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/a[1]")
 	WebElement Loadno;
 
 	// Initialization

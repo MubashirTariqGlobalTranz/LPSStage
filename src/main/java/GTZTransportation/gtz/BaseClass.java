@@ -12,7 +12,6 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,7 +46,7 @@ public class BaseClass {
 
     static {
         config.setProperty("browser", "chrome");      // Browser choice
-        config.setProperty("headless", "false");      // Headless mode
+        config.setProperty("headless", "true");      // Headless mode
         config.setProperty("incognito", "false");      // Incognito mode
         config.setProperty("environment", "stage");   // Environment choice
 
@@ -144,7 +143,8 @@ public class BaseClass {
             // Highlight server errors
             devTools.addListener(Network.responseReceived(), response -> {
                 int status = response.getResponse().getStatus();
-                if (status == 400 || status == 401 || status == 403 || status == 404 || status == 500 || status == 502 || status == 503 || status == 504) {
+                if (status == 400 || status == 401 || status == 403 || status == 404 || status == 500 || status == 502 || status == 503 || status == 504){
+                	
                     logger.severe("Server Error Detected: " + response.getResponse().getUrl() + " - Status: " + status);
                     // captureScreenShot(driver, "Server_Error"); // Commented out as requested
                 }
@@ -228,19 +228,6 @@ public class BaseClass {
         if (driver != null) {
             driver.quit();
             logger.info("Browser closed successfully.");
-        }
-    }
-
-    // Clears browser cache and memory using JavaScript
-    public static void clearBrowserCacheAndMemory() {
-        try {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("window.localStorage.clear();");
-            js.executeScript("window.sessionStorage.clear();");
-            js.executeScript("caches.keys().then(function(names) { for (let name of names) caches.delete(name); });");
-            logger.info("Browser cache and memory cleared successfully.");
-        } catch (Exception e) {
-            logger.warning("Failed to clear browser cache and memory: " + e.getMessage());
         }
     }
 }

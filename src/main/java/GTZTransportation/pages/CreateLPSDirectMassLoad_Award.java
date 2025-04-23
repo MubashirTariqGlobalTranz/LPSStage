@@ -115,6 +115,12 @@ public class CreateLPSDirectMassLoad_Award extends BaseClass {
 
 	
 		Create.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		WebElement K = driver.findElement(By.className("info-validation"));
 		String kt = K.getText();
 		System.out.println("Original text: " + kt);

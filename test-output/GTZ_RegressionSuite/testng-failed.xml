@@ -5,48 +5,70 @@
     <listener class-name="Utility.TestListener"/>
     <listener class-name="listeners.RetryListener"/>
   </listeners>
-  <test thread-count="1" name="DirectLoad(failed)">
+  <test thread-count="1" name="Copy Load- Spot Quote(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateDirectLoad_AwardTest">
+      <class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest">
         <methods>
-          <include name="spotQuote_DirectLoad_Tests"/>
           <include name="setup"/>
+          <include name="spotQuote_CopyLoad_Tests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.CreateDirectLoad_AwardTest -->
+      </class> <!-- GTZTransportation.gtz.CopyLoad_SpotQuoteTest -->
     </classes>
-  </test> <!-- DirectLoad(failed) -->
-  <test thread-count="1" name="CutomerRouted-FindRates(failed)">
+  </test> <!-- Copy Load- Spot Quote(failed) -->
+  <test thread-count="1" name="LPS_Key Revenue- Invoice(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test">
-        <methods>
-          <include name="FindRates_BOL_Creation_CustomerRouted_Tests"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CreateBOL_FindRates_CustomerRouted_Test -->
-    </classes>
-  </test> <!-- CutomerRouted-FindRates(failed) -->
-  <test thread-count="1" name="FindRates-CancelLoad(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.FindRates_CancelLoadTest">
+      <class name="GTZTransportation.gtz.KeyRevenue_InvoiceTest">
         <methods>
           <include name="tearDown"/>
-          <include name="FindRates_CancelLoad_Tests"/>
+          <include name="setup"/>
+          <include name="KeyRevenue_Invoice_tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.KeyRevenue_InvoiceTest -->
+    </classes>
+  </test> <!-- LPS_Key Revenue- Invoice(failed) -->
+  <test thread-count="1" name="LPS Report - Quick Report(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_QuickReportTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="LPS_QuickReport_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.FindRates_CancelLoadTest -->
+      </class> <!-- GTZTransportation.gtz.LPS_QuickReportTest -->
     </classes>
-  </test> <!-- FindRates-CancelLoad(failed) -->
-  <test thread-count="1" name="CustomerCarrier-Carrier Filters(failed)">
+  </test> <!-- LPS Report - Quick Report(failed) -->
+  <test thread-count="1" name="Reports 1- Spot Quote(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
+      <class name="GTZTransportation.gtz.Report1_SpotQuoteTest">
         <methods>
-          <include name="CustomerCarriers_CarrierListFilters_tests"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="spotQuote_Reports_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
+      </class> <!-- GTZTransportation.gtz.Report1_SpotQuoteTest -->
     </classes>
-  </test> <!-- CustomerCarrier-Carrier Filters(failed) -->
+  </test> <!-- Reports 1- Spot Quote(failed) -->
+  <test thread-count="1" name="LPS Dashboard - Report(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LPS_Dashboard_ReportsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="LPS_Dashboard_Reports_Tests"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ReportsTest -->
+    </classes>
+  </test> <!-- LPS Dashboard - Report(failed) -->
+  <test thread-count="1" name="Complete Load -Invoice Flow- Spot Quote(failed)">
+    <classes>
+      <class name="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest">
+        <methods>
+          <include name="spotQuote_Complete_Load_Invoice_Flow_Tests"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest -->
+    </classes>
+  </test> <!-- Complete Load -Invoice Flow- Spot Quote(failed) -->
 </suite> <!-- Failed suite [GTZ_RegressionSuite] -->

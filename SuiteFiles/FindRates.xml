@@ -56,4 +56,11 @@
 
 		</classes>
 	</test>
+	<test name="FindRates-Heavy Hual">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FindRates_HeavyHualTest" />
+
+		</classes>
+	</test>
 </suite>

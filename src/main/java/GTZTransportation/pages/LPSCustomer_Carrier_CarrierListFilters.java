@@ -86,8 +86,6 @@ public class LPSCustomer_Carrier_CarrierListFilters extends BaseClass {
     }
 
     public void Search() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-
         retryingFindSendKeys(SearchCarrier, "Test");
         retryingFindClick(SearchButton);
         captureScreenShot(driver, "Verify Carrier Search");
@@ -114,8 +112,9 @@ public class LPSCustomer_Carrier_CarrierListFilters extends BaseClass {
         int attempts = 0;
         while (attempts < 3) {
             try {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-                wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(keys);
+                new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.visibilityOf(element))
+                    .sendKeys(keys);
                 result = true;
                 break;
             } catch (StaleElementReferenceException e) {
@@ -133,8 +132,9 @@ public class LPSCustomer_Carrier_CarrierListFilters extends BaseClass {
         int attempts = 0;
         while (attempts < 3) {
             try {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-                wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+                new WebDriverWait(driver, Duration.ofSeconds(10))
+                    .until(ExpectedConditions.elementToBeClickable(element))
+                    .click();
                 result = true;
                 break;
             } catch (StaleElementReferenceException e) {
@@ -147,3 +147,4 @@ public class LPSCustomer_Carrier_CarrierListFilters extends BaseClass {
         }
     }
 }
+

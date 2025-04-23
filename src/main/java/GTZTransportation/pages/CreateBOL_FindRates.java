@@ -1,6 +1,5 @@
 package GTZTransportation.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -41,8 +40,8 @@ public class CreateBOL_FindRates extends BaseClass {
 	@FindBy(xpath = "//button[@class='btn btn-large btn-primary']")
 	WebElement FindRatesButton;
 
-	@FindBy(xpath = "//*[@id=\"content\"]/div/div[1]/div[20]/div/div[2]/table/tbody/tr[2]/td[6]/a[1]")
-	WebElement Create;
+	@FindBy(xpath = "(//tr[contains(@class, 'even')]//td[contains(@class, 'create-bol')]//a[contains(text(), 'Create')])[1]")
+    WebElement Create;
 
 	@FindBy(xpath = "//input[@id='tr2']")
 	WebElement Description;
@@ -156,7 +155,7 @@ public class CreateBOL_FindRates extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div[1]/div[18]/div/div[2]/table/tbody/tr[2]/td[6]/a[1]")).click();
+		Create.click();
 		
 	}
 

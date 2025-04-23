@@ -469,6 +469,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 
 		LoadContactName.sendKeys("MubashirTariq");
 		LoadContactPhoneNo.sendKeys("(651) 789-5782");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		SubmitLoadInformation.click();
 	}
 
@@ -519,6 +525,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		LoadId.sendKeys(Keys.BACK_SPACE);
 
 		AllLoad.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		FilterLoad.click();
 		RespondBid.click();
 		try {
@@ -540,6 +552,12 @@ public class LoadFlow_SpotQuote extends BaseClass {
 		WebElement M = driver.findElement(By.className("success-validation"));
 		String mt = M.getText();
 		System.out.println("Text is : " + mt);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 

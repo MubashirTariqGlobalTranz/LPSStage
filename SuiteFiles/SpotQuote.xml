@@ -208,4 +208,17 @@
 
 		</classes>
 	</test>
+	
+	<test name="Adhoc Tool -Remove Line Items">
+		<classes>
+			<class name="GTZTransportation.gtz.LPS_Admin_AdhocRemoveLineItemsTest" />
+
+		</classes>
+	</test>
+	<test name="Spot Quote -Pallet Tag">
+		<classes>
+			<class name="GTZTransportation.gtz.CreatePallet_TagTest" />
+
+		</classes>
+	</test>
 </suite>

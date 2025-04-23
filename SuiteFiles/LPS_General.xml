@@ -224,4 +224,11 @@
 
 		</classes>
 	</test>
+	
+	<test name="LPS Dashboard - Diesel Region">
+		<classes>
+			<class name="GTZTransportation.gtz.Dashboard_DieselPriceTest" />
+
+		</classes>
+	</test>
 </suite>

@@ -5,104 +5,133 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 import GTZTransportation.gtz.BaseClass;
 
 public class LPS_Admin_DataEntryExpression extends BaseClass {
 
-	// public static WebDriver driver;
+    @FindBy(xpath = "//span[normalize-space()='Admin']")
+    WebElement Admin;
 
-	@FindBy(xpath = "//span[normalize-space()='Admin']")
-	WebElement Admin;
+    @FindBy(xpath = "//a[normalize-space()='Expression Help']")
+    WebElement ExpressionHelp;
 
-	@FindBy(xpath = "//a[normalize-space()='Expression Help']")
-	WebElement ExpressionHelp;
+    @FindBy(xpath = "//input[@id='ContentPlaceHolder1_txtDataEntryShipmentId']")
+    WebElement DataEntryShipment;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_txtDataEntryShipmentId']")
-	WebElement DataEntryShipment;
+    @FindBy(xpath = "//input[@id='ContentPlaceHolder1_btnLoad']")
+    WebElement LoadDataEntryShipment;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_btnLoad']")
-	WebElement LoadDataEntryShipment;
+    @FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_txtName']")
+    WebElement Name;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_txtName']")
-	WebElement Name;
+    @FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_btnFilter']")
+    WebElement Save;
 
-	@FindBy(xpath = "//input[@id='ContentPlaceHolder1_containerFilter_btnFilter']")
-	WebElement Save;
+    @FindBy(xpath = "//a[@id='ContentPlaceHolder1_containerFilter_btnExpand']")
+    WebElement FilterExpand;
 
-	@FindBy(xpath = "//a[@id='ContentPlaceHolder1_containerFilter_btnExpand']")
-	WebElement FilterExpand;
+    // Initialization
+    public LPS_Admin_DataEntryExpression() {
+        PageFactory.initElements(driver, this);
+    }
 
-	// Initialization
-	public LPS_Admin_DataEntryExpression() {
-		PageFactory.initElements(driver, this);
-	}
+    // This will open Admin & Data Entry Expressions
+    public void Admin() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-	// This will open Admin & Data Entry Expressions
-	public void Admin()
+        Admin.click();
 
-	{
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        // Find the "Data entry expression" link
+        WebElement actionEventsLink = driver
+                .findElement(By.xpath("//a[@href='/DataEntry/Shipment/Expressions/default.aspx']"));
 
-		Admin.click();
+        // Use JavaScript to click on the "Data entry expression" link
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", actionEventsLink);
+    }
 
-		// Find the "Data entry expression" link
-		WebElement actionEventsLink = driver
-				.findElement(By.xpath("//a[@href='/DataEntry/Shipment/Expressions/default.aspx']"));
+    // This will open data entry Expression
+    public void DataEntryExpression() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-		// Use JavaScript to click on the "Data entry expression" link
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", actionEventsLink);
-	}
+        retryingFindClick(ExpressionHelp);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-	// This will open data entry Expression
-	public void DataEntryExpression() {
+        retryingFindSendKeys(DataEntryShipment, "Test");
+        retryingFindClick(LoadDataEntryShipment);
+        captureScreenShot(driver, "Verify Data Entry Expression Help");
+    }
 
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+    // This will search Expression
+    public void SearchExpression() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        retryingFindClick(FilterExpand);
+        retryingFindSendKeys(Name, "ValidateCurrency");
+        retryingFindClick(Save);
 
-		ExpressionHelp.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        captureScreenShot(driver, "Verify Search Data Expression");
 
-		DataEntryShipment.sendKeys("Test");
-		LoadDataEntryShipment.click();
-		captureScreenShot(driver, "Verify Data Entry Expression Help");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
-	}
+    private void retryingFindSendKeys(WebElement element, String keys) {
+        boolean result = false;
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(keys);
+                result = true;
+                break;
+            } catch (StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException: Retrying sendKeys for element");
+            }
+            attempts++;
+        }
+        if (!result) {
+            throw new RuntimeException("Failed to send keys to element after 3 attempts");
+        }
+    }
 
-	// This will search Expression
-	public void SearchExpression() {
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		FilterExpand.click();
-		Name.sendKeys("ValidateCurrency");
-		Save.click();
-
-		captureScreenShot(driver, "Verify Search Data Expression");
-		
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	}
-
+    private void retryingFindClick(WebElement element) {
+        boolean result = false;
+        int attempts = 0;
+        while (attempts < 3) {
+            try {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+                result = true;
+                break;
+            } catch (StaleElementReferenceException e) {
+                System.out.println("StaleElementReferenceException: Retrying click for element");
+            }
+            attempts++;
+        }
+        if (!result) {
+            throw new RuntimeException("Failed to click element after 3 attempts");
+        }
+    }
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest">
+      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
         <methods>
-          <include name="CustomerCarriers_CarrierListFilters_tests"/>
           <include name="setup"/>
+          <include name="spotQuote_CompleteLoadFlow_Tests"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPSCustomer_Carrier_CarrierListFiltersTest -->
+      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

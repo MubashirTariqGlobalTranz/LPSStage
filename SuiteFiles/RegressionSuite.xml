@@ -696,4 +696,11 @@
 
 		</classes>
 	</test>
+	<test name="FindRates-International">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FindRates_InternationalTest" />
+
+		</classes>
+	</test>
 </suite>

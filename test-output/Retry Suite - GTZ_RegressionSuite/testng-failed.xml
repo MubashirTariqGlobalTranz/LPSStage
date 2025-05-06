@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Retry Suite - GTZ_RegressionSuite]">
-  <test thread-count="5" name="Retry - GTZTransportation.gtz.CopyLoad_SpotQuoteTest.spotQuote_CopyLoad_Tests(failed)">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest.spotQuote_Complete_Load_Invoice_Flow_Tests(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.CopyLoad_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest">
         <methods>
-          <include name="setup"/>
-          <include name="spotQuote_CopyLoad_Tests"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.CopyLoad_SpotQuoteTest -->
-    </classes>
-  </test> <!-- Retry - GTZTransportation.gtz.CopyLoad_SpotQuoteTest.spotQuote_CopyLoad_Tests(failed) -->
-  <test thread-count="5" name="Retry - GTZTransportation.gtz.LPS_Dashboard_ReportsTest.LPS_Dashboard_Reports_Tests(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LPS_Dashboard_ReportsTest">
-        <methods>
+          <include name="spotQuote_Complete_Load_Invoice_Flow_Tests"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="LPS_Dashboard_Reports_Tests"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LPS_Dashboard_ReportsTest -->
+      </class> <!-- GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest -->
     </classes>
-  </test> <!-- Retry - GTZTransportation.gtz.LPS_Dashboard_ReportsTest.LPS_Dashboard_Reports_Tests(failed) -->
+  </test> <!-- Retry - GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest.spotQuote_Complete_Load_Invoice_Flow_Tests(failed) -->
 </suite> <!-- Failed suite [Retry Suite - GTZ_RegressionSuite] -->

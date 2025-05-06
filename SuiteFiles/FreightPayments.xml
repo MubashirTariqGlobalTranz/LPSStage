@@ -71,4 +71,25 @@
 
 		</classes>
 	</test>
+	<test name="FreightPayment-CodeShipment">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_CodeShipmentsTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-CodeShipment">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ConfirmPaymentTest" />
+
+		</classes>
+	</test>
+	<test name="FreightPayment-RemittanceInfo">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_CarrierPortalRemittanceTest" />
+
+		</classes>
+	</test>
 </suite>

@@ -710,7 +710,7 @@
 
 		</classes>
 	</test>
-	<test name="FreightPayment-CodeShipment">
+	<test name="FreightPayment-ConfirmPayment">
 		<classes>
 			<class
 				name="GTZTransportation.gtz.FreightPayment_ConfirmPaymentTest" />

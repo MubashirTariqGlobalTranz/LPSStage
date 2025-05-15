@@ -76,8 +76,8 @@
 		<!-- Chrome DevTools Protocol dependency -->
 		<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-devtools-v131</artifactId>
-    <version>4.29.0</version>
+    <artifactId>selenium-devtools-v136</artifactId>
+    <version>4.32.0</version>
 </dependency>
 
 	</dependencies>

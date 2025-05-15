@@ -724,4 +724,11 @@
 
 		</classes>
 	</test>
+	<test name="FreightPayment-BatchShipments">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_BatchShipmentsTest" />
+
+		</classes>
+	</test>
 </suite>

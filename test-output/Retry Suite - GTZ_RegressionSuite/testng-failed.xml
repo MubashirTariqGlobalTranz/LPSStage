@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Retry Suite - GTZ_RegressionSuite]">
-  <test thread-count="5" name="Retry - GTZTransportation.gtz.LoadFlow_SpotQuoteTest.spotQuote_CompleteLoadFlow_Tests(failed)">
+  <test thread-count="5" name="Retry - GTZTransportation.gtz.FindRates_CancelLoadTest.FindRates_CancelLoad_Tests(failed)">
     <classes>
-      <class name="GTZTransportation.gtz.LoadFlow_SpotQuoteTest">
+      <class name="GTZTransportation.gtz.FindRates_CancelLoadTest">
         <methods>
-          <include name="setup"/>
-          <include name="spotQuote_CompleteLoadFlow_Tests"/>
           <include name="tearDown"/>
-        </methods>
-      </class> <!-- GTZTransportation.gtz.LoadFlow_SpotQuoteTest -->
-    </classes>
-  </test> <!-- Retry - GTZTransportation.gtz.LoadFlow_SpotQuoteTest.spotQuote_CompleteLoadFlow_Tests(failed) -->
-  <test thread-count="5" name="Retry - GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest.spotQuote_Complete_Load_Invoice_Flow_Tests(failed)">
-    <classes>
-      <class name="GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest">
-        <methods>
-          <include name="spotQuote_Complete_Load_Invoice_Flow_Tests"/>
-          <include name="tearDown"/>
+          <include name="FindRates_CancelLoad_Tests"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest -->
+      </class> <!-- GTZTransportation.gtz.FindRates_CancelLoadTest -->
     </classes>
-  </test> <!-- Retry - GTZTransportation.gtz.LoadFlow_Invoice_SpotQuoteTest.spotQuote_Complete_Load_Invoice_Flow_Tests(failed) -->
+  </test> <!-- Retry - GTZTransportation.gtz.FindRates_CancelLoadTest.FindRates_CancelLoad_Tests(failed) -->
 </suite> <!-- Failed suite [Retry Suite - GTZ_RegressionSuite] -->

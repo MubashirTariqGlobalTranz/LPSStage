@@ -99,4 +99,11 @@
 
 		</classes>
 	</test>
+	<test name="FreightPayment-ReviewShipments">
+		<classes>
+			<class
+				name="GTZTransportation.gtz.FreightPayment_ReviewShipmentsTest" />
+
+		</classes>
+	</test>
 </suite>
